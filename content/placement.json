@@ -122,11 +122,7 @@
       "tier": 5,
       "lesson": "5.2.2",
       "prompt": "Surah Al 'Imran 3:134 describes the virtuous as those who do what with their anger?",
-      "options": [
-        "Let it grow",
-        "Pass it on to others",
-        "Suppress it"
-      ],
+      "options": ["Let it grow", "Pass it on to others", "Suppress it"],
       "correct": 2,
       "explanation": "The verse describes those who suppress their anger and excuse the faults of the people."
     },

@@ -39,7 +39,7 @@
           "quote": "Read in the Name of your Lord who created;"
         }
       ],
-      "summary": "Surah al-'Alaq 96:1 opens revelation by tying reading and learning directly to the Creator. The word for \"read\" comes from the Arabic root q-r-', which is also the root of recitation and of the word Qur'an.",
+      "summary": "Surah al-'Alaq 96:1 opens revelation by tying reading and learning directly to the Creator.",
       "mechanic": "root_word_match",
       "questions": [
         {
@@ -55,14 +55,14 @@
         },
         {
           "type": "select",
-          "prompt": "Which pair is connected to the root q-r-' in this lesson?",
+          "prompt": "In 96:1, what is the reader first told to do?",
           "options": [
-            "Recitation and Qur'an",
-            "Pen and paper",
-            "Prayer and fasting"
+            "Write",
+            "Read",
+            "Travel"
           ],
-          "correct": 0,
-          "explanation": "The lesson links the root q-r-' to recitation and to the word Qur'an."
+          "correct": 1,
+          "explanation": "The verse begins: Read in the Name of your Lord who created."
         }
       ],
       "status": "PREVIEW",
@@ -72,7 +72,10 @@
         "quoteHashes": [
           "292763a9b5ba4fbf"
         ]
-      }
+      },
+      "candidates": [
+        "Root q-r-' (recitation, Qur'an): add with a source that states it."
+      ]
     },
     {
       "slug": "2.1.2",
@@ -243,7 +246,7 @@
         }
       ],
       "status": "DRAFT",
-      "draftReason": "Not yet verified — MIZAN Vol. 1, Surah al-Fatiha 1:1-5 (Traditions): source unreachable: HTTP 403 (the site blocks automated readers; save the page by hand as .cache/pages/www_al_islam_org_al_mizan_exegesis_quran_volume_1_sayyid_muhammad_husayn_tabatabai.html)",
+      "draftReason": "Not yet verified — MIZAN Vol. 1, Surah al-Fatiha 1:1-5 (Traditions): source unreachable: HTTP 403 (the site blocks automated readers; save the exact page by hand as .cache/pages/www_al_islam_org_al_mizan_exegesis_quran_volume_1_sayyid_muhammad_husayn_tabatabai.html)",
       "verification": {
         "passed": false,
         "checkedAt": "2026-11-24",
@@ -299,7 +302,7 @@
         }
       ],
       "status": "DRAFT",
-      "draftReason": "Not yet verified — MIZAN Vol. 1, Surah al-Fatiha, verse 5 commentary: source unreachable: HTTP 403 (the site blocks automated readers; save the page by hand as .cache/pages/www_al_islam_org_al_mizan_exegesis_quran_volume_1_sayyid_muhammad_husayn_tabatabai.html)",
+      "draftReason": "Not yet verified — MIZAN Vol. 1, Surah al-Fatiha, verse 5 commentary: source unreachable: HTTP 403 (the site blocks automated readers; save the exact page by hand as .cache/pages/www_al_islam_org_al_mizan_exegesis_quran_volume_1_sayyid_muhammad_husayn_tabatabai.html)",
       "verification": {
         "passed": false,
         "checkedAt": "2026-11-24",
@@ -354,7 +357,7 @@
         }
       ],
       "status": "DRAFT",
-      "draftReason": "Not yet verified — MIZAN Vol. 1, Surah al-Fatiha, verse 1 commentary: source unreachable: HTTP 403 (the site blocks automated readers; save the page by hand as .cache/pages/www_al_islam_org_al_mizan_exegesis_quran_volume_1_sayyid_muhammad_husayn_tabatabai.html)",
+      "draftReason": "Not yet verified — MIZAN Vol. 1, Surah al-Fatiha, verse 1 commentary: source unreachable: HTTP 403 (the site blocks automated readers; save the exact page by hand as .cache/pages/www_al_islam_org_al_mizan_exegesis_quran_volume_1_sayyid_muhammad_husayn_tabatabai.html)",
       "verification": {
         "passed": false,
         "checkedAt": "2026-11-24",
@@ -464,7 +467,7 @@
         }
       ],
       "status": "DRAFT",
-      "draftReason": "Not yet verified — MIZAN Vol. 1, Foreword: source unreachable: HTTP 403 (the site blocks automated readers; save the page by hand as .cache/pages/www_al_islam_org_al_mizan_exegesis_quran_volume_1_sayyid_muhammad_husayn_tabatabai.html)",
+      "draftReason": "Not yet verified — MIZAN Vol. 1, Foreword: source unreachable: HTTP 403 (the site blocks automated readers; save the exact page by hand as .cache/pages/www_al_islam_org_al_mizan_exegesis_quran_volume_1_sayyid_muhammad_husayn_tabatabai.html)",
       "verification": {
         "passed": false,
         "checkedAt": "2026-11-24",
@@ -531,7 +534,7 @@
         }
       ],
       "status": "DRAFT",
-      "draftReason": "Not yet verified — NAHJ Saying 313: source unreachable: HTTP 403 (the site blocks automated readers; save the page by hand as .cache/pages/www_al_islam_org_nahjul_balagha_part_2_letters_and_sayings.html)",
+      "draftReason": "Not yet verified — NAHJ Saying 313: source unreachable: HTTP 403 (the site blocks automated readers; save the exact page by hand as .cache/pages/www_al_islam_org_nahjul_balagha_part_2_letters_and_sayings.html)",
       "verification": {
         "passed": false,
         "checkedAt": "2026-11-24",
@@ -666,7 +669,7 @@
       "slug": "2.4.3",
       "tier": 2,
       "unit": 4,
-      "title": "Tier 2 Checkpoint: Seeing Signs Without Forgetting the Creator",
+      "title": "Tier 2 Boss Checkpoint: Seeing Signs Without Forgetting the Creator",
       "objective": "Synthesize Tier 2 around Al-Mizan Vol. 1's principle that looking at creation should remind the heart of God rather than distract from Him.",
       "hook": "When you admire something remarkable in the world, does it pull your attention away from its Source or point back toward it?",
       "sources": [

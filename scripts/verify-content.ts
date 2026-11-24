@@ -87,6 +87,10 @@ async function getPage(
   return result;
 }
 
+// Raw JSON is edited in place and re-validated by the schema before it is written.
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+type Raw = Record<string, any>;
+
 type Failure = {
   slug: string;
   locator: string;
@@ -110,7 +114,7 @@ async function main() {
   for (const f of files) {
     const file = path.join(CONTENT, f);
     const tier = JSON.parse(fs.readFileSync(file, "utf8"));
-    const lessons = tier.lessons as Record<string, any>[]; // eslint-disable-line @typescript-eslint/no-explicit-any
+    const lessons = tier.lessons as Raw[];
 
     // Pass 1: lessons that carry their own quotes.
     for (const l of lessons) {
@@ -199,8 +203,8 @@ async function main() {
   const all = files.flatMap(
     (f) =>
       JSON.parse(fs.readFileSync(path.join(CONTENT, f), "utf8"))
-        .lessons as Record<string, any>[]
-  ); // eslint-disable-line @typescript-eslint/no-explicit-any
+        .lessons as Raw[]
+  );
   const count = (s: string) => all.filter((l) => l.status === s).length;
   const lines = [
     "# Verification report",

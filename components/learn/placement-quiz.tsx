@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
 import type { PlacementQuestion } from "@/content/schema";
 import { computePlacement } from "@/lib/placement";
+import { useHydrated } from "@/lib/use-hydrated";
 import { cn } from "@/lib/utils";
 import { useProgress } from "@/store/use-progress";
 
@@ -18,6 +19,7 @@ type Props = {
 
 export function PlacementQuiz({ questions, tierNames }: Props) {
   const save = useProgress((s) => s.savePlacement);
+  const hydrated = useHydrated();
   const [i, setI] = useState(-1); // -1 = intro, questions.length = results
   const [picks, setPicks] = useState<(number | null)[]>(() =>
     questions.map(() => null)
@@ -40,7 +42,7 @@ export function PlacementQuiz({ questions, tierNames }: Props) {
 
   if (i === -1) {
     return (
-      <div>
+      <div data-testid="placement-intro" data-hydrated={hydrated}>
         <h1 className="text-4xl font-bold leading-tight">Find my level</h1>
         <p className="mt-4 text-lg text-muted-foreground">
           {questions.length > 0

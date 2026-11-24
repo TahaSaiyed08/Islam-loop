@@ -70,25 +70,25 @@
       "questions": [
         {
           "type": "select",
-          "prompt": "What does this clause say about the definitive verses?",
+          "prompt": "What does the quoted clause call the definitive verses?",
           "options": [
-            "They are the mother of the Book",
-            "They are optional",
-            "They are a later addition"
+            "The mother of the Book",
+            "A later addition",
+            "Optional reading"
           ],
           "correct": 0,
-          "explanation": "The verse says: Parts of it are definitive verses, which are the mother of the Book."
+          "explanation": "The clause says: Parts of it are definitive verses, which are the mother of the Book."
         },
         {
           "type": "select",
-          "prompt": "You read one unclear line online. What is a careful next step?",
+          "prompt": "The clause says parts of the Book are definitive verses. What does that tell you?",
           "options": [
-            "Look at the surrounding passage and the clearer verses first",
-            "Share it at once",
-            "Build a rule from it"
+            "Some of its verses are definitive, and these are its core",
+            "Every verse is metaphorical",
+            "No verse is clear"
           ],
           "correct": 0,
-          "explanation": "The clause points to the definitive verses as the core of the Book."
+          "explanation": "The definitive verses are called the mother of the Book, its core."
         }
       ],
       "status": "PREVIEW",

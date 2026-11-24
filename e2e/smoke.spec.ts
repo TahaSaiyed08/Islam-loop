@@ -3,7 +3,7 @@ import { expect, test, type Page } from "@playwright/test";
 import { findBanned } from "../lib/banned";
 import { computePlacement } from "../lib/placement";
 
-import { getCatalog, playLesson, visibleText } from "./helpers";
+import { getCatalog, hydrated, playLesson, visibleText } from "./helpers";
 
 const catalog = getCatalog();
 const lesson = (slug: string) => {
@@ -143,6 +143,7 @@ test("the placement quiz runs to the end and lands on the right tier", async ({
     qs.map((q) => ({ tier: q.tier, correct: true }))
   ).startTier;
   await page.goto("/placement");
+  await hydrated(page);
   await page.getByTestId("placement-begin").click();
   for (let i = 0; i < qs.length; i++) {
     await page.getByTestId(`placement-option-${qs[i].correct}`).click();
@@ -167,6 +168,7 @@ test("placement with every answer wrong starts at Tier 1, and skipping works", a
 }) => {
   const qs = catalog.placement;
   await page.goto("/placement");
+  await hydrated(page);
   await page.getByTestId("placement-begin").click();
   for (let i = 0; i < qs.length; i++) {
     await page
@@ -181,6 +183,7 @@ test("placement with every answer wrong starts at Tier 1, and skipping works", a
     "1"
   );
   await page.goto("/placement");
+  await hydrated(page);
   await page.getByTestId("placement-skip").click();
   await expect(page).toHaveURL(/\/learn\/?$/);
 });
@@ -195,6 +198,7 @@ test("reset clears progress, with an in-page confirmation and no browser dialog"
     void d.dismiss();
   });
   await page.goto("/settings");
+  await hydrated(page);
   await expect(page.getByTestId("stat-completed")).toHaveText("1");
   await page.getByTestId("reset-open").click();
   await page.getByTestId("reset-confirm").click();
@@ -233,6 +237,7 @@ test("every source link is an absolute https URL and external links are safe", a
   for (const l of catalog.lessons)
     for (const s of l.sources) expect(s.url).toMatch(/^https:\/\//);
   await page.goto("/lesson/1.1.1");
+  await hydrated(page);
   await page.getByTestId("continue").click();
   const link = page.getByRole("link", { name: /Read the full text/ });
   await expect(link).toHaveAttribute("href", /^https:\/\//);

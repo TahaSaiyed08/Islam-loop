@@ -11,7 +11,9 @@ export async function playLesson(
   right = true
 ) {
   await page.goto(`/lesson/${lesson.slug}`);
-  await expect(page.getByTestId("lesson-player")).toBeVisible();
+  await expect(
+    page.locator('[data-testid="lesson-player"][data-hydrated="true"]')
+  ).toBeVisible();
   await page.getByTestId("continue").click(); // Begin
   const readable = lesson.sources.filter((s) => s.role !== "family");
   for (let i = 0; i < readable.length; i++) {
@@ -46,4 +48,9 @@ export function visibleText(html: string): string {
     .replace(/&#x27;|&#39;|&apos;/g, "'")
     .replace(/&quot;/g, '"')
     .replace(/\s+/g, " ");
+}
+
+/** Waits until React has attached handlers (SSR HTML is visible before it is interactive). */
+export async function hydrated(page: Page) {
+  await expect(page.locator('[data-hydrated="true"]')).toBeVisible();
 }

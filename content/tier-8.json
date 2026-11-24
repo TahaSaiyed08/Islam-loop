@@ -243,14 +243,14 @@
         },
         {
           "type": "select",
-          "prompt": "A friend thinks forcing others to believe is justified. What does 2:256 say?",
+          "prompt": "What does the verse say has become distinct from error?",
           "options": [
-            "There is no compulsion in religion",
-            "Force is the only way",
-            "Silence is required"
+            "Rectitude",
+            "Wealth",
+            "Custom"
           ],
           "correct": 0,
-          "explanation": "The verse says there is no compulsion in religion."
+          "explanation": "The verse says rectitude has become distinct from error."
         }
       ],
       "status": "PREVIEW",
@@ -350,7 +350,7 @@
           "quote": "Say, ‘He is Allah, the One. Allah is the All-embracing. He neither begat, nor was begotten, nor has He any equal.’"
         }
       ],
-      "summary": "Surah al-Ikhlas 112:1-4 presents God's absolute unity and incomparability, a statement that Tier 1 introduced and that fits with a faith that invites reflection.",
+      "summary": "Surah al-Ikhlas 112:1-4 presents God's absolute unity and incomparability in four brief verses.",
       "mechanic": "verse_decoder",
       "questions": [
         {

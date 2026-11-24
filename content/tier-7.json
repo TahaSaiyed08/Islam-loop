@@ -209,7 +209,7 @@
           "quote": "Indeed we belong to Allah and to Him do we indeed return."
         }
       ],
-      "summary": "Surah al-Baqarah 2:155-157 says that people will be tested with fear, hunger and loss, gives good news to the patient, and gives the words with which the patient answer an affliction: \"Indeed we belong to Allah and to Him do we indeed return.\"",
+      "summary": "Surah al-Baqarah 2:156 gives the words of those who are patient when an affliction visits them: \"Indeed we belong to Allah and to Him do we indeed return.\" It comes in a passage about being tested and about patience.",
       "mechanic": "verse_decoder",
       "questions": [
         {
@@ -225,14 +225,14 @@
         },
         {
           "type": "select",
-          "prompt": "What does the passage promise those who are patient?",
+          "prompt": "What do the words of 2:156 affirm?",
           "options": [
-            "Good news, and the blessings of their Lord and His mercy",
-            "That they will never be tested",
-            "That loss will not happen"
+            "That we belong to Allah and return to Him",
+            "That loss is always deserved",
+            "That nothing can be done"
           ],
           "correct": 0,
-          "explanation": "The passage gives good news to the patient and says they receive blessings and mercy."
+          "explanation": "The words say: Indeed we belong to Allah and to Him do we indeed return."
         }
       ],
       "status": "PREVIEW",

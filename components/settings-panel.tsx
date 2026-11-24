@@ -3,15 +3,17 @@
 import { useState } from "react";
 
 import { Button } from "@/components/ui/button";
+import { useHydrated } from "@/lib/use-hydrated";
 import { useProgress } from "@/store/use-progress";
 
 export function SettingsPanel() {
   const { ready, completed, points, streak, placement, reset } = useProgress();
+  const hydrated = useHydrated();
   const [confirming, setConfirming] = useState(false);
   const [done, setDone] = useState(false);
 
   return (
-    <div className="space-y-8">
+    <div className="space-y-8" data-hydrated={hydrated}>
       <section
         className="rounded-xl border bg-card p-6"
         aria-labelledby="saved"

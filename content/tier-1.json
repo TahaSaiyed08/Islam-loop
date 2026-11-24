@@ -55,14 +55,14 @@
         },
         {
           "type": "select",
-          "prompt": "Match the root f-t-r (fitrah) to its meaning in this lesson.",
+          "prompt": "Match \"fitrah\" to its meaning in 30:30.",
           "options": [
             "External habit",
             "Original nature",
             "Passing mood"
           ],
           "correct": 1,
-          "explanation": "In this verse fitrah means the original nature, not something learned from outside."
+          "explanation": "In this verse fitrah is the original nature endowed by Allah, not something learned from outside."
         }
       ],
       "status": "PREVIEW",
@@ -122,7 +122,7 @@
         }
       ],
       "status": "DRAFT",
-      "draftReason": "Not yet verified — NAHJ Saying 54: source unreachable: HTTP 403 (the site blocks automated readers; save the page by hand as .cache/pages/www_al_islam_org_nahjul_balagha_part_2_letters_and_sayings.html)",
+      "draftReason": "Not yet verified — NAHJ Saying 54: source unreachable: HTTP 403 (the site blocks automated readers; save the exact page by hand as .cache/pages/www_al_islam_org_nahjul_balagha_part_2_letters_and_sayings.html)",
       "verification": {
         "passed": false,
         "checkedAt": "2026-11-24",
@@ -300,7 +300,7 @@
         }
       ],
       "status": "DRAFT",
-      "draftReason": "Not yet verified — NAHJ Sermon 1: source unreachable: HTTP 403 (the site blocks automated readers; save the page by hand as .cache/pages/www_al_islam_org_nahjul_balagha_part_1_sermons.html)",
+      "draftReason": "Not yet verified — NAHJ Sermon 1: source unreachable: HTTP 403 (the site blocks automated readers; save the exact page by hand as .cache/pages/www_al_islam_org_nahjul_balagha_part_1_sermons.html)",
       "verification": {
         "passed": false,
         "checkedAt": "2026-11-24",
@@ -357,7 +357,7 @@
         }
       ],
       "status": "DRAFT",
-      "draftReason": "Not yet verified — NAHJ Sermon 1: source unreachable: HTTP 403 (the site blocks automated readers; save the page by hand as .cache/pages/www_al_islam_org_nahjul_balagha_part_1_sermons.html)",
+      "draftReason": "Not yet verified — NAHJ Sermon 1: source unreachable: HTTP 403 (the site blocks automated readers; save the exact page by hand as .cache/pages/www_al_islam_org_nahjul_balagha_part_1_sermons.html)",
       "verification": {
         "passed": false,
         "checkedAt": "2026-11-24",
@@ -414,7 +414,7 @@
         }
       ],
       "status": "DRAFT",
-      "draftReason": "Not yet verified — NAHJ Saying 82: source unreachable: HTTP 403 (the site blocks automated readers; save the page by hand as .cache/pages/www_al_islam_org_nahjul_balagha_part_2_letters_and_sayings.html)",
+      "draftReason": "Not yet verified — NAHJ Saying 82: source unreachable: HTTP 403 (the site blocks automated readers; save the exact page by hand as .cache/pages/www_al_islam_org_nahjul_balagha_part_2_letters_and_sayings.html)",
       "verification": {
         "passed": false,
         "checkedAt": "2026-11-24",
@@ -471,7 +471,7 @@
         }
       ],
       "status": "DRAFT",
-      "draftReason": "Not yet verified — NAHJ Saying 98: source unreachable: HTTP 403 (the site blocks automated readers; save the page by hand as .cache/pages/www_al_islam_org_nahjul_balagha_part_2_letters_and_sayings.html)",
+      "draftReason": "Not yet verified — NAHJ Saying 98: source unreachable: HTTP 403 (the site blocks automated readers; save the exact page by hand as .cache/pages/www_al_islam_org_nahjul_balagha_part_2_letters_and_sayings.html)",
       "verification": {
         "passed": false,
         "checkedAt": "2026-11-24",
@@ -501,7 +501,6 @@
         }
       ],
       "summary": "Saying 227 defines belief as a three-part whole: inner appreciation in the heart, honest expression on the tongue, and lived action through the limbs.",
-      "familyNote": "Imam Ali reinforces this idea of belief as inner conviction joined to action.",
       "mechanic": "root_word_match",
       "questions": [
         {
@@ -531,7 +530,7 @@
       "candidates": [
         "NAHJ Saying 125 as a family note: the syllabus text contains an ellipsis; split into exact quotes before use."
       ],
-      "draftReason": "Not yet verified — NAHJ Saying 227: source unreachable: HTTP 403 (the site blocks automated readers; save the page by hand as .cache/pages/www_al_islam_org_nahjul_balagha_part_2_letters_and_sayings.html)",
+      "draftReason": "Not yet verified — NAHJ Saying 227: source unreachable: HTTP 403 (the site blocks automated readers; save the exact page by hand as .cache/pages/www_al_islam_org_nahjul_balagha_part_2_letters_and_sayings.html)",
       "verification": {
         "passed": false,
         "checkedAt": "2026-11-24",
@@ -572,7 +571,7 @@
         }
       ],
       "summary": "Letter 31 reminds young readers never to surrender their dignity to others, because God created every human being free.",
-      "familyNote": "In the same fatherly letter (Letter 31), Imam Ali writes about the open heart of the young.",
+      "familyNote": "In the same fatherly letter (Letter 31), Imam Ali writes about the heart of the young.",
       "mechanic": "scenario_dilemma",
       "questions": [
         {
@@ -599,7 +598,7 @@
         }
       ],
       "status": "DRAFT",
-      "draftReason": "Not yet verified — NAHJ Letter 31: source unreachable: HTTP 403 (the site blocks automated readers; save the page by hand as .cache/pages/www_al_islam_org_nahjul_balagha_part_2_letters_and_sayings.html)",
+      "draftReason": "Not yet verified — NAHJ Letter 31: source unreachable: HTTP 403 (the site blocks automated readers; save the exact page by hand as .cache/pages/www_al_islam_org_nahjul_balagha_part_2_letters_and_sayings.html)",
       "verification": {
         "passed": false,
         "checkedAt": "2026-11-24",
@@ -657,7 +656,7 @@
         }
       ],
       "status": "DRAFT",
-      "draftReason": "Not yet verified — NAHJ Saying 237: source unreachable: HTTP 403 (the site blocks automated readers; save the page by hand as .cache/pages/www_al_islam_org_nahjul_balagha_part_2_letters_and_sayings.html)",
+      "draftReason": "Not yet verified — NAHJ Saying 237: source unreachable: HTTP 403 (the site blocks automated readers; save the exact page by hand as .cache/pages/www_al_islam_org_nahjul_balagha_part_2_letters_and_sayings.html)",
       "verification": {
         "passed": false,
         "checkedAt": "2026-11-24",
@@ -670,7 +669,7 @@
       "slug": "1.4.3",
       "tier": 1,
       "unit": 4,
-      "title": "Tier 1 Checkpoint: Two Kinds of Humanity",
+      "title": "Tier 1 Boss Checkpoint: Two Kinds of Humanity",
       "objective": "Apply Letter 53's principle of universal human dignity across faith and background.",
       "hook": "How should you treat someone who does not share your religious beliefs?",
       "sources": [

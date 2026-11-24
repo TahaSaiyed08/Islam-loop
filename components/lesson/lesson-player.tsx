@@ -26,6 +26,7 @@ import {
 import { Progress } from "@/components/ui/progress";
 import { passMark, type PlayableLesson } from "@/lib/content";
 import { POINTS_PER_CORRECT } from "@/lib/lesson-ui";
+import { useHydrated } from "@/lib/use-hydrated";
 import { MECHANIC_LABEL } from "@/lib/site";
 import { cn } from "@/lib/utils";
 import { useProgress } from "@/store/use-progress";
@@ -44,6 +45,7 @@ type Props = {
 
 export function LessonPlayer({ lesson, nextSlug, tierName }: Props) {
   const complete = useProgress((s) => s.completeLesson);
+  const hydrated = useHydrated();
 
   const readSources = useMemo(
     () =>
@@ -170,6 +172,7 @@ export function LessonPlayer({ lesson, nextSlug, tierName }: Props) {
       className="flex min-h-screen flex-col"
       data-testid="lesson-player"
       data-lesson={lesson.slug}
+      data-hydrated={hydrated}
     >
       <header className="mx-auto flex w-full max-w-2xl items-center gap-4 px-4 pt-4">
         <Button
