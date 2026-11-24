@@ -1,6 +1,6 @@
 "use client";
 
-import { CheckCircle, XCircle } from "lucide-react";
+import { Check, X } from "lucide-react";
 import { useKey } from "react-use";
 
 import { Button } from "@/components/ui/button";
@@ -12,6 +12,8 @@ type FooterProps = {
   disabled?: boolean;
   /** Button text while status is "none" (default "Check"). */
   label?: string;
+  /** The one-line reason, shown in the coloured bar after checking. */
+  explanation?: string | null;
   /** Second button on the finish screen. */
   onPractice?: () => void;
   practiceLabel?: string;
@@ -19,11 +21,15 @@ type FooterProps = {
   doneLabel?: string;
 };
 
+// Ported from sanidhyy/duolingo-clone (MIT). Same Check / Continue flow, coloured
+// bars and Enter shortcut; the feedback reads like the real app: an icon disc, a
+// bold verdict and the reason underneath. No hearts, no penalty.
 export const Footer = ({
   onCheck,
   status,
   disabled,
   label = "Check",
+  explanation,
   onPractice,
   practiceLabel = "Practise again",
   doneLabel = "Continue",
@@ -41,36 +47,51 @@ export const Footer = ({
     [onCheck, disabled]
   );
 
+  const checked = status === "correct" || status === "wrong";
+
   return (
     <footer
       data-testid="footer"
       data-status={status}
       className={cn(
-        "sticky bottom-0 min-h-[100px] border-t-2 bg-background lg:h-[140px]",
+        "sticky bottom-0 border-t-2 border-swan bg-white lg:min-h-[140px]",
         status === "correct" && "border-transparent bg-success-soft",
         status === "wrong" && "border-transparent bg-danger-soft"
       )}
     >
-      <div className="mx-auto flex h-full min-h-[100px] max-w-[1140px] items-center justify-between gap-x-4 px-6 lg:px-10">
-        {status === "correct" && (
-          <div
-            role="status"
-            data-testid="footer-message"
-            className="flex items-center text-base font-bold text-success lg:text-2xl"
-          >
-            <CheckCircle className="mr-4 h-6 w-6 shrink-0 lg:h-10 lg:w-10" />
-            Well done.
-          </div>
-        )}
-
-        {status === "wrong" && (
-          <div
-            role="status"
-            data-testid="footer-message"
-            className="flex items-center text-base font-bold text-danger lg:text-2xl"
-          >
-            <XCircle className="mr-4 h-6 w-6 shrink-0 lg:h-10 lg:w-10" />
-            The correct answer is shown above.
+      <div className="mx-auto flex min-h-[100px] max-w-[1000px] flex-col gap-4 px-4 py-4 sm:flex-row sm:items-center sm:justify-between sm:px-6 lg:min-h-[140px] lg:px-10">
+        {checked && (
+          <div className="flex items-center gap-x-4" role="status">
+            <div
+              aria-hidden
+              className="hidden size-20 shrink-0 items-center justify-center rounded-full bg-white sm:flex"
+            >
+              {status === "correct" ? (
+                <Check className="size-10 stroke-[3.5] text-success" />
+              ) : (
+                <X className="size-10 stroke-[3.5] text-danger" />
+              )}
+            </div>
+            <div
+              className={status === "correct" ? "text-success" : "text-danger"}
+            >
+              <p
+                data-testid="footer-message"
+                className="text-xl font-extrabold lg:text-2xl"
+              >
+                {status === "correct"
+                  ? "Well done."
+                  : "The correct answer is shown above."}
+              </p>
+              {explanation && (
+                <p
+                  data-testid="explanation"
+                  className="mt-1 text-base font-semibold"
+                >
+                  {explanation}
+                </p>
+              )}
+            </div>
           </div>
         )}
 
@@ -78,6 +99,7 @@ export const Footer = ({
           <Button
             variant="default"
             size="lg"
+            className="w-full sm:w-auto"
             onClick={onPractice}
             data-testid="practise-again"
           >
@@ -90,7 +112,7 @@ export const Footer = ({
           key={status}
           disabled={disabled}
           aria-disabled={disabled}
-          className="ml-auto"
+          className="w-full sm:ml-auto sm:w-auto sm:min-w-[150px]"
           onClick={onCheck}
           size="lg"
           variant={status === "wrong" ? "danger" : "secondary"}
@@ -99,7 +121,7 @@ export const Footer = ({
           }
         >
           {status === "none" && label}
-          {(status === "correct" || status === "wrong") && "Continue"}
+          {checked && "Continue"}
           {status === "completed" && doneLabel}
         </Button>
       </div>

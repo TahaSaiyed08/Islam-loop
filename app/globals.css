@@ -11,32 +11,39 @@ body,
 /* The Roadmap design tokens. Deep teal, warm sand, off-white. See DESIGN.md. */
 @layer base {
   :root {
-    --background: 42 40% 97%;
-    --foreground: 190 42% 11%;
-    --card: 0 0% 100%;
-    --card-foreground: 190 42% 11%;
-    --primary: 184 66% 21%;
-    --primary-foreground: 42 40% 97%;
-    --secondary: 38 62% 85%;
-    --secondary-foreground: 190 42% 13%;
-    --accent: 36 70% 62%;
-    --accent-foreground: 190 42% 11%;
-    --muted: 40 28% 92%;
-    --muted-foreground: 190 16% 32%;
-    --border: 38 24% 82%;
-    --input: 38 24% 76%;
-    --ring: 184 66% 28%;
-    --success: 152 52% 25%;
-    --success-soft: 150 40% 91%;
-    --danger: 8 62% 36%;
-    --danger-soft: 10 70% 94%;
-    /* Ported UI palette: brand teal (secondary buttons, banners), sand (primary buttons). */
-    --brand: 184 62% 26%;
-    --brand-dark: 184 66% 17%;
-    --sand: 36 72% 66%;
-    --sand-dark: 33 58% 46%;
-    --sand-ink: 30 70% 26%;
-    --radius: 0.875rem;
+    /* The Roadmap palette (DESIGN.md). Neutrals follow the Duolingo-style grey scale;
+       hues are our own: teal brand, amber accent, coral for errors. */
+    --background: 0 0% 100%; /* #FFFFFF */
+    --foreground: 0 0% 29.4%; /* #4B4B4B */
+    --card: 0 0% 100%; /* #FFFFFF */
+    --card-foreground: 0 0% 29.4%; /* #4B4B4B */
+    --primary: 182 81.8% 23.7%; /* #0B6B6E */
+    --primary-foreground: 0 0% 100%; /* #FFFFFF */
+    --secondary: 40 100% 92%; /* #FFF1D6 */
+    --secondary-foreground: 36 100% 27.1%; /* #8A5300 */
+    --accent: 36 87.6% 59%; /* #F2A93B */
+    --accent-foreground: 41 100% 12%; /* #3D2A00 */
+    --muted: 0 0% 96.9%; /* #F7F7F7 */
+    --muted-foreground: 0 0% 42%; /* #6B6B6B */
+    --border: 0 0% 89.8%; /* #E5E5E5 */
+    --input: 0 0% 89.8%; /* #E5E5E5 */
+    --ring: 182 84.2% 27.3%; /* #0B7C80 */
+    --success: 182 81.8% 23.7%; /* #0B6B6E */
+    --success-soft: 176 60% 90.2%; /* #D7F5F3 */
+    --success-line: 175 49.3% 70.6%; /* #8FD9D3 */
+    --danger: 358 67.4% 42.2%; /* #B42328 */
+    --danger-soft: 4 100% 94.1%; /* #FFE3E1 */
+    --danger-line: 3 80% 80.4%; /* #F5A9A5 */
+    --brand: 182 84.2% 27.3%; /* #0B7C80 */
+    --brand-dark: 182 86% 19.6%; /* #075A5D */
+    --brand-soft: 177 53.8% 92.4%; /* #E1F6F5 */
+    --brand-line: 175 49.3% 70.6%; /* #8FD9D3 */
+    --sand: 36 87.6% 59%; /* #F2A93B */
+    --sand-dark: 36 78.7% 44.1%; /* #C98318 */
+    --sand-ink: 36 100% 27.1%; /* #8A5300 */
+    --sand-soft: 40 100% 92%; /* #FFF1D6 */
+    --sand-line: 39 83.9% 68.4%; /* #F2C26B */
+    --radius: 1rem;
   }
 
   * {
@@ -49,6 +56,7 @@ body,
 
   body {
     @apply bg-background font-sans text-base leading-relaxed text-foreground antialiased;
+    font-weight: 500;
   }
 
   :focus-visible {

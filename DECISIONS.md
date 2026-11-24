@@ -86,3 +86,15 @@ All from the "Initial import from sanidhyy/duolingo-clone" commit. Mapped colour
 | `app/layout.tsx`, `app/globals.css` | same | Clerk, toaster, hearts modal and Nunito removed; exit and practice modals mounted; `h-full` restored; theme tokens kept. |
 
 **Not ported (not applicable):** `db/`, `actions/`, hearts modal, banner, the courses, shop, quests and leaderboard pages, all audio, all upstream images. The placement quiz is new but built entirely from the ported shell (`Header`, `Challenge`, `Footer`, `ResultCard`).
+
+## Duolingo-style pass ("try again")
+
+31. **Style, not brand.** The request was to match Duolingo's style. CLAUDE.md rule 4 bans Duolingo's name, owl, colours, sounds, fonts and art, so the pass copies the *system* (white canvas, grey scale, rounded heavy type, sinking 3D buttons, per-unit colours on the path, feedback bar layout, stat cards) and keeps our own hues, font, icons and mark. The neutral greys are generic and shared with many apps.
+32. **Font:** Nunito, self-hosted via `@fontsource-variable/nunito`. It is what upstream used and is not Duolingo's font. Self-hosting keeps builds offline-safe.
+33. **Palette** chosen by measured contrast (DESIGN.md): text colours reach 4.5:1, bright fills (path nodes) 3:1. Duolingo's own white-on-green fails AA; ours does not.
+34. **Press mechanics:** upstream's `active:border-b-0` made buttons *shrink* (the face stayed put and everything below jumped up 4px). The face now sinks via a transparent top border, the way the real app feels. A test holds a node down and checks the node below does not move.
+35. **Feedback** moved the one-line explanation from under the cards into the coloured footer, next to the verdict, as in the real app.
+36. **Mobile bar** is white with the streak and points, matching Duolingo's mobile web; still the upstream structure (fixed 50px bar, sheet menu).
+37. **Bug found and fixed:** unit colour classes live in `lib/unit-theme.ts`, but Tailwind only scanned `app/` and `components/`, so every unit banner rendered white text on white. All tests had passed, because none checked a computed colour. `lib/` is now scanned, and a regression test checks every banner has a colour and 4.5:1 text.
+38. **Active sidebar item** text moved from brand teal to the deeper teal ink: axe measured 4.44:1 on the pale fill.
+39. **Al-Islam.org is still unreachable** in this session: the WebFetch route still fails with `getaddrinfo ENOTFOUND al-islam.org`. Content is unchanged.

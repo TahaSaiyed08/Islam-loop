@@ -10,10 +10,10 @@ export const SourceCard = ({ source }: { source: Source }) => {
       data-testid="source-card"
       className="rounded-xl border-2 border-b-4 bg-white p-4 lg:p-6"
     >
-      <blockquote className="border-l-4 border-sand pl-4 font-quote text-xl leading-relaxed text-neutral-800 lg:text-2xl">
+      <blockquote className="border-l-4 border-sand pl-4 font-quote text-xl leading-relaxed text-eel lg:text-2xl">
         <p>{source.quote}</p>
       </blockquote>
-      <figcaption className="mt-4 space-y-2 text-base text-neutral-600">
+      <figcaption className="mt-4 space-y-2 text-base text-wolf">
         <p data-testid="citation">{citation(source)}</p>
         {source.key === "QURAN" && (
           <p>

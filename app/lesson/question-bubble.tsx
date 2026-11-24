@@ -12,7 +12,7 @@ export const QuestionBubble = ({ question }: QuestionBubbleProps) => {
 
       <div
         data-testid="hook"
-        className="relative rounded-xl border-2 bg-white px-4 py-2 text-base lg:text-lg"
+        className="relative rounded-2xl border-2 border-swan bg-white px-4 py-3 text-base font-semibold text-eel lg:text-lg"
       >
         {question}
 

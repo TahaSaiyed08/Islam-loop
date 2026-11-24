@@ -5,6 +5,7 @@ import Link from "next/link";
 import { CircularProgressbarWithChildren } from "react-circular-progressbar";
 
 import { Button } from "@/components/ui/button";
+import type { UnitTheme } from "@/lib/unit-theme";
 import { cn } from "@/lib/utils";
 
 import "react-circular-progressbar/dist/styles.css";
@@ -20,6 +21,7 @@ type LessonButtonProps = {
   isCheckpoint?: boolean;
   percentage: number;
   isFirst?: boolean;
+  theme: UnitTheme;
 };
 
 // Ported from sanidhyy/duolingo-clone (MIT): the same zigzag (cycleLength 8, 40px
@@ -34,6 +36,7 @@ export const LessonButton = ({
   isCheckpoint,
   percentage,
   isFirst,
+  theme,
 }: LessonButtonProps) => {
   const cycleLength = 8;
   const cycleIndex = index % cycleLength;
@@ -65,7 +68,10 @@ export const LessonButton = ({
     <Button
       size="rounded"
       variant={locked ? "locked" : "secondary"}
-      className="h-[70px] w-[70px] border-b-8"
+      className={cn(
+        "h-[70px] w-[70px] border-b-8 active:border-t-8",
+        !locked && theme.node
+      )}
       tabIndex={-1}
       aria-label={label}
       data-testid={`lesson-button-${slug}`}
@@ -74,7 +80,7 @@ export const LessonButton = ({
         className={cn(
           "h-10 w-10",
           locked
-            ? "fill-neutral-400 stroke-neutral-400 text-neutral-400"
+            ? "fill-hare stroke-hare text-hare"
             : "fill-primary-foreground text-primary-foreground",
           isCompleted && "fill-none stroke-[4]"
         )}
@@ -105,7 +111,9 @@ export const LessonButton = ({
             className="relative h-[102px] w-[102px]"
             data-testid="current-lesson"
           >
-            <div className="absolute -top-6 left-2.5 z-10 animate-bounce rounded-xl border-2 bg-white px-3 py-2.5 font-bold uppercase tracking-wide text-brand motion-reduce:animate-none">
+            <div
+              className={`absolute -top-6 left-2.5 z-10 animate-bounce rounded-xl border-2 border-swan bg-white px-3 py-2.5 font-extrabold uppercase tracking-wide motion-reduce:animate-none ${theme.ink}`}
+            >
               Start
               <div
                 className="absolute -bottom-2 left-1/2 h-0 w-0 -translate-x-1/2 transform border-x-8 border-t-8 border-x-transparent"
@@ -116,10 +124,10 @@ export const LessonButton = ({
               value={Number.isNaN(percentage) ? 0 : percentage}
               styles={{
                 path: {
-                  stroke: "#2f8f92",
+                  stroke: theme.ring,
                 },
                 trail: {
-                  stroke: "#e5e7eb",
+                  stroke: "#E5E5E5",
                 },
               }}
             >

@@ -76,7 +76,7 @@ export const Challenge = ({
         role="list"
       >
         {placed.length === 0 && (
-          <p className="rounded-xl border-2 border-dashed p-4 text-neutral-600">
+          <p className="rounded-xl border-2 border-dashed p-4 text-wolf">
             Nothing placed yet.
           </p>
         )}
@@ -114,8 +114,8 @@ export const Challenge = ({
 
       {checked && status === "wrong" && (
         <div data-testid="correct-order">
-          <p className="font-bold text-neutral-700">Correct order</p>
-          <ol className="mt-1 list-decimal pl-6 text-base text-neutral-700">
+          <p className="font-bold text-eel">Correct order</p>
+          <ol className="mt-1 list-decimal pl-6 text-base text-eel">
             {challenge.items.map((t) => (
               <li key={t}>{t}</li>
             ))}

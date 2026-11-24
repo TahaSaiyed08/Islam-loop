@@ -26,7 +26,11 @@ So the goal's condition "every Al-Islam.org lesson has an exact page URL **and a
 | `pnpm verify` | exit 0: 49 PREVIEW, 0 APPROVED, 71 DRAFT |
 | `pnpm build` | exit 0 |
 | `DEPLOY_TARGET=static pnpm build` | exit 0 |
-| `pnpm test:e2e` | 35 passed |
+| `pnpm test:e2e` | 37 passed |
+
+## Duolingo-style pass
+
+After the port, a second pass matched the real app's feel without its brand: white canvas, Nunito, sinking 3D buttons, per-unit colours on the path, feedback in the coloured bar, stat cards on the finish screen. It found and fixed a real bug: the unit banners were rendering white-on-white because Tailwind was not scanning `lib/`. Details are in DECISIONS 31–39 and DESIGN.md; two new e2e tests guard the banner colours and the press mechanics.
 
 ## B4 acceptance tests (`e2e/ui.spec.ts`)
 

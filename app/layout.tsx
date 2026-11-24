@@ -5,6 +5,8 @@ import { PracticeModal } from "@/components/modals/practice-modal";
 import { ProgressInit } from "@/components/progress-init";
 import { SITE_DESCRIPTION, SITE_NAME, SITE_TAGLINE, siteUrl } from "@/lib/site";
 
+import "@fontsource-variable/nunito";
+
 import "./globals.css";
 
 export const metadata: Metadata = {

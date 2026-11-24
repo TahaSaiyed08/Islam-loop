@@ -1,6 +1,6 @@
 # Progress
 
-**Phase:** 10 (docs and final report). **Status:** all phases complete; see FINAL_REPORT.md.
+**Phase:** rework done, then a Duolingo-style pass (DECISIONS 31–39). **Status:** UI ported and restyled, all gates green; Al-Islam.org content still blocked (see REWORK_REPORT.md, MANUAL_FETCH.md).
 
 | Phase | Status |
 |---|---|

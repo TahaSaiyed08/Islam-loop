@@ -16,7 +16,7 @@ export const MobileSidebar = () => {
         aria-label="Open menu"
         className="-ml-2.5 flex size-11 items-center justify-center rounded-md"
       >
-        <Menu className="text-white" />
+        <Menu className="text-wolf" />
       </SheetTrigger>
 
       <SheetContent className="z-[100] p-0" side="left">

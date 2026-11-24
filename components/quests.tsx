@@ -26,11 +26,11 @@ export const TierCard = ({
 
   return (
     <div
-      className="space-y-4 rounded-xl border-2 bg-white p-4"
+      className="space-y-4 rounded-2xl border-2 border-swan bg-white p-6"
       data-testid="tier-card"
     >
       <div className="flex w-full items-center justify-between space-y-2">
-        <h3 className="text-lg font-bold">Your tier</h3>
+        <h3 className="text-xl font-extrabold text-eel">Your tier</h3>
       </div>
 
       <ul className="w-full space-y-4">
@@ -38,16 +38,17 @@ export const TierCard = ({
           <Trophy aria-hidden className="size-10 shrink-0 text-sand-dark" />
 
           <div className="flex w-full flex-col gap-y-2">
-            <p className="text-sm font-bold text-neutral-700">
+            <p className="text-base font-extrabold text-eel">
               Tier {tier} · {name}
             </p>
 
             <Progress
               value={progress}
-              className="h-2"
+              className="h-4"
+              indicatorClassName="bg-sand"
               aria-label="Tier progress"
             />
-            <p className="text-sm text-neutral-600">
+            <p className="text-sm font-semibold text-wolf">
               {done} of {open} lessons finished
               {hasCheckpoint &&
                 (checkpointDone

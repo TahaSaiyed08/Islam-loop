@@ -159,21 +159,15 @@ export const Quiz = ({ lesson, nextSlug, tierName }: QuizProps) => {
           <h1
             ref={headingRef}
             tabIndex={-1}
-            className="text-lg font-bold text-neutral-700 outline-none lg:text-3xl"
+            className={`text-2xl font-extrabold outline-none lg:text-[32px] ${passed ? "text-[#C77700]" : "text-eel"}`}
           >
-            {lesson.isCheckpoint ? (
-              passed ? (
-                "Checkpoint passed"
-              ) : (
-                "Not quite yet"
-              )
-            ) : (
-              <>
-                Great job! <br /> You&apos;ve completed the lesson.
-              </>
-            )}
+            {lesson.isCheckpoint
+              ? passed
+                ? "Checkpoint passed"
+                : "Not quite yet"
+              : "Lesson complete!"}
           </h1>
-          <p className="text-base text-neutral-600" data-testid="score">
+          <p className="text-base text-wolf" data-testid="score">
             {correctCount} of {total} right on the first try.
             {lesson.isCheckpoint &&
               !passed &&
@@ -194,16 +188,14 @@ export const Quiz = ({ lesson, nextSlug, tierName }: QuizProps) => {
           </div>
 
           <div className="w-full space-y-3 text-left">
-            <h2 className="text-xl font-bold text-neutral-700">In short</h2>
-            <p className="text-base text-neutral-700 lg:text-lg">
-              {lesson.summary}
-            </p>
+            <h2 className="text-xl font-bold text-eel">In short</h2>
+            <p className="text-base text-eel lg:text-lg">{lesson.summary}</p>
             {showFamilyNote && (
               <>
-                <h2 className="pt-4 text-xl font-bold text-neutral-700">
+                <h2 className="pt-4 text-xl font-bold text-eel">
                   From the Prophet&apos;s family
                 </h2>
-                <p className="text-base text-neutral-700 lg:text-lg">
+                <p className="text-base text-eel lg:text-lg">
                   {lesson.familyNote}
                 </p>
                 {familySources.map((s, i) => (
@@ -259,7 +251,7 @@ export const Quiz = ({ lesson, nextSlug, tierName }: QuizProps) => {
         <div className="flex h-full items-center justify-center">
           <div className="flex w-full flex-col gap-y-12 px-6 py-8 lg:min-h-[350px] lg:w-[600px] lg:px-0">
             <div className="space-y-3">
-              <p className="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs font-bold uppercase tracking-wide text-neutral-600">
+              <p className="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs font-bold uppercase tracking-wide text-wolf">
                 <span>
                   {tierName} · Lesson {lesson.slug}
                 </span>
@@ -268,12 +260,12 @@ export const Quiz = ({ lesson, nextSlug, tierName }: QuizProps) => {
               <h1
                 ref={headingRef}
                 tabIndex={-1}
-                className="text-center text-lg font-bold text-neutral-700 outline-none lg:text-start lg:text-3xl"
+                className="text-center text-2xl font-extrabold leading-tight text-eel outline-none lg:text-start lg:text-3xl"
               >
                 {title}
               </h1>
               {challenge.type === "SOURCE" && challenge.objective && (
-                <p className="text-base text-neutral-600 lg:text-lg">
+                <p className="text-base text-wolf lg:text-lg">
                   <strong className="font-semibold">{lesson.title}.</strong>{" "}
                   {challenge.objective}
                 </p>
@@ -285,9 +277,7 @@ export const Quiz = ({ lesson, nextSlug, tierName }: QuizProps) => {
                 <QuestionBubble question={challenge.hook} />
               )}
               {challenge.type === "SOURCE" && challenge.note && (
-                <p className="mb-6 text-base text-neutral-600">
-                  {challenge.note}
-                </p>
+                <p className="mb-6 text-base text-wolf">{challenge.note}</p>
               )}
 
               <Challenge
@@ -304,15 +294,6 @@ export const Quiz = ({ lesson, nextSlug, tierName }: QuizProps) => {
                   setPlaced((p) => p.filter((x) => x !== i))
                 }
               />
-
-              {explanation && (
-                <p
-                  className="mt-4 text-base text-neutral-700"
-                  data-testid="explanation"
-                >
-                  {explanation}
-                </p>
-              )}
             </div>
           </div>
         </div>
@@ -322,6 +303,7 @@ export const Quiz = ({ lesson, nextSlug, tierName }: QuizProps) => {
         disabled={disabled}
         status={status}
         label={challenge.type === "SOURCE" ? "Continue" : "Check"}
+        explanation={explanation}
         onCheck={onContinue}
       />
     </div>

@@ -6,7 +6,7 @@ export function PreviewBadge({ className }: { className?: string }) {
     <span
       data-testid="preview-badge"
       className={cn(
-        "inline-flex items-center rounded-full bg-secondary px-3 py-1 text-xs font-bold uppercase tracking-wide text-secondary-foreground",
+        "inline-flex items-center rounded-lg border-2 border-sand-line bg-sand-soft px-2.5 py-0.5 text-xs font-extrabold uppercase tracking-wide text-sand-ink",
         className
       )}
     >

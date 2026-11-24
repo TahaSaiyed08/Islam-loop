@@ -4,8 +4,8 @@ import { BASE_REPO_URL } from "@/lib/site";
 
 export const Footer = () => {
   return (
-    <div className="w-full border-t-2 border-slate-200 p-4">
-      <div className="mx-auto flex max-w-screen-lg flex-col items-center gap-2 text-sm text-neutral-600 sm:flex-row sm:flex-wrap sm:justify-center sm:gap-x-3">
+    <div className="w-full border-t-2 border-swan p-4">
+      <div className="mx-auto flex max-w-screen-lg flex-col items-center gap-2 text-sm text-wolf sm:flex-row sm:flex-wrap sm:justify-center sm:gap-x-3">
         <span>Free and non-commercial</span>
         <span aria-hidden className="hidden sm:inline">
           ·

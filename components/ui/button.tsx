@@ -5,43 +5,43 @@ import { cva, type VariantProps } from "class-variance-authority";
 
 import { cn } from "@/lib/utils";
 
-// Ported from sanidhyy/duolingo-clone (MIT). Same variants and 3D press effect;
-// colours mapped to the Roadmap theme (brand teal, sand, rose).
+// Ported from sanidhyy/duolingo-clone (MIT): the same variants, sizes and 3D edge.
+// The press now sinks the face the way the real app does: the bottom edge moves to a
+// transparent top border, so the face drops 4px while the box keeps its height and
+// nothing around it jumps. Colours are the Roadmap palette (DESIGN.md).
+const sink =
+  "active:border-b-0 active:border-t-4 active:border-t-transparent active:bg-clip-padding";
+
 const buttonVariants = cva(
-  "inline-flex items-center justify-center whitespace-nowrap rounded-xl text-sm font-bold ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 uppercase tracking-wide",
+  "inline-flex items-center justify-center whitespace-nowrap rounded-2xl text-[15px] font-extrabold uppercase tracking-wide ring-offset-background transition-[filter,background-color] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50",
   {
     variants: {
       variant: {
         default:
-          "bg-white text-black border-slate-200 border-2 border-b-4 active:border-b-2 hover:bg-slate-100 text-slate-500",
+          "bg-white text-wolf border-swan border-2 border-b-4 hover:bg-polar active:border-b-2 active:translate-y-[2px]",
 
         // custom
-        locked:
-          "bg-neutral-200 text-primary-foreground hover:bg-neutral-200/90 border-neutral-400 border-b-4 active:border-b-0",
+        locked: "bg-swan text-hare border-[#CACACA] border-b-4 hover:bg-swan",
 
-        primary:
-          "bg-sand text-foreground hover:bg-sand/90 border-sand-dark border-b-4 active:border-b-0",
-        primaryOutline: "bg-white text-sand-ink hover:bg-slate-100",
+        primary: `bg-sand text-accent-foreground border-sand-dark border-b-4 hover:brightness-105 ${sink}`,
+        primaryOutline: "bg-white text-sand-ink hover:bg-polar",
 
-        secondary:
-          "bg-brand text-white hover:bg-brand/90 border-brand-dark border-b-4 active:border-b-0",
-        secondaryOutline: "bg-white text-brand hover:bg-slate-100",
+        secondary: `bg-brand text-white border-brand-dark border-b-4 hover:brightness-110 ${sink}`,
+        secondaryOutline: "bg-white text-brand hover:bg-polar",
 
-        danger:
-          "bg-rose-600 text-white hover:bg-rose-600/90 border-rose-800 border-b-4 active:border-b-0",
-        dangerOutline: "bg-white text-rose-700 hover:bg-slate-100",
+        danger: `bg-rose-600 text-white border-rose-800 border-b-4 hover:brightness-110 ${sink}`,
+        dangerOutline: "bg-white text-rose-700 hover:bg-polar",
 
-        super:
-          "bg-brand-dark text-white hover:bg-brand-dark/90 border-black/60 border-b-4 active:border-b-0",
-        superOutline: "bg-white text-brand-dark hover:bg-slate-100",
+        super: `bg-brand-dark text-white border-black/60 border-b-4 hover:brightness-110 ${sink}`,
+        superOutline: "bg-white text-brand-dark hover:bg-polar",
 
         ghost:
-          "bg-transparent text-slate-600 border-transparent border-0 hover:bg-slate-100",
+          "bg-transparent text-wolf border-transparent border-0 hover:bg-polar",
 
         sidebar:
-          "bg-transparent text-slate-600 border-2 border-transparent hover:bg-slate-100 transition-none",
+          "bg-transparent text-wolf border-2 border-transparent hover:bg-polar transition-none",
         sidebarOutline:
-          "bg-brand/10 text-brand border-brand/40 border-2 hover:bg-brand/15 transition-none",
+          "bg-brand-soft text-primary border-brand-line border-2 hover:bg-brand-soft transition-none",
       },
       size: {
         default: "h-11 px-4 py-2",

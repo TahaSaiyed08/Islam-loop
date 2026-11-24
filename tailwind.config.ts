@@ -6,7 +6,7 @@ const hsl = (name: string) => `hsl(var(--${name}) / <alpha-value>)`;
 
 const config = {
   darkMode: ["class"],
-  content: ["./app/**/*.{ts,tsx}", "./components/**/*.{ts,tsx}"],
+  content: ["./app/**/*.{ts,tsx}", "./components/**/*.{ts,tsx}", "./lib/**/*.{ts,tsx}"],
   theme: {
     container: {
       center: true,
@@ -34,10 +34,16 @@ const config = {
           foreground: hsl("accent-foreground"),
         },
         card: { DEFAULT: hsl("card"), foreground: hsl("card-foreground") },
-        brand: { DEFAULT: hsl("brand"), dark: hsl("brand-dark") },
-        sand: { DEFAULT: hsl("sand"), dark: hsl("sand-dark"), ink: hsl("sand-ink") },
-        success: { DEFAULT: hsl("success"), soft: hsl("success-soft") },
-        danger: { DEFAULT: hsl("danger"), soft: hsl("danger-soft") },
+        brand: { DEFAULT: hsl("brand"), dark: hsl("brand-dark"), soft: hsl("brand-soft"), line: hsl("brand-line") },
+        sand: { DEFAULT: hsl("sand"), dark: hsl("sand-dark"), ink: hsl("sand-ink"), soft: hsl("sand-soft"), line: hsl("sand-line") },
+        success: { DEFAULT: hsl("success"), soft: hsl("success-soft"), line: hsl("success-line") },
+        danger: { DEFAULT: hsl("danger"), soft: hsl("danger-soft"), line: hsl("danger-line") },
+        // Neutral grey scale (eel text, wolf secondary text, hare disabled, swan borders, polar fills).
+        eel: "#4B4B4B",
+        wolf: "#6B6B6B",
+        hare: "#AFAFAF",
+        swan: "#E5E5E5",
+        polar: "#F7F7F7",
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -45,16 +51,7 @@ const config = {
         sm: "calc(var(--radius) - 4px)",
       },
       fontFamily: {
-        sans: [
-          "ui-sans-serif",
-          "system-ui",
-          "-apple-system",
-          "Segoe UI",
-          "Roboto",
-          "Helvetica Neue",
-          "Arial",
-          "sans-serif",
-        ],
+        sans: ["Nunito Variable", "Nunito", "ui-rounded", "system-ui", "-apple-system", "Segoe UI", "sans-serif"],
         quote: [
           "Iowan Old Style",
           "Palatino Linotype",

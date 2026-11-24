@@ -220,3 +220,56 @@ test("the exit dialog asks before leaving", async ({ page }) => {
   await page.getByRole("button", { name: "Leave", exact: true }).click();
   await expect(page).toHaveURL(/\/learn\/?$/);
 });
+
+// Regression: the unit colours live in lib/, which Tailwind once did not scan, so
+// every banner rendered white text on a white background.
+test("every unit banner has its own colour and its white text reaches 4.5:1", async ({
+  page,
+}) => {
+  await page.goto("/learn");
+  const colours = await page
+    .getByTestId("unit-banner")
+    .evaluateAll((els) =>
+      els.map((el) => getComputedStyle(el).backgroundColor)
+    );
+  expect(colours.length).toBeGreaterThan(3);
+  const lum = (c: string) => {
+    const [r, g, b] = c
+      .match(/\d+/g)!
+      .slice(0, 3)
+      .map((v) => {
+        const x = Number(v) / 255;
+        return x <= 0.03928 ? x / 12.92 : ((x + 0.055) / 1.055) ** 2.4;
+      });
+    return 0.2126 * r + 0.7152 * g + 0.0722 * b;
+  };
+  for (const c of colours) {
+    expect(c, "banner has no background colour").not.toMatch(
+      /rgba\(0, 0, 0, 0\)|rgb\(255, 255, 255\)/
+    );
+    expect(1.05 / (lum(c) + 0.05)).toBeGreaterThanOrEqual(4.5);
+  }
+  expect(new Set(colours).size).toBeGreaterThanOrEqual(3); // units cycle colours
+});
+
+// The 3D press sinks the face like the real app; nothing around it may jump.
+test("pressing a path button sinks it without shifting the path", async ({
+  page,
+}) => {
+  await page.setViewportSize({ width: 1280, height: 800 });
+  await page.goto("/learn");
+  const current = page.locator('[data-current="true"] button');
+  const below = page.locator('[data-testid^="lesson-button-1."]').nth(1);
+  const before = (await below.boundingBox())!;
+  const face = (await current.boundingBox())!;
+  await page.mouse.move(face.x + face.width / 2, face.y + face.height / 2);
+  await page.mouse.down();
+  const pressed = (await below.boundingBox())!;
+  const facePressed = await current.evaluate(
+    (el) => getComputedStyle(el).borderTopWidth
+  );
+  await page.mouse.move(5, 5); // leave before releasing so no click fires
+  await page.mouse.up();
+  expect(pressed.y).toBe(before.y);
+  expect(facePressed).toBe("8px");
+});

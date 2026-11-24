@@ -65,10 +65,10 @@ export const PlacementQuiz = ({ questions, tierNames }: Props) => {
         <div className="flex-1">
           <div className="flex h-full items-center justify-center">
             <div className="flex w-full flex-col gap-y-8 px-6 py-8 lg:min-h-[350px] lg:w-[600px] lg:px-0">
-              <h1 className="text-center text-lg font-bold text-neutral-700 lg:text-start lg:text-3xl">
+              <h1 className="text-center text-2xl font-extrabold leading-tight text-eel lg:text-start lg:text-3xl">
                 Find my level
               </h1>
-              <p className="text-base text-neutral-600 lg:text-lg">
+              <p className="text-base text-wolf lg:text-lg">
                 {questions.length > 0
                   ? `${questions.length} quick questions, about ninety seconds. You start where the questions stop being easy. Earlier tiers stay open if you want them.`
                   : "The placement questions are still being checked against their sources. You can start from the beginning."}
@@ -119,10 +119,10 @@ export const PlacementQuiz = ({ questions, tierNames }: Props) => {
           className="mx-auto flex w-full max-w-lg flex-1 flex-col items-center justify-center gap-y-4 px-6 py-8 text-center lg:gap-y-8"
         >
           <LogoMark className="size-[100px]" />
-          <h1 className="text-lg font-bold text-neutral-700 lg:text-3xl">
+          <h1 className="text-2xl font-extrabold text-eel lg:text-[32px]">
             Start at Tier {result.startTier}
           </h1>
-          <p className="text-base text-neutral-600 lg:text-lg">
+          <p className="text-base text-wolf lg:text-lg">
             {tierNames[result.startTier]}.{" "}
             {result.startTier > 1
               ? `Tiers 1 to ${result.startTier - 1} are marked skipped. They are not marked complete, and you can still open any of them.`
@@ -140,7 +140,7 @@ export const PlacementQuiz = ({ questions, tierNames }: Props) => {
               value={`${right}/${answers.length}`}
             />
           </div>
-          <ul className="w-full space-y-1 text-left text-base text-neutral-700">
+          <ul className="w-full space-y-1 text-left text-base text-eel">
             {result.tiers.map((t) => (
               <li key={t.tier}>
                 <strong className={t.passed ? "text-success" : "text-danger"}>
@@ -214,10 +214,10 @@ export const PlacementQuiz = ({ questions, tierNames }: Props) => {
         <div className="flex h-full items-center justify-center">
           <div className="flex w-full flex-col gap-y-12 px-6 py-8 lg:min-h-[350px] lg:w-[600px] lg:px-0">
             <div className="space-y-3">
-              <p className="text-xs font-bold uppercase tracking-wide text-neutral-600">
+              <p className="text-xs font-bold uppercase tracking-wide text-wolf">
                 Find my level · Question {index + 1} of {questions.length}
               </p>
-              <h1 className="text-center text-lg font-bold text-neutral-700 lg:text-start lg:text-3xl">
+              <h1 className="text-center text-2xl font-extrabold leading-tight text-eel lg:text-start lg:text-3xl">
                 {q.prompt}
               </h1>
             </div>
@@ -231,19 +231,16 @@ export const PlacementQuiz = ({ questions, tierNames }: Props) => {
                 onPlace={() => {}}
                 onUnplace={() => {}}
               />
-              {status !== "none" && (
-                <p
-                  className="mt-4 text-base text-neutral-700"
-                  data-testid="explanation"
-                >
-                  {q.explanation}
-                </p>
-              )}
             </div>
           </div>
         </div>
       </div>
-      <Footer disabled={!selectedOption} status={status} onCheck={onContinue} />
+      <Footer
+        disabled={!selectedOption}
+        status={status}
+        explanation={status === "none" ? null : q.explanation}
+        onCheck={onContinue}
+      />
     </>
   );
 };

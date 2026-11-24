@@ -62,7 +62,10 @@ test("keyboard: a lesson can be played with the keyboard alone", async ({
   await page.keyboard.press("Enter"); // source -> questions
   await page.keyboard.press("1"); // choose option 1
   await page.keyboard.press("Enter"); // check
-  await expect(page.getByTestId("footer")).toHaveAttribute("data-status", /correct|wrong/);
+  await expect(page.getByTestId("footer")).toHaveAttribute(
+    "data-status",
+    /correct|wrong/
+  );
   await page.keyboard.press("Enter"); // continue
   await page.keyboard.press("1");
   await page.keyboard.press("Enter");

@@ -36,7 +36,7 @@ export const Sidebar = ({ className }: SidebarProps) => {
         <SidebarItem label="Settings" href="/settings" icon="settings" />
       </nav>
 
-      <div className="space-y-1 p-4 text-sm text-neutral-600">
+      <div className="space-y-1 p-4 text-sm text-wolf">
         <p>Free and non-commercial</p>
         <p>
           Based on{" "}

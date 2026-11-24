@@ -1,20 +1,14 @@
 "use client";
 
-import { Compass, Info, Library, Route, Settings } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
+import { NAV_ICONS } from "@/components/nav-icons";
 import { Button } from "@/components/ui/button";
 
-// lucide icons replace the upstream image icons; a name (not a component) is passed
-// so the sidebar can stay a server component.
-const ICONS = {
-  route: Route,
-  compass: Compass,
-  library: Library,
-  info: Info,
-  settings: Settings,
-};
+// Original flat icons replace the upstream image icons; a name (not a component) is
+// passed so the sidebar can stay a server component.
+const ICONS = NAV_ICONS;
 
 type SidebarItemProps = {
   label: string;
@@ -34,7 +28,9 @@ export const SidebarItem = ({ label, icon, href }: SidebarItemProps) => {
       asChild
     >
       <Link href={href} prefetch aria-current={isActive ? "page" : undefined}>
-        <Icon aria-hidden className="mr-5 size-8 shrink-0 stroke-[1.75]" />
+        <span className="mr-5 flex">
+          <Icon />
+        </span>
         {label}
       </Link>
     </Button>

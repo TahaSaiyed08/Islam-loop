@@ -8,7 +8,7 @@ import { SITE_NAME } from "@/lib/site";
 // the right side links to Sources and About.
 export const Header = () => {
   return (
-    <header className="h-20 w-full border-b-2 border-slate-200 px-4">
+    <header className="h-20 w-full border-b-2 border-swan px-4">
       <div className="mx-auto flex h-full items-center justify-between lg:max-w-screen-lg">
         <Link
           href="/"

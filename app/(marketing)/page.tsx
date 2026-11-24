@@ -3,6 +3,8 @@ import Link from "next/link";
 import { HeroIllustration } from "@/components/hero-illustration";
 import { Button } from "@/components/ui/button";
 
+// Ported from sanidhyy/duolingo-clone (MIT): illustration left, headline and two
+// stacked full-width buttons right.
 export default function MarketingPage() {
   return (
     <div className="mx-auto flex w-full max-w-[988px] flex-1 flex-col items-center justify-center gap-2 p-4 lg:flex-row">
@@ -12,11 +14,11 @@ export default function MarketingPage() {
 
       <div className="flex flex-col items-center gap-y-8">
         <div className="space-y-3 text-center">
-          <h1 className="max-w-[480px] text-xl font-bold text-neutral-700 lg:text-3xl">
+          <h1 className="max-w-[480px] text-2xl font-extrabold leading-tight text-eel lg:text-[32px]">
             Learn Islam through the Qur&apos;an and the teachings of the Prophet
             and his family.
           </h1>
-          <p className="text-base text-neutral-600 lg:text-lg">
+          <p className="text-lg font-semibold text-wolf">
             Free, short lessons. Every quote sourced.
           </p>
         </div>
@@ -30,8 +32,8 @@ export default function MarketingPage() {
 
           <Button
             size="lg"
-            variant="primaryOutline"
-            className="w-full border-2 border-b-4 border-slate-200"
+            variant="default"
+            className="w-full text-brand"
             asChild
           >
             <Link href="/learn" prefetch data-testid="cta-start">
@@ -39,7 +41,7 @@ export default function MarketingPage() {
             </Link>
           </Button>
 
-          <p className="text-sm text-neutral-600">
+          <p className="text-sm font-semibold text-wolf">
             No account, no ads, nothing to buy.
           </p>
         </div>

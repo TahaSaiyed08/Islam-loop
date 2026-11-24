@@ -8,6 +8,7 @@ import { TierCard } from "@/components/quests";
 import { StickyWrapper } from "@/components/sticky-wrapper";
 import { UserProgress } from "@/components/user-progress";
 import { computePath, nextLessonSlug } from "@/lib/path";
+import { unitTheme } from "@/lib/unit-theme";
 import { useProgress } from "@/store/use-progress";
 
 import { Header } from "./header";
@@ -93,14 +94,14 @@ export function LearnView({ tiers }: { tiers: LearnTier[] }) {
               <Header title={`Tier ${t.tier} · ${t.name}`} />
               {tp?.skipped && (
                 <p
-                  className="mb-4 text-center text-sm font-bold text-neutral-600"
+                  className="mb-4 text-center text-sm font-bold text-wolf"
                   data-testid={`skipped-${t.tier}`}
                 >
                   Skipped through placement. You can still open any lesson here.
                 </p>
               )}
               {pending > 0 && (
-                <p className="mb-5 text-center text-neutral-600">
+                <p className="mb-5 text-center text-wolf">
                   {count === 0
                     ? "These lessons are still being checked against their sources."
                     : `${pending} more lesson${pending === 1 ? " is" : "s are"} still being checked against their sources.`}
@@ -122,11 +123,12 @@ export function LearnView({ tiers }: { tiers: LearnTier[] }) {
                   return (
                     <div key={u.unit} className="mb-10">
                       <Unit
-                        title={`Unit ${t.tier}.${u.unit}`}
-                        description={
+                        label={`Tier ${t.tier} · Unit ${u.unit}`}
+                        title={
                           u.name ??
                           `${lessons.length} lesson${lessons.length === 1 ? "" : "s"}`
                         }
+                        theme={unitTheme(u.unit)}
                         lessons={lessons}
                         startIndex={startIndex}
                         currentSlug={currentSlug}

@@ -1,3 +1,5 @@
+import type { UnitTheme } from "@/lib/unit-theme";
+
 import { LessonButton } from "./lesson-button";
 import { UnitBanner } from "./unit-banner";
 
@@ -10,8 +12,9 @@ export type UnitLesson = {
 };
 
 type UnitProps = {
+  label: string;
   title: string;
-  description: string;
+  theme: UnitTheme;
   lessons: UnitLesson[];
   /** How many lessons of this tier come before this unit (keeps the zigzag going). */
   startIndex: number;
@@ -21,8 +24,9 @@ type UnitProps = {
 };
 
 export const Unit = ({
+  label,
   title,
-  description,
+  theme,
   lessons,
   startIndex,
   currentSlug,
@@ -34,8 +38,9 @@ export const Unit = ({
   return (
     <>
       <UnitBanner
+        label={label}
         title={title}
-        description={description}
+        theme={theme}
         href={open ? `/lesson/${open.slug}` : undefined}
         preview={lessons.some((l) => l.status === "PREVIEW")}
       />
@@ -52,6 +57,7 @@ export const Unit = ({
             state={lesson.state}
             current={lesson.slug === currentSlug}
             percentage={percentage}
+            theme={theme}
           />
         ))}
       </div>
