@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* The Roadmap design tokens. Deep teal, warm sand, off-white. See DESIGN.md. */
+@layer base {
+  :root {
+    --background: 42 40% 97%;
+    --foreground: 190 42% 11%;
+    --card: 0 0% 100%;
+    --card-foreground: 190 42% 11%;
+    --primary: 184 66% 21%;
+    --primary-foreground: 42 40% 97%;
+    --secondary: 38 62% 85%;
+    --secondary-foreground: 190 42% 13%;
+    --accent: 36 70% 62%;
+    --accent-foreground: 190 42% 11%;
+    --muted: 40 28% 92%;
+    --muted-foreground: 190 16% 32%;
+    --border: 38 24% 82%;
+    --input: 38 24% 76%;
+    --ring: 184 66% 28%;
+    --success: 152 52% 25%;
+    --success-soft: 150 40% 91%;
+    --danger: 8 62% 36%;
+    --danger-soft: 10 70% 94%;
+    --radius: 0.875rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    @apply bg-background font-sans text-base leading-relaxed text-foreground antialiased;
+  }
+
+  :focus-visible {
+    @apply outline-none ring-2 ring-ring ring-offset-2 ring-offset-background;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}

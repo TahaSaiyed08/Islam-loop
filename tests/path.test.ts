@@ -4,7 +4,14 @@ import { computePath, nextLessonSlug } from "@/lib/path";
 import { computePlacement } from "@/lib/placement";
 
 const tiers = [
-  { tier: 1, lessons: [{ slug: "1.1.1", isCheckpoint: false }, { slug: "1.1.2", isCheckpoint: false }, { slug: "1.4.3", isCheckpoint: true }] },
+  {
+    tier: 1,
+    lessons: [
+      { slug: "1.1.1", isCheckpoint: false },
+      { slug: "1.1.2", isCheckpoint: false },
+      { slug: "1.4.3", isCheckpoint: true },
+    ],
+  },
   { tier: 2, lessons: [{ slug: "2.1.1", isCheckpoint: false }] },
   { tier: 3, lessons: [] },
   { tier: 4, lessons: [{ slug: "4.1.1", isCheckpoint: false }] },
@@ -46,7 +53,9 @@ describe("computePath", () => {
   });
 
   it("finds the next lesson to continue", () => {
-    expect(nextLessonSlug(computePath(tiers, new Set(["1.1.1"])))).toBe("1.1.2");
+    expect(nextLessonSlug(computePath(tiers, new Set(["1.1.1"])))).toBe(
+      "1.1.2"
+    );
   });
 });
 
@@ -56,7 +65,8 @@ describe("computePlacement", () => {
   });
   it("starts after the last tier passed in a row", () => {
     const r = computePlacement([
-      { tier: 1, correct: true }, { tier: 1, correct: true },
+      { tier: 1, correct: true },
+      { tier: 1, correct: true },
       { tier: 2, correct: true },
       { tier: 3, correct: false },
       { tier: 4, correct: true },
@@ -64,10 +74,20 @@ describe("computePlacement", () => {
     expect(r.startTier).toBe(3);
   });
   it("needs every question in a tier to be right", () => {
-    expect(computePlacement([{ tier: 1, correct: true }, { tier: 1, correct: false }]).startTier).toBe(1);
+    expect(
+      computePlacement([
+        { tier: 1, correct: true },
+        { tier: 1, correct: false },
+      ]).startTier
+    ).toBe(1);
   });
   it("steps over tiers with no questions and caps at Tier 10", () => {
-    expect(computePlacement([{ tier: 1, correct: true }, { tier: 4, correct: true }]).startTier).toBe(5);
+    expect(
+      computePlacement([
+        { tier: 1, correct: true },
+        { tier: 4, correct: true },
+      ]).startTier
+    ).toBe(5);
     expect(computePlacement([{ tier: 10, correct: true }]).startTier).toBe(10);
   });
 });

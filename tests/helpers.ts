@@ -34,7 +34,11 @@ export function makeLesson(over: Partial<Lesson> = {}): Lesson {
       explanation: "Because.",
     })),
     status: "PREVIEW",
-    verification: { passed: true, checkedAt: "2026-11-24", quoteHashes: [quoteHash(QUOTE)] },
+    verification: {
+      passed: true,
+      checkedAt: "2026-11-24",
+      quoteHashes: [quoteHash(QUOTE)],
+    },
     ...over,
   };
 }

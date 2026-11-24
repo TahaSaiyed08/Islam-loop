@@ -27,11 +27,11 @@ export function computePath(
   startTier = 1
 ): TierPath[] {
   const out: TierPath[] = [];
-  let prevGate = true;
+  let prevGate: boolean = true;
 
   for (const t of [...tiers].sort((a, b) => a.tier - b.tier)) {
     const skipped = t.tier < startTier;
-    const open = t.tier === 1 || t.tier <= startTier || prevGate;
+    const open: boolean = t.tier === 1 || t.tier <= startTier || prevGate;
 
     let allBefore = true;
     const lessons = t.lessons.map((l) => {

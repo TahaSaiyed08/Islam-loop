@@ -32,7 +32,8 @@ import {
 const ROOT = path.resolve(__dirname, "..");
 const CONTENT = path.join(ROOT, "content");
 const PAGES = path.join(ROOT, ".cache", "pages");
-const UA = "TheRoadmapVerifier/1.0 (non-commercial educational site; quote verification)";
+const UA =
+  "TheRoadmapVerifier/1.0 (non-commercial educational site; quote verification)";
 
 if (process.env.HTTPS_PROXY || process.env.https_proxy)
   setGlobalDispatcher(new EnvHttpProxyAgent());
@@ -48,7 +49,9 @@ function loadVerses(): Verses {
 let lastFetch = 0;
 const pageMemo = new Map<string, { text: string } | { error: string }>();
 
-async function getPage(url: string): Promise<{ text: string } | { error: string }> {
+async function getPage(
+  url: string
+): Promise<{ text: string } | { error: string }> {
   const memo = pageMemo.get(url);
   if (memo) return memo;
   const file = path.join(PAGES, pageCacheName(url));
@@ -65,8 +68,11 @@ async function getPage(url: string): Promise<{ text: string } | { error: string 
         signal: AbortSignal.timeout(30_000),
       });
       if (res.headers.get("cf-mitigated") === "challenge" || res.status === 403)
-        result = { error: `source unreachable: HTTP ${res.status} (the site blocks automated readers; save the exact page by hand as .cache/pages/${pageCacheName(url)})` };
-      else if (!res.ok) result = { error: `source unreachable: HTTP ${res.status}` };
+        result = {
+          error: `source unreachable: HTTP ${res.status} (the site blocks automated readers; save the exact page by hand as .cache/pages/${pageCacheName(url)})`,
+        };
+      else if (!res.ok)
+        result = { error: `source unreachable: HTTP ${res.status}` };
       else {
         const html = await res.text();
         fs.mkdirSync(PAGES, { recursive: true });
@@ -81,7 +87,13 @@ async function getPage(url: string): Promise<{ text: string } | { error: string 
   return result;
 }
 
-type Failure = { slug: string; locator: string; quote: string; reason: string; closest?: string };
+type Failure = {
+  slug: string;
+  locator: string;
+  quote: string;
+  reason: string;
+  closest?: string;
+};
 
 async function main() {
   const verses = loadVerses();
@@ -90,7 +102,9 @@ async function main() {
   let passed = 0;
   let unverifiable = 0;
 
-  const files = fs.readdirSync(CONTENT).filter((f) => /^tier-\d+\.json$/.test(f));
+  const files = fs
+    .readdirSync(CONTENT)
+    .filter((f) => /^tier-\d+\.json$/.test(f));
   files.sort((a, b) => parseInt(a.slice(5), 10) - parseInt(b.slice(5), 10));
 
   for (const f of files) {
@@ -106,15 +120,25 @@ async function main() {
       let reason = "";
       for (const s of l.sources) {
         let check: Check;
-        if (s.key === "QURAN") check = verifyQuranQuote(s.quote, s.locator, verses);
+        if (s.key === "QURAN")
+          check = verifyQuranQuote(s.quote, s.locator, verses);
         else {
           const page = await getPage(s.url);
-          check = "error" in page ? { ok: false, reason: page.error } : verifyPageQuote(s.quote, page.text);
+          check =
+            "error" in page
+              ? { ok: false, reason: page.error }
+              : verifyPageQuote(s.quote, page.text);
         }
         hashes.push(check.ok ? quoteHash(s.quote) : null);
         if (!check.ok) {
           if (check.reason.startsWith("source unreachable")) unverifiable++;
-          failures.push({ slug: l.slug, locator: `${s.key} ${s.locator}`, quote: s.quote, reason: check.reason, closest: check.closest });
+          failures.push({
+            slug: l.slug,
+            locator: `${s.key} ${s.locator}`,
+            quote: s.quote,
+            reason: check.reason,
+            closest: check.closest,
+          });
           if (s.role === "primary") {
             primaryOk = false;
             reason ||= `${s.key} ${s.locator}: ${check.reason}`;
@@ -146,8 +170,13 @@ async function main() {
       const isBoss = l.mechanic === "boss_checkpoint";
       if (!isBoss && !(l.siteOnly && !l.sources?.length)) continue;
       const ok = isBoss ? live : true;
-      const hashes = (l.verification?.quoteHashes as (string | null)[] | undefined) ?? [];
-      l.verification = { passed: ok, checkedAt, quoteHashes: l.sources?.length ? hashes : [] };
+      const hashes =
+        (l.verification?.quoteHashes as (string | null)[] | undefined) ?? [];
+      l.verification = {
+        passed: ok,
+        checkedAt,
+        quoteHashes: l.sources?.length ? hashes : [],
+      };
       if (ok) {
         delete l.draftReason;
         if (l.status === "DRAFT" && l.hook && l.summary) l.status = "PREVIEW";
@@ -167,7 +196,11 @@ async function main() {
   }
 
   // Report
-  const all = files.flatMap((f) => (JSON.parse(fs.readFileSync(path.join(CONTENT, f), "utf8")).lessons as Record<string, any>[])); // eslint-disable-line @typescript-eslint/no-explicit-any
+  const all = files.flatMap(
+    (f) =>
+      JSON.parse(fs.readFileSync(path.join(CONTENT, f), "utf8"))
+        .lessons as Record<string, any>[]
+  ); // eslint-disable-line @typescript-eslint/no-explicit-any
   const count = (s: string) => all.filter((l) => l.status === s).length;
   const lines = [
     "# Verification report",
@@ -178,15 +211,21 @@ async function main() {
     "| Slug | Source | Reason | Closest match on the page |",
     "|---|---|---|---|",
     ...failures.map(
-      (x) => `| ${x.slug} | ${x.locator} | ${x.reason.replace(/\|/g, "/")} | ${(x.closest ?? "").replace(/\|/g, "/")} |`
+      (x) =>
+        `| ${x.slug} | ${x.locator} | ${x.reason.replace(/\|/g, "/")} | ${(x.closest ?? "").replace(/\|/g, "/")} |`
     ),
     "",
   ];
   fs.mkdirSync(path.join(ROOT, "docs"), { recursive: true });
-  fs.writeFileSync(path.join(ROOT, "docs", "verify-report.md"), lines.join("\n"));
+  fs.writeFileSync(
+    path.join(ROOT, "docs", "verify-report.md"),
+    lines.join("\n")
+  );
 
   console.log(`verified lessons: ${passed}`);
-  console.log(`PREVIEW ${count("PREVIEW")} · APPROVED ${count("APPROVED")} · DRAFT ${count("DRAFT")}`);
+  console.log(
+    `PREVIEW ${count("PREVIEW")} · APPROVED ${count("APPROVED")} · DRAFT ${count("DRAFT")}`
+  );
   for (const x of failures) {
     console.log(`\nFAIL ${x.slug} [${x.locator}] ${x.reason}`);
     console.log(`  expected: ${x.quote}`);

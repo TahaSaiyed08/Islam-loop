@@ -88,7 +88,8 @@ export const lessonSchema = z
       ctx.addIssue({ code: "custom", message: `${l.slug}: ${message}` });
 
     const [tier, unit] = l.slug.split(".").map(Number);
-    if (tier !== l.tier || unit !== l.unit) issue("slug does not match tier/unit");
+    if (tier !== l.tier || unit !== l.unit)
+      issue("slug does not match tier/unit");
 
     for (const s of l.sources) {
       const isVerse = s.key === "QURAN";
@@ -111,10 +112,16 @@ export const lessonSchema = z
     if (!isBoss && l.questions.length < 2) issue("needs 2-3 questions");
     if (!isBoss && !l.siteOnly && !l.sources.some((s) => s.role === "primary"))
       issue("needs a primary source");
-    if (l.mechanic === "timeline_builder" && !l.questions.some((q) => q.type === "order"))
+    if (
+      l.mechanic === "timeline_builder" &&
+      !l.questions.some((q) => q.type === "order")
+    )
       issue("timeline_builder needs an order question");
     if (!l.verification?.passed) issue("not verified");
-    if (l.verification && l.verification.quoteHashes.length !== l.sources.length)
+    if (
+      l.verification &&
+      l.verification.quoteHashes.length !== l.sources.length
+    )
       issue("quoteHashes must align with sources");
   });
 
@@ -122,13 +129,18 @@ export const tierFileSchema = z
   .object({
     tier: z.number().int().min(1).max(10),
     name: z.string().min(1),
-    units: z.array(z.object({ unit: z.number().int(), name: z.string().optional() })),
+    units: z.array(
+      z.object({ unit: z.number().int(), name: z.string().optional() })
+    ),
     lessons: z.array(lessonSchema),
   })
   .superRefine((t, ctx) => {
     for (const l of t.lessons)
       if (l.tier !== t.tier)
-        ctx.addIssue({ code: "custom", message: `${l.slug} is in the wrong tier file` });
+        ctx.addIssue({
+          code: "custom",
+          message: `${l.slug} is in the wrong tier file`,
+        });
     const slugs = t.lessons.map((l) => l.slug);
     if (new Set(slugs).size !== slugs.length)
       ctx.addIssue({ code: "custom", message: "duplicate slugs" });

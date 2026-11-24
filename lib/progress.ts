@@ -64,7 +64,9 @@ function parse(raw: string | null): Data | null {
     const j = JSON.parse(raw) as Partial<Data>;
     const d = empty();
     if (Array.isArray(j.completed))
-      d.completed = j.completed.filter((s): s is string => typeof s === "string");
+      d.completed = j.completed.filter(
+        (s): s is string => typeof s === "string"
+      );
     if (typeof j.points === "number" && j.points >= 0) d.points = j.points;
     if (j.streak && typeof j.streak.count === "number")
       d.streak = {
@@ -130,7 +132,8 @@ export class LocalProgressStore implements ProgressStore {
   getStreak(now: Date = new Date()): StreakState {
     const s = this.read().streak;
     if (!s.lastDay) return { count: 0, lastDay: null };
-    const alive = s.lastDay === dayKey(now) || s.lastDay === dayKey(addDays(now, -1));
+    const alive =
+      s.lastDay === dayKey(now) || s.lastDay === dayKey(addDays(now, -1));
     return { count: alive ? s.count : 0, lastDay: s.lastDay };
   }
 
@@ -139,7 +142,10 @@ export class LocalProgressStore implements ProgressStore {
     const today = dayKey(now);
     if (d.streak.lastDay === today) return d.streak;
     const continues = d.streak.lastDay === dayKey(addDays(now, -1));
-    const streak = { count: continues ? d.streak.count + 1 : 1, lastDay: today };
+    const streak = {
+      count: continues ? d.streak.count + 1 : 1,
+      lastDay: today,
+    };
     this.write({ ...d, streak });
     return streak;
   }

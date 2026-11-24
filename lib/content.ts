@@ -19,6 +19,15 @@ export function isVisible(l: Lesson): boolean {
   );
 }
 
+function isFullyVerified(l: Lesson): boolean {
+  return (
+    isVisible(l) &&
+    l.sources.every(
+      (s, i) => l.verification?.quoteHashes[i] === quoteHash(s.quote)
+    )
+  );
+}
+
 export function effectiveStatus(l: Lesson): Lesson["status"] {
   return isVisible(l) ? l.status : "DRAFT";
 }
@@ -28,6 +37,8 @@ export type PlayableLesson = Lesson & { isCheckpoint: boolean };
 export type CatalogTier = {
   tier: number;
   name: string;
+  /** All lessons planned for the tier, including hidden DRAFTs. */
+  total: number;
   units: { unit: number; name?: string; lessons: PlayableLesson[] }[];
   lessons: PlayableLesson[];
 };
@@ -64,7 +75,10 @@ const bySlugOrder = (a: Lesson, b: Lesson) => {
 };
 
 /** Pure: validate raw JSON and keep only what may be shown. */
-export function buildCatalog(rawTiers: unknown[], rawPlacement: unknown): Catalog {
+export function buildCatalog(
+  rawTiers: unknown[],
+  rawPlacement: unknown
+): Catalog {
   const tierFiles: TierFile[] = rawTiers
     .map((t) => tierFileSchema.parse(t))
     .sort((a, b) => a.tier - b.tier);
@@ -100,13 +114,29 @@ export function buildCatalog(rawTiers: unknown[], rawPlacement: unknown): Catalo
       ...u,
       lessons: playable.filter((l) => l.unit === u.unit),
     }));
-    tiers.push({ tier: tf.tier, name: tf.name, units, lessons: playable });
+    tiers.push({
+      tier: tf.tier,
+      name: tf.name,
+      total: tf.lessons.length,
+      units,
+      lessons: playable,
+    });
     all.push(...playable);
   }
 
   const bySlug = new Map(all.map((l) => [l.slug, l]));
+  // A placement question is built from a lesson's quote, so it needs that
+  // lesson visible AND every one of its quotes verified.
+  const fullyVerified = new Set(
+    tierFiles
+      .flatMap((t) => t.lessons)
+      .filter(isFullyVerified)
+      .map((l) => l.slug)
+  );
   const placement = placementFileSchema
     .parse(rawPlacement)
-    .questions.filter((q) => bySlug.has(q.lesson));
+    .questions.filter(
+      (q) => bySlug.has(q.lesson) && fullyVerified.has(q.lesson)
+    );
   return { tiers, lessons: all, bySlug, placement };
 }

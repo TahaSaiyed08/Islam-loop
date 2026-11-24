@@ -5,7 +5,9 @@ import { LocalProgressStore, dayKey } from "@/lib/progress";
 function fakeStorage(): Storage {
   const m = new Map<string, string>();
   return {
-    get length() { return m.size; },
+    get length() {
+      return m.size;
+    },
     clear: () => m.clear(),
     getItem: (k) => m.get(k) ?? null,
     key: (i) => [...m.keys()][i] ?? null,
@@ -15,12 +17,24 @@ function fakeStorage(): Storage {
 }
 
 const throwing: Storage = {
-  get length(): number { throw new Error("blocked"); },
-  clear() { throw new Error("blocked"); },
-  getItem() { throw new Error("blocked"); },
-  key() { throw new Error("blocked"); },
-  removeItem() { throw new Error("blocked"); },
-  setItem() { throw new Error("blocked"); },
+  get length(): number {
+    throw new Error("blocked");
+  },
+  clear() {
+    throw new Error("blocked");
+  },
+  getItem() {
+    throw new Error("blocked");
+  },
+  key() {
+    throw new Error("blocked");
+  },
+  removeItem() {
+    throw new Error("blocked");
+  },
+  setItem() {
+    throw new Error("blocked");
+  },
 };
 
 describe("LocalProgressStore", () => {
