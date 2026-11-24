@@ -16,7 +16,7 @@ export const Header = ({ percentage }: HeaderProps) => {
         type="button"
         onClick={open}
         aria-label="Leave the lesson"
-        className="rounded-md p-1 text-slate-600 transition hover:opacity-75"
+        className="flex size-11 shrink-0 items-center justify-center rounded-md text-slate-600 transition hover:opacity-75"
       >
         <X />
       </button>

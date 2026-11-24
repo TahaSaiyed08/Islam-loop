@@ -1,5 +1,7 @@
 # Final report
 
+> The first build. The UI described here was later replaced by a port of the upstream screens; see `REWORK_REPORT.md` for the current state.
+
 **Repo:** https://github.com/TahaSaiyed08/Islam-loop, branch `claude/the-roadmap-website-djd0th` (not merged to `main`).
 **Deployed:** no. The code is ready for Vercel (`docs/DEPLOY_VERCEL.md`).
 

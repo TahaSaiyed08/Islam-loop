@@ -82,7 +82,8 @@
         "checkedAt": "2026-11-24",
         "quoteHashes": [
           "673464bde40df98d"
-        ]
+        ],
+        "method": "script"
       }
     },
     {
@@ -136,7 +137,8 @@
         "checkedAt": "2026-11-24",
         "quoteHashes": [
           "ef2bd50ba0147d1a"
-        ]
+        ],
+        "method": "script"
       }
     },
     {
@@ -218,7 +220,8 @@
         "quoteHashes": [
           "571cfc9d6ed129d6",
           "5c73ee9ef76139ca"
-        ]
+        ],
+        "method": "script"
       }
     },
     {
@@ -272,7 +275,8 @@
         "checkedAt": "2026-11-24",
         "quoteHashes": [
           "4c5ce47143bfc51c"
-        ]
+        ],
+        "method": "script"
       }
     },
     {
@@ -344,7 +348,8 @@
         "checkedAt": "2026-11-24",
         "quoteHashes": [
           "4ee4648ac1b32ef5"
-        ]
+        ],
+        "method": "script"
       }
     },
     {
@@ -413,7 +418,8 @@
         "checkedAt": "2026-11-24",
         "quoteHashes": [
           "68bea553b80b5b44"
-        ]
+        ],
+        "method": "script"
       }
     },
     {
@@ -467,7 +473,8 @@
         "checkedAt": "2026-11-24",
         "quoteHashes": [
           "fd83b20de514970d"
-        ]
+        ],
+        "method": "script"
       }
     },
     {

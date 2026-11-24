@@ -31,7 +31,7 @@ export const Header = () => {
           >
             <Link href="/sources">Sources</Link>
           </Button>
-          <Button size="sm" variant="ghost" asChild>
+          <Button variant="ghost" asChild>
             <Link href="/about">About</Link>
           </Button>
         </nav>

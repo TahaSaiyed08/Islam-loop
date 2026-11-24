@@ -71,7 +71,8 @@
         "checkedAt": "2026-11-24",
         "quoteHashes": [
           "3301a54c2464e856"
-        ]
+        ],
+        "method": "script"
       }
     },
     {
@@ -90,7 +91,7 @@
           "translator": "Sayed Ali Reza",
           "edition": "Al-Islam.org edition",
           "locator": "Saying 54",
-          "url": "https://www.al-islam.org/nahjul-balagha-part-2-letters-and-sayings",
+          "url": "https://al-islam.org/nahjul-balagha-part-2-letters-and-sayings/selections-sayings-and-preaching-amir-al-muminin-ali",
           "quote": "There is no wealth like wisdom, no destitution like ignorance, no inheritance like refinement and no support like consultation."
         }
       ],
@@ -122,13 +123,14 @@
         }
       ],
       "status": "DRAFT",
-      "draftReason": "Not yet verified — NAHJ Saying 54: source unreachable: HTTP 403 (the site blocks automated readers; save the exact page by hand as .cache/pages/www_al_islam_org_nahjul_balagha_part_2_letters_and_sayings.html)",
+      "draftReason": "Not yet verified — NAHJ Saying 54: source unreachable: HTTP 403 (the site blocks automated readers; save the exact page by hand as .cache/pages/al_islam_org_nahjul_balagha_part_2_letters_and_sayings_selections_sayings_and_preaching_amir_al_muminin_ali.html)",
       "verification": {
         "passed": false,
         "checkedAt": "2026-11-24",
         "quoteHashes": [
           null
-        ]
+        ],
+        "method": "script"
       }
     },
     {
@@ -182,7 +184,8 @@
         "checkedAt": "2026-11-24",
         "quoteHashes": [
           "9aae218d6461456e"
-        ]
+        ],
+        "method": "script"
       }
     },
     {
@@ -239,7 +242,8 @@
         "checkedAt": "2026-11-24",
         "quoteHashes": [
           "d0fef7b99db8a8e4"
-        ]
+        ],
+        "method": "script"
       }
     },
     {
@@ -258,7 +262,7 @@
           "translator": "Sayed Ali Reza",
           "edition": "Al-Islam.org edition",
           "locator": "Sermon 1",
-          "url": "https://www.al-islam.org/nahjul-balagha-part-1-sermons",
+          "url": "https://al-islam.org/nahjul-balagha-part-1-sermons/sermon-1-praise-due-allah-whose-worth-cannot-be-described",
           "quote": "He is with everything but not in physical nearness. He is different from everything but not in physical separation."
         },
         {
@@ -300,14 +304,15 @@
         }
       ],
       "status": "DRAFT",
-      "draftReason": "Not yet verified — NAHJ Sermon 1: source unreachable: HTTP 403 (the site blocks automated readers; save the exact page by hand as .cache/pages/www_al_islam_org_nahjul_balagha_part_1_sermons.html)",
+      "draftReason": "Not yet verified — NAHJ Sermon 1: source unreachable: HTTP 403 (the site blocks automated readers; save the exact page by hand as .cache/pages/al_islam_org_nahjul_balagha_part_1_sermons_sermon_1_praise_due_allah_whose_worth_cannot_be_described.html)",
       "verification": {
         "passed": false,
         "checkedAt": "2026-11-24",
         "quoteHashes": [
           null,
           "f16461b19291ef8c"
-        ]
+        ],
+        "method": "script"
       }
     },
     {
@@ -326,7 +331,7 @@
           "translator": "Sayed Ali Reza",
           "edition": "Al-Islam.org edition",
           "locator": "Sermon 1",
-          "url": "https://www.al-islam.org/nahjul-balagha-part-1-sermons",
+          "url": "https://al-islam.org/nahjul-balagha-part-1-sermons/sermon-1-praise-due-allah-whose-worth-cannot-be-described",
           "quote": "The foremost in religion is the acknowledgement of Him, the perfection of acknowledging Him is to testify Him"
         }
       ],
@@ -357,13 +362,14 @@
         }
       ],
       "status": "DRAFT",
-      "draftReason": "Not yet verified — NAHJ Sermon 1: source unreachable: HTTP 403 (the site blocks automated readers; save the exact page by hand as .cache/pages/www_al_islam_org_nahjul_balagha_part_1_sermons.html)",
+      "draftReason": "Not yet verified — NAHJ Sermon 1: source unreachable: HTTP 403 (the site blocks automated readers; save the exact page by hand as .cache/pages/al_islam_org_nahjul_balagha_part_1_sermons_sermon_1_praise_due_allah_whose_worth_cannot_be_described.html)",
       "verification": {
         "passed": false,
         "checkedAt": "2026-11-24",
         "quoteHashes": [
           null
-        ]
+        ],
+        "method": "script"
       }
     },
     {
@@ -382,7 +388,7 @@
           "translator": "Sayed Ali Reza",
           "edition": "Al-Islam.org edition",
           "locator": "Saying 82",
-          "url": "https://www.al-islam.org/nahjul-balagha-part-2-letters-and-sayings",
+          "url": "https://al-islam.org/nahjul-balagha-part-2-letters-and-sayings/selections-sayings-and-preaching-amir-al-muminin-ali",
           "quote": "no one should feel ashamed of saying 'I do not know' when he is asked a matter which he does not know"
         }
       ],
@@ -414,13 +420,14 @@
         }
       ],
       "status": "DRAFT",
-      "draftReason": "Not yet verified — NAHJ Saying 82: source unreachable: HTTP 403 (the site blocks automated readers; save the exact page by hand as .cache/pages/www_al_islam_org_nahjul_balagha_part_2_letters_and_sayings.html)",
+      "draftReason": "Not yet verified — NAHJ Saying 82: source unreachable: HTTP 403 (the site blocks automated readers; save the exact page by hand as .cache/pages/al_islam_org_nahjul_balagha_part_2_letters_and_sayings_selections_sayings_and_preaching_amir_al_muminin_ali.html)",
       "verification": {
         "passed": false,
         "checkedAt": "2026-11-24",
         "quoteHashes": [
           null
-        ]
+        ],
+        "method": "script"
       }
     },
     {
@@ -439,7 +446,7 @@
           "translator": "Sayed Ali Reza",
           "edition": "Al-Islam.org edition",
           "locator": "Saying 98",
-          "url": "https://www.al-islam.org/nahjul-balagha-part-2-letters-and-sayings",
+          "url": "https://al-islam.org/nahjul-balagha-part-2-letters-and-sayings/selections-sayings-and-preaching-amir-al-muminin-ali",
           "quote": "When you hear a tradition test it according to the criterion of intelligence not that of mere hearing"
         }
       ],
@@ -471,13 +478,14 @@
         }
       ],
       "status": "DRAFT",
-      "draftReason": "Not yet verified — NAHJ Saying 98: source unreachable: HTTP 403 (the site blocks automated readers; save the exact page by hand as .cache/pages/www_al_islam_org_nahjul_balagha_part_2_letters_and_sayings.html)",
+      "draftReason": "Not yet verified — NAHJ Saying 98: source unreachable: HTTP 403 (the site blocks automated readers; save the exact page by hand as .cache/pages/al_islam_org_nahjul_balagha_part_2_letters_and_sayings_selections_sayings_and_preaching_amir_al_muminin_ali.html)",
       "verification": {
         "passed": false,
         "checkedAt": "2026-11-24",
         "quoteHashes": [
           null
-        ]
+        ],
+        "method": "script"
       }
     },
     {
@@ -496,7 +504,7 @@
           "translator": "Sayed Ali Reza",
           "edition": "Al-Islam.org edition",
           "locator": "Saying 227",
-          "url": "https://www.al-islam.org/nahjul-balagha-part-2-letters-and-sayings",
+          "url": "https://al-islam.org/nahjul-balagha-part-2-letters-and-sayings/selections-sayings-and-preaching-amir-al-muminin-ali",
           "quote": "Belief means appreciation with the heart, acknowledgement with the tongue, and action with the limbs."
         }
       ],
@@ -530,13 +538,14 @@
       "candidates": [
         "NAHJ Saying 125 as a family note: the syllabus text contains an ellipsis; split into exact quotes before use."
       ],
-      "draftReason": "Not yet verified — NAHJ Saying 227: source unreachable: HTTP 403 (the site blocks automated readers; save the exact page by hand as .cache/pages/www_al_islam_org_nahjul_balagha_part_2_letters_and_sayings.html)",
+      "draftReason": "Not yet verified — NAHJ Saying 227: source unreachable: HTTP 403 (the site blocks automated readers; save the exact page by hand as .cache/pages/al_islam_org_nahjul_balagha_part_2_letters_and_sayings_selections_sayings_and_preaching_amir_al_muminin_ali.html)",
       "verification": {
         "passed": false,
         "checkedAt": "2026-11-24",
         "quoteHashes": [
           null
-        ]
+        ],
+        "method": "script"
       }
     },
     {
@@ -555,7 +564,7 @@
           "translator": "Sayed Ali Reza",
           "edition": "Al-Islam.org edition",
           "locator": "Letter 31",
-          "url": "https://www.al-islam.org/nahjul-balagha-part-2-letters-and-sayings",
+          "url": "https://al-islam.org/nahjul-balagha-part-2-letters-and-sayings/letter-31-advice-one-his-sons-after-returning-battle",
           "quote": "Do not be the slave of others for Allah had made you free."
         },
         {
@@ -566,7 +575,7 @@
           "translator": "Sayed Ali Reza",
           "edition": "Al-Islam.org edition",
           "locator": "Letter 31",
-          "url": "https://www.al-islam.org/nahjul-balagha-part-2-letters-and-sayings",
+          "url": "https://al-islam.org/nahjul-balagha-part-2-letters-and-sayings/letter-31-advice-one-his-sons-after-returning-battle",
           "quote": "the heart of a young man is like uncultivated land. It accepts whatever is strewn on it."
         }
       ],
@@ -598,14 +607,15 @@
         }
       ],
       "status": "DRAFT",
-      "draftReason": "Not yet verified — NAHJ Letter 31: source unreachable: HTTP 403 (the site blocks automated readers; save the exact page by hand as .cache/pages/www_al_islam_org_nahjul_balagha_part_2_letters_and_sayings.html)",
+      "draftReason": "Not yet verified — NAHJ Letter 31: source unreachable: HTTP 403 (the site blocks automated readers; save the exact page by hand as .cache/pages/al_islam_org_nahjul_balagha_part_2_letters_and_sayings_letter_31_advice_one_his_sons_after_returning_battle.html)",
       "verification": {
         "passed": false,
         "checkedAt": "2026-11-24",
         "quoteHashes": [
           null,
           null
-        ]
+        ],
+        "method": "script"
       }
     },
     {
@@ -624,7 +634,7 @@
           "translator": "Sayed Ali Reza",
           "edition": "Al-Islam.org edition",
           "locator": "Saying 237",
-          "url": "https://www.al-islam.org/nahjul-balagha-part-2-letters-and-sayings",
+          "url": "https://al-islam.org/nahjul-balagha-part-2-letters-and-sayings/selections-sayings-and-preaching-amir-al-muminin-ali",
           "quote": "Still another group worshipped Allah out of gratefulness; this is the worship of free men."
         }
       ],
@@ -656,13 +666,14 @@
         }
       ],
       "status": "DRAFT",
-      "draftReason": "Not yet verified — NAHJ Saying 237: source unreachable: HTTP 403 (the site blocks automated readers; save the exact page by hand as .cache/pages/www_al_islam_org_nahjul_balagha_part_2_letters_and_sayings.html)",
+      "draftReason": "Not yet verified — NAHJ Saying 237: source unreachable: HTTP 403 (the site blocks automated readers; save the exact page by hand as .cache/pages/al_islam_org_nahjul_balagha_part_2_letters_and_sayings_selections_sayings_and_preaching_amir_al_muminin_ali.html)",
       "verification": {
         "passed": false,
         "checkedAt": "2026-11-24",
         "quoteHashes": [
           null
-        ]
+        ],
+        "method": "script"
       }
     },
     {
@@ -681,7 +692,7 @@
           "translator": "Sayed Ali Reza",
           "edition": "Al-Islam.org edition",
           "locator": "Letter 53",
-          "url": "https://www.al-islam.org/nahjul-balagha-part-2-letters-and-sayings",
+          "url": "https://al-islam.org/nahjul-balagha-part-2-letters-and-sayings/letter-53-order-malik-al-ashtar",
           "quote": "they are of two kinds, either your brother in religion or one like you in creation."
         }
       ],

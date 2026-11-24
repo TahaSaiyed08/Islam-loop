@@ -1,7 +1,7 @@
 "use client";
 
 import { CheckCircle, XCircle } from "lucide-react";
-import { useKey, useMedia } from "react-use";
+import { useKey } from "react-use";
 
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
@@ -40,7 +40,6 @@ export const Footer = ({
     {},
     [onCheck, disabled]
   );
-  const isMobile = useMedia("(max-width: 1024px)", false);
 
   return (
     <footer
@@ -78,7 +77,7 @@ export const Footer = ({
         {status === "completed" && onPractice && (
           <Button
             variant="default"
-            size={isMobile ? "sm" : "lg"}
+            size="lg"
             onClick={onPractice}
             data-testid="practise-again"
           >
@@ -93,7 +92,7 @@ export const Footer = ({
           aria-disabled={disabled}
           className="ml-auto"
           onClick={onCheck}
-          size={isMobile ? "sm" : "lg"}
+          size="lg"
           variant={status === "wrong" ? "danger" : "secondary"}
           data-testid={
             status === "none" && label === "Check" ? "check" : "continue"

@@ -187,7 +187,8 @@
         "checkedAt": "2026-11-24",
         "quoteHashes": [
           "be36410420cf9083"
-        ]
+        ],
+        "method": "script"
       }
     },
     {
@@ -241,7 +242,8 @@
         "checkedAt": "2026-11-24",
         "quoteHashes": [
           "c27c105ede174c23"
-        ]
+        ],
+        "method": "script"
       }
     },
     {

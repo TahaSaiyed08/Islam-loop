@@ -20,6 +20,8 @@ import { tierFileSchema } from "../content/schema";
 import { quoteHash } from "../lib/text";
 import {
   type Check,
+  type WebfetchEntry,
+  checkWebfetchEvidence,
   type Verses,
   htmlToText,
   pageCacheName,
@@ -99,7 +101,20 @@ type Failure = {
   closest?: string;
 };
 
+/** Quotes confirmed through WebFetch (see REWORK.md C2). Each needs two confirmations. */
+function loadWebfetch(): Map<string, WebfetchEntry> {
+  const file = path.join(CONTENT, "webfetch-evidence.json");
+  const m = new Map<string, WebfetchEntry>();
+  if (!fs.existsSync(file)) return m;
+  const j = JSON.parse(fs.readFileSync(file, "utf8")) as {
+    entries: WebfetchEntry[];
+  };
+  for (const e of j.entries) m.set(`${e.slug}#${e.source}`, e);
+  return m;
+}
+
 async function main() {
+  const webfetch = loadWebfetch();
   const verses = loadVerses();
   const checkedAt = new Date().toISOString().slice(0, 10);
   const failures: Failure[] = [];
@@ -120,19 +135,38 @@ async function main() {
     for (const l of lessons) {
       if (!l.sources?.length) continue;
       const hashes: (string | null)[] = [];
+      const evidence: (string | null)[] = [];
+      let usedWebfetch = false;
       let primaryOk = true;
       let reason = "";
-      for (const s of l.sources) {
+      for (const [si, s] of l.sources.entries()) {
         let check: Check;
+        let evidenceText: string | null = null;
         if (s.key === "QURAN")
           check = verifyQuranQuote(s.quote, s.locator, verses);
         else {
-          const page = await getPage(s.url);
-          check =
-            "error" in page
-              ? { ok: false, reason: page.error }
-              : verifyPageQuote(s.quote, page.text);
+          const entry = webfetch.get(`${l.slug}#${si}`);
+          const viaWebfetch = entry
+            ? checkWebfetchEvidence(s.quote, entry)
+            : null;
+          if (viaWebfetch?.ok) {
+            check = viaWebfetch;
+            evidenceText = entry!.evidence;
+            usedWebfetch = true;
+          } else {
+            const page = await getPage(s.url);
+            check =
+              "error" in page
+                ? { ok: false, reason: page.error }
+                : verifyPageQuote(s.quote, page.text);
+            if (!check.ok && viaWebfetch)
+              check = {
+                ...check,
+                reason: `${check.reason}; WebFetch record rejected: ${viaWebfetch.reason}`,
+              };
+          }
         }
+        evidence.push(evidenceText);
         hashes.push(check.ok ? quoteHash(s.quote) : null);
         if (!check.ok) {
           if (check.reason.startsWith("source unreachable")) unverifiable++;
@@ -149,7 +183,13 @@ async function main() {
           }
         }
       }
-      l.verification = { passed: primaryOk, checkedAt, quoteHashes: hashes };
+      l.verification = {
+        passed: primaryOk,
+        checkedAt,
+        quoteHashes: hashes,
+        method: usedWebfetch ? "webfetch" : "script",
+        ...(usedWebfetch ? { evidence } : {}),
+      };
       if (primaryOk) {
         passed++;
         delete l.draftReason;

@@ -71,7 +71,8 @@
         "checkedAt": "2026-11-24",
         "quoteHashes": [
           "292763a9b5ba4fbf"
-        ]
+        ],
+        "method": "script"
       },
       "candidates": [
         "Root q-r-' (recitation, Qur'an): add with a source that states it."
@@ -103,7 +104,7 @@
           "translator": "Sayed Ali Reza",
           "edition": "Al-Islam.org edition",
           "locator": "Saying 5",
-          "url": "https://www.al-islam.org/nahjul-balagha-part-2-letters-and-sayings",
+          "url": "https://al-islam.org/nahjul-balagha-part-2-letters-and-sayings/selections-sayings-and-preaching-amir-al-muminin-ali",
           "quote": "Knowledge is a venerable estate; good manners are new dresses; and thinking is clear mirror."
         }
       ],
@@ -141,7 +142,8 @@
         "quoteHashes": [
           "ac2d32d18213a112",
           null
-        ]
+        ],
+        "method": "script"
       }
     },
     {
@@ -195,7 +197,8 @@
         "checkedAt": "2026-11-24",
         "quoteHashes": [
           "ca77a16c73c2ef81"
-        ]
+        ],
+        "method": "script"
       }
     },
     {
@@ -214,7 +217,7 @@
           "translator": "Sayyid Sa'eed Akhtar Rizvi (WOFIS)",
           "edition": "Al-Islam.org edition",
           "locator": "Vol. 1, Surah al-Fatiha 1:1-5 (Traditions)",
-          "url": "https://www.al-islam.org/al-mizan-exegesis-quran-volume-1-sayyid-muhammad-husayn-tabatabai",
+          "url": "https://al-islam.org/al-mizan-exegesis-quran-volume-1-sayyid-muhammad-husayn-tabatabai/surah-al-fatiha-verses-1-5",
           "quote": "ar-Rahman (the Beneficent) is a special name with a general attribute; and ar-Rahim (the Merciful) is a general name with a special attribute."
         }
       ],
@@ -246,13 +249,14 @@
         }
       ],
       "status": "DRAFT",
-      "draftReason": "Not yet verified — MIZAN Vol. 1, Surah al-Fatiha 1:1-5 (Traditions): source unreachable: HTTP 403 (the site blocks automated readers; save the exact page by hand as .cache/pages/www_al_islam_org_al_mizan_exegesis_quran_volume_1_sayyid_muhammad_husayn_tabatabai.html)",
+      "draftReason": "Not yet verified — MIZAN Vol. 1, Surah al-Fatiha 1:1-5 (Traditions): source unreachable: HTTP 403 (the site blocks automated readers; save the exact page by hand as .cache/pages/al_islam_org_al_mizan_exegesis_quran_volume_1_sayyid_muhammad_husayn_tabatabai_surah_al_fatiha_verses_1_5.html)",
       "verification": {
         "passed": false,
         "checkedAt": "2026-11-24",
         "quoteHashes": [
           null
-        ]
+        ],
+        "method": "script"
       }
     },
     {
@@ -271,7 +275,7 @@
           "translator": "Sayyid Sa'eed Akhtar Rizvi (WOFIS)",
           "edition": "Al-Islam.org edition",
           "locator": "Vol. 1, Surah al-Fatiha, verse 5 commentary",
-          "url": "https://www.al-islam.org/al-mizan-exegesis-quran-volume-1-sayyid-muhammad-husayn-tabatabai",
+          "url": "https://al-islam.org/al-mizan-exegesis-quran-volume-1-sayyid-muhammad-husayn-tabatabai/surah-al-fatiha-verses-1-5",
           "quote": "The true worship, therefore, is that in which the worshipped and the worshipper both are present."
         }
       ],
@@ -302,13 +306,14 @@
         }
       ],
       "status": "DRAFT",
-      "draftReason": "Not yet verified — MIZAN Vol. 1, Surah al-Fatiha, verse 5 commentary: source unreachable: HTTP 403 (the site blocks automated readers; save the exact page by hand as .cache/pages/www_al_islam_org_al_mizan_exegesis_quran_volume_1_sayyid_muhammad_husayn_tabatabai.html)",
+      "draftReason": "Not yet verified — MIZAN Vol. 1, Surah al-Fatiha, verse 5 commentary: source unreachable: HTTP 403 (the site blocks automated readers; save the exact page by hand as .cache/pages/al_islam_org_al_mizan_exegesis_quran_volume_1_sayyid_muhammad_husayn_tabatabai_surah_al_fatiha_verses_1_5.html)",
       "verification": {
         "passed": false,
         "checkedAt": "2026-11-24",
         "quoteHashes": [
           null
-        ]
+        ],
+        "method": "script"
       }
     },
     {
@@ -327,7 +332,7 @@
           "translator": "Sayyid Sa'eed Akhtar Rizvi (WOFIS)",
           "edition": "Al-Islam.org edition",
           "locator": "Vol. 1, Surah al-Fatiha, verse 1 commentary",
-          "url": "https://www.al-islam.org/al-mizan-exegesis-quran-volume-1-sayyid-muhammad-husayn-tabatabai",
+          "url": "https://al-islam.org/al-mizan-exegesis-quran-volume-1-sayyid-muhammad-husayn-tabatabai/surah-al-fatiha-verses-1-5",
           "quote": "every chapter is a single unit in structure and in fullness of meaning"
         }
       ],
@@ -357,13 +362,14 @@
         }
       ],
       "status": "DRAFT",
-      "draftReason": "Not yet verified — MIZAN Vol. 1, Surah al-Fatiha, verse 1 commentary: source unreachable: HTTP 403 (the site blocks automated readers; save the exact page by hand as .cache/pages/www_al_islam_org_al_mizan_exegesis_quran_volume_1_sayyid_muhammad_husayn_tabatabai.html)",
+      "draftReason": "Not yet verified — MIZAN Vol. 1, Surah al-Fatiha, verse 1 commentary: source unreachable: HTTP 403 (the site blocks automated readers; save the exact page by hand as .cache/pages/al_islam_org_al_mizan_exegesis_quran_volume_1_sayyid_muhammad_husayn_tabatabai_surah_al_fatiha_verses_1_5.html)",
       "verification": {
         "passed": false,
         "checkedAt": "2026-11-24",
         "quoteHashes": [
           null
-        ]
+        ],
+        "method": "script"
       }
     },
     {
@@ -417,7 +423,8 @@
         "checkedAt": "2026-11-24",
         "quoteHashes": [
           "fd8fee39039dd23d"
-        ]
+        ],
+        "method": "script"
       }
     },
     {
@@ -436,7 +443,7 @@
           "translator": "Sayyid Sa'eed Akhtar Rizvi (WOFIS)",
           "edition": "Al-Islam.org edition",
           "locator": "Vol. 1, Foreword",
-          "url": "https://www.al-islam.org/al-mizan-exegesis-quran-volume-1-sayyid-muhammad-husayn-tabatabai",
+          "url": "https://al-islam.org/al-mizan-exegesis-quran-volume-1-sayyid-muhammad-husayn-tabatabai/foreword",
           "quote": "the author made a detailed plan to explain the Qur'an with the help of the Qur'an itself"
         }
       ],
@@ -467,13 +474,14 @@
         }
       ],
       "status": "DRAFT",
-      "draftReason": "Not yet verified — MIZAN Vol. 1, Foreword: source unreachable: HTTP 403 (the site blocks automated readers; save the exact page by hand as .cache/pages/www_al_islam_org_al_mizan_exegesis_quran_volume_1_sayyid_muhammad_husayn_tabatabai.html)",
+      "draftReason": "Not yet verified — MIZAN Vol. 1, Foreword: source unreachable: HTTP 403 (the site blocks automated readers; save the exact page by hand as .cache/pages/al_islam_org_al_mizan_exegesis_quran_volume_1_sayyid_muhammad_husayn_tabatabai_foreword.html)",
       "verification": {
         "passed": false,
         "checkedAt": "2026-11-24",
         "quoteHashes": [
           null
-        ]
+        ],
+        "method": "script"
       }
     },
     {
@@ -492,7 +500,7 @@
           "translator": "Sayed Ali Reza",
           "edition": "Al-Islam.org edition",
           "locator": "Saying 313",
-          "url": "https://www.al-islam.org/nahjul-balagha-part-2-letters-and-sayings",
+          "url": "https://al-islam.org/nahjul-balagha-part-2-letters-and-sayings/selections-sayings-and-preaching-amir-al-muminin-ali",
           "quote": "The Qur'an contains news about the past, foretellings about the future and commandments for the present."
         },
         {
@@ -503,7 +511,7 @@
           "translator": "Sayed Ali Reza",
           "edition": "Al-Islam.org edition",
           "locator": "Letter 53",
-          "url": "https://www.al-islam.org/nahjul-balagha-part-2-letters-and-sayings",
+          "url": "https://al-islam.org/nahjul-balagha-part-2-letters-and-sayings/letter-53-order-malik-al-ashtar",
           "quote": "Referring to Allah means to act according to what is clear in His Book."
         }
       ],
@@ -534,14 +542,15 @@
         }
       ],
       "status": "DRAFT",
-      "draftReason": "Not yet verified — NAHJ Saying 313: source unreachable: HTTP 403 (the site blocks automated readers; save the exact page by hand as .cache/pages/www_al_islam_org_nahjul_balagha_part_2_letters_and_sayings.html)",
+      "draftReason": "Not yet verified — NAHJ Saying 313: source unreachable: HTTP 403 (the site blocks automated readers; save the exact page by hand as .cache/pages/al_islam_org_nahjul_balagha_part_2_letters_and_sayings_selections_sayings_and_preaching_amir_al_muminin_ali.html)",
       "verification": {
         "passed": false,
         "checkedAt": "2026-11-24",
         "quoteHashes": [
           null,
           null
-        ]
+        ],
+        "method": "script"
       }
     },
     {
@@ -595,7 +604,8 @@
         "checkedAt": "2026-11-24",
         "quoteHashes": [
           "8c05f8bbb480cde9"
-        ]
+        ],
+        "method": "script"
       }
     },
     {
@@ -624,7 +634,7 @@
           "translator": "Sayed Ali Reza",
           "edition": "Al-Islam.org edition",
           "locator": "Letter 31",
-          "url": "https://www.al-islam.org/nahjul-balagha-part-2-letters-and-sayings",
+          "url": "https://al-islam.org/nahjul-balagha-part-2-letters-and-sayings/letter-31-advice-one-his-sons-after-returning-battle",
           "quote": "Make yourself the measure (for dealings) between you and others. Thus, you should desire for others what you desire for yourself"
         }
       ],
@@ -662,7 +672,8 @@
         "quoteHashes": [
           "6741de59b978470b",
           null
-        ]
+        ],
+        "method": "script"
       }
     },
     {
@@ -681,7 +692,7 @@
           "translator": "Sayyid Sa'eed Akhtar Rizvi (WOFIS)",
           "edition": "Al-Islam.org edition",
           "locator": "Vol. 1, Surah al-Fatiha, verse 5 commentary",
-          "url": "https://www.al-islam.org/al-mizan-exegesis-quran-volume-1-sayyid-muhammad-husayn-tabatabai",
+          "url": "https://al-islam.org/al-mizan-exegesis-quran-volume-1-sayyid-muhammad-husayn-tabatabai/surah-al-fatiha-verses-1-5",
           "quote": "Nothing in the creation can hide the divine presence, nor should looking at these things make one forgetful of Allah."
         },
         {

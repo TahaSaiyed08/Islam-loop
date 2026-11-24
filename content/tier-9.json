@@ -97,7 +97,8 @@
         "checkedAt": "2026-11-24",
         "quoteHashes": [
           "122b634a54dda931"
-        ]
+        ],
+        "method": "script"
       }
     },
     {

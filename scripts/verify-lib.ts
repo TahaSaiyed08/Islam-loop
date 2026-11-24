@@ -162,3 +162,53 @@ export function pageCacheName(url: string): string {
       .replace(/^_|_$/g, "") + ".html"
   );
 }
+
+export type WebfetchEntry = {
+  slug: string;
+  /** Index into the lesson's `sources`. */
+  source: number;
+  checkedAt: string;
+  /** Separate WebFetch calls that both answered YES. */
+  confirmations: number;
+  /** The sentence the page returned, as written. */
+  evidence: string;
+};
+
+/**
+ * A WebFetch record counts only if two separate calls confirmed it and the
+ * returned sentence contains the quote exactly once (after the usual whitespace
+ * and quote-mark normalisation).
+ */
+export function checkWebfetchEvidence(
+  quote: string,
+  entry: WebfetchEntry | undefined
+): Check {
+  if (!entry) return { ok: false, reason: "no WebFetch evidence recorded" };
+  if (entry.confirmations < 2)
+    return {
+      ok: false,
+      reason: `WebFetch confirmed ${entry.confirmations} time(s); two separate confirmations are required`,
+    };
+  const hay = normalizeText(entry.evidence);
+  const needle = normalizeText(quote);
+  if (!needle) return { ok: false, reason: "empty quote" };
+  let count = 0;
+  for (
+    let i = hay.indexOf(needle);
+    i !== -1;
+    i = hay.indexOf(needle, i + needle.length)
+  )
+    count++;
+  if (count === 0)
+    return {
+      ok: false,
+      reason: "the WebFetch evidence does not contain the quote",
+      closest: closestMatch(entry.evidence, quote),
+    };
+  if (count > 1)
+    return {
+      ok: false,
+      reason: "the WebFetch evidence contains the quote more than once",
+    };
+  return { ok: true };
+}

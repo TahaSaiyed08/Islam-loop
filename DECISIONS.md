@@ -41,3 +41,48 @@ Every place where the build brief left a choice open, or where the environment f
 22. **Verifier page cache.** If a page cannot be fetched, save it by hand as `.cache/pages/<name>.html` (the verifier prints the exact name) and run `pnpm verify` again. It uses the saved file as the page, and the same exact-substring rule applies.
 23. **Banned words** are matched as whole words, case-insensitively. `curse(s)` is included.
 24. **Architecture diagram and demo video.** Archify and HyperFrames were unavailable. `docs/architecture.html` is hand-written and `docs/demo.mp4` was recorded with Playwright and encoded with ffmpeg.
+
+## Rework (REWORK.md)
+
+### Skills
+25. **Installed as project skills in `.claude/skills/`** (licences kept): Superpowers (14 skills, prefixed `superpowers-`), Matt Pocock `research`, `handoff`, `improve-codebase-architecture`, Ponytail (`ponytail`, `-audit`, `-review`), Taste, Impeccable, UI UX Pro Max, Humanizer, six Marketing skills (seo-audit, ai-seo, schema, copywriting, copy-editing, cro), Understand-Anything (`understand`), Archify. Not copied: the rest of Matt Pocock's repo (only the three jobs named in PLAN.md), Impeccable's per-editor duplicates, GStack and HyperFrames (they need a desktop browser or native renderer). All ten repos cloned fine; GitHub was not blocked.
+26. **They did not register as callable skills in this session** ("Unknown skill"), so I read their instruction files directly and followed them. **Taste was not run:** it is a builder for photo-led company sites with a browser gate, and its rules (one section per screen, real photographs, no captions) conflict with a fixed, ported app structure. **Impeccable's audit was done by hand** from `reference/audit.md`: axe (WCAG A/AA, 7 pages and every lesson state), a touch-target scan at 360px (fixed: menu button 24px, exit button 32px, mobile footer and header buttons 36px, footer links 20px, all now 44px), horizontal-overflow checks, focus and keyboard tests. Impeccable's `critique`, `adapt` and `polish` commands were not run as such.
+27. Files over 1 MB were not removed from the skills (a first attempt deleted three script files by mistake and they were restored from the source repos).
+
+### Network, again
+28. Al-Islam.org is still unreadable. From the shell it is a Cloudflare challenge (HTTP 403). The WebFetch route (used through the `web-fetch` agent) fails earlier: `getaddrinfo ENOTFOUND` for both `al-islam.org` and `www.al-islam.org`, although both are on the environment's allowlist and the shell can reach them. That route evidently runs under a separate network policy that this session cannot change. I did not spoof headers, did not drive a browser through the challenge, and did not mark any quote verified without a check. So REWORK.md C2 and C3 (verify Al-Islam.org quotes, write the stubs) could not be done. `MANUAL_FETCH.md` lists every page and quote still to check.
+29. **What was built for C2 anyway:** `pnpm verify` accepts WebFetch evidence from `content/webfetch-evidence.json` (`{slug, source, checkedAt, confirmations, evidence}`). A record counts only if `confirmations` is at least 2 and the evidence sentence contains the quote exactly once after whitespace and quote-mark normalisation. A passing lesson gets `verification.method = "webfetch"` and the sentence in `verification.evidence`. Six unit tests cover it, and the wiring was proved in a throwaway copy of the repo (a two-confirmation record unlocked a lesson, a one-confirmation record was rejected). No evidence records exist in the real repo.
+30. **C1 URLs applied:** every non-Qur'an source now carries the exact page URL from REWORK.md (32 sources). No quote text changed. Sahifa and Maqtal have no URL yet (no lesson with those sources has been written; they are stubs).
+
+### Ported upstream files (B1/B2)
+All from the "Initial import from sanidhyy/duolingo-clone" commit. Mapped colours: upstream green becomes brand teal, sky becomes teal tints or sand, orange becomes sand. Fonts stay system fonts (decision 6).
+
+| Upstream | Now | What changed |
+|---|---|---|
+| `app/(main)/layout.tsx` | same path | Kept as is; added a skip link and `id="main"`. |
+| `components/sidebar.tsx` | same | Clerk `UserButton` and the mascot removed; our mark and name; five items (Learn, Find my level, Sources, About, Settings); credit block ("Free and non-commercial", "Based on sanidhyy/duolingo-clone (MIT)") where the user button was; `nav` landmark. |
+| `components/sidebar-item.tsx` | same | Image icons replaced by lucide icons, passed by name so the sidebar stays a server component; `aria-current`. |
+| `components/mobile-header.tsx`, `mobile-sidebar.tsx` | same | `bg-green-500` to `bg-brand`; menu button given a 44px target, an accessible name and a hidden sheet title. **Extra:** site name and a streak/points readout (`mobile-stats.tsx`), because the right column is desktop only. |
+| `components/feed-wrapper.tsx` | same | Unchanged. |
+| `components/sticky-wrapper.tsx` | same | Added a `data-testid` only. |
+| `components/user-progress.tsx` | same | Course picker and hearts removed; streak and points from the ProgressStore. |
+| `components/promo.tsx` | same | "Upgrade to Pro" became the "Find my level" card. |
+| `components/quests.tsx` | same | Quests became the "Your tier" card (`TierCard`). |
+| `app/(main)/learn/header.tsx` | same | Back arrow removed; one sticky header per tier; top offset for the mobile bar. |
+| `app/(main)/learn/unit-banner.tsx` | same | Teal banner; "Continue" opens the unit's next open lesson (hidden if none); small "Preview" chip. |
+| `app/(main)/learn/unit.tsx` | same | Database types removed; states come from the unlock logic. **The zigzag index continues across a tier's units** (upstream restarts at 0 in each unit). With few lessons open per unit, restarting would give Tier 1 only two offsets. |
+| `app/(main)/learn/lesson-button.tsx` | same | Same zigzag (cycle 8, 40px), 70px round `border-b-8` buttons, Start bubble and progress ring. Lesson id became a slug; the checkpoint gets the Crown; the ring shows the unit's share finished; locked buttons are not focusable; accessible names; `motion-reduce` on the bounce. |
+| `app/(main)/learn/page.tsx` | `page.tsx` + `learn-view.tsx` | Server page builds the data from the catalog; the client view reads progress and composes the ported pieces. |
+| `components/ui/button.tsx` | same | Every variant and the 3D press kept; colours mapped (secondary teal, primary sand, danger rose-600 for contrast). `super*` recoloured though unused. |
+| `components/ui/progress.tsx`, `sheet.tsx`, `dialog.tsx` | same | Colours only. |
+| `app/lesson/layout.tsx`, `question-bubble.tsx` | same | Layout unchanged; the mascot is our mark; the bubble carries the lesson's hook. |
+| `app/lesson/header.tsx` | same | Hearts removed; the X is a real 44px button. |
+| `app/lesson/quiz.tsx` | same | Same none/correct/wrong flow, `onNext`, `onContinue`, percentage bar, finish screen with confetti and result cards. Server actions, hearts, hearts modal and audio removed; a wrong answer shows the right one and moves on; completion goes to the ProgressStore; confetti uses site colours and is off for reduced motion. The finish screen adds the summary and family note. |
+| `app/lesson/challenge.tsx`, `card.tsx` | same | Two types added in the same shell: SOURCE (quote card) and ORDER (tap to order). Audio and images removed; keyboard access (role, tabIndex, Space) added; answer text 16px+; options use one column because they are sentences. |
+| `app/lesson/footer.tsx` | same | Texts "Well done." and "The correct answer is shown above."; Enter shortcut kept but no longer double-fires when a button has focus; sticky; buttons are at least 44px. |
+| `app/lesson/result-card.tsx` | same | Variants are points and score ("Lesson complete"); icons are lucide. |
+| `components/modals/exit-modal.tsx`, `practice-modal.tsx`; `store/use-exit-modal.ts`, `use-practice-modal.ts` | same | Wording and mark changed; `isClient` state replaced by a hydration hook. Practice opens when a lesson is already finished. |
+| `app/(marketing)/layout.tsx`, `header.tsx`, `footer.tsx`, `page.tsx` | same | Clerk, banner, login and GitHub icon removed; Sources and About links; the language buttons became the credit line; the hero image became an original SVG (`hero-illustration.tsx`); our copy and buttons. |
+| `app/layout.tsx`, `app/globals.css` | same | Clerk, toaster, hearts modal and Nunito removed; exit and practice modals mounted; `h-full` restored; theme tokens kept. |
+
+**Not ported (not applicable):** `db/`, `actions/`, hearts modal, banner, the courses, shop, quests and leaderboard pages, all audio, all upstream images. The placement quiz is new but built entirely from the ported shell (`Header`, `Challenge`, `Footer`, `ResultCard`).

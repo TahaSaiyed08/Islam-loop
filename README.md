@@ -11,7 +11,7 @@ Every quote is copied from its source and checked by a script. A lesson whose qu
 - 71 are hidden `DRAFT`. 25 of those are fully written but wait for verification, because their sources are on Al-Islam.org, which blocks automated readers. The other 46 are stubs: title, objective and a candidate source, with no quote yet.
 - Nothing is `APPROVED`. Only a person sets that, after reading a lesson against its source.
 
-See `docs/verify-report.md` for the latest verification run and `FINAL_REPORT.md` for the full lesson table.
+See `docs/verify-report.md` for the latest verification run, `REWORK_REPORT.md` for the current lesson table, and `MANUAL_FETCH.md` for what still needs checking against Al-Islam.org.
 
 ## Run it
 
@@ -57,8 +57,11 @@ The rules every lesson follows are in `SYLLABUS.md` (Part 1).
 ## Folder map
 
 ```
-app/                 Pages: landing, learn, lesson/[slug], placement, sources, about, settings
-components/          UI. lesson/ holds the lesson player; ui/ the base buttons, dialog, progress
+app/(marketing)/     Landing page (ported from the upstream marketing layout)
+app/(main)/          Sidebar layout: learn (zigzag path), sources, about, settings
+app/lesson/          The lesson quiz shell (ported): header, challenge, card, footer, quiz
+app/placement/       The placement quiz, built from the same shell
+components/          Sidebar, mobile header, right-column cards; ui/ the base button, dialog, sheet, progress
 content/             tier-1.json … tier-10.json, placement.json, schema.ts, sources/ (Qara'i file)
 lib/content.ts       Which lessons may be shown (never DRAFT; hash guard)
 lib/progress.ts      The ProgressStore interface and its localStorage implementation

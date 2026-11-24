@@ -90,3 +90,60 @@ describe("page verification", () => {
     );
   });
 });
+
+import {
+  checkWebfetchEvidence,
+  type WebfetchEntry,
+} from "../scripts/verify-lib";
+
+describe("WebFetch evidence", () => {
+  const quote = "no wealth like wisdom, no destitution like ignorance";
+  const entry = (over: Partial<WebfetchEntry> = {}): WebfetchEntry => ({
+    slug: "1.1.2",
+    source: 0,
+    checkedAt: "2026-11-24",
+    confirmations: 2,
+    evidence:
+      "There is no wealth like wisdom, no destitution like ignorance, no inheritance like refinement.",
+    ...over,
+  });
+
+  it("passes when two calls confirmed and the sentence contains the quote once", () => {
+    expect(checkWebfetchEvidence(quote, entry()).ok).toBe(true);
+  });
+  it("normalises quote marks and spacing only", () => {
+    const e = entry({
+      evidence:
+        "He said ‘no wealth  like wisdom, no destitution like ignorance’.",
+    });
+    expect(
+      checkWebfetchEvidence(
+        "'no wealth like wisdom, no destitution like ignorance'",
+        e
+      ).ok
+    ).toBe(true);
+  });
+  it("fails with a single confirmation", () => {
+    expect(checkWebfetchEvidence(quote, entry({ confirmations: 1 })).ok).toBe(
+      false
+    );
+  });
+  it("fails when the sentence does not contain the quote (one word changed)", () => {
+    const r = checkWebfetchEvidence(
+      "no wealth like knowledge, no destitution like ignorance",
+      entry()
+    );
+    expect(r.ok).toBe(false);
+  });
+  it("fails when the quote appears twice", () => {
+    expect(
+      checkWebfetchEvidence(
+        quote,
+        entry({ evidence: `${quote}. And again, ${quote}.` })
+      ).ok
+    ).toBe(false);
+  });
+  it("fails without a record", () => {
+    expect(checkWebfetchEvidence(quote, undefined).ok).toBe(false);
+  });
+});

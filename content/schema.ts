@@ -60,6 +60,10 @@ export const verificationSchema = z.object({
   checkedAt: z.string().min(1),
   /** Aligned with `sources`; null when that source did not verify. */
   quoteHashes: z.array(z.string().nullable()),
+  /** How the quotes were checked: against the Qara'i file or the page by script, or by WebFetch evidence. */
+  method: z.enum(["script", "webfetch"]).optional(),
+  /** For method "webfetch": the sentence returned for each source (null where not used). */
+  evidence: z.array(z.string().nullable()).optional(),
 });
 
 export const lessonSchema = z

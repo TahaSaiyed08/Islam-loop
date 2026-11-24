@@ -29,6 +29,6 @@ A free, non-commercial site for learning Islam through the Qur'an and the teachi
 
 ## Layout
 
-`content/` lessons (JSON) + `schema.ts` + `sources/` · `lib/content.ts` visibility rules · `lib/progress.ts` the `ProgressStore` interface · `lib/path.ts` unlocking · `lib/placement.ts` · `scripts/verify-*.ts` the verifier · `components/lesson/` the player · `e2e/` Playwright.
+`content/` lessons (JSON) + `schema.ts` + `sources/` · `lib/content.ts` visibility rules · `lib/progress.ts` the `ProgressStore` interface · `lib/path.ts` unlocking · `lib/placement.ts` · `scripts/verify-*.ts` the verifier · `app/lesson/` the ported quiz shell (`quiz.tsx`), `app/(main)/learn/` the ported path · `e2e/` Playwright.
 
 When compacting, keep PROGRESS.md status and the list of modified files.

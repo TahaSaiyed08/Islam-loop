@@ -19,6 +19,10 @@ Defined as CSS variables in `app/globals.css` and mapped in `tailwind.config.ts`
 
 Contrast: all text pairs are checked by axe (WCAG 2 A/AA) in `e2e/a11y.spec.ts`.
 
+## Ported UI
+
+The learning screens are ported from sanidhyy/duolingo-clone (MIT): fixed 256px sidebar, a two-column learn page with a 368px right column, the zigzag lesson path with 3D round buttons, and the lesson quiz shell with a coloured footer. Colours are mapped to extra tokens: `brand` (teal 184 62% 26%, secondary buttons, banners, progress) with `brand-dark` for the 3D edge, and `sand` (36 72% 66%, primary buttons) with `sand-dark` and `sand-ink` (text on white).
+
 ## Type and space
 
 - Body 16px minimum; questions and quotes 20–24px. Quotes use a serif stack (`font-quote`); everything else uses the system sans stack.

@@ -12,7 +12,10 @@ import { Sidebar } from "./sidebar";
 export const MobileSidebar = () => {
   return (
     <Sheet>
-      <SheetTrigger aria-label="Open menu">
+      <SheetTrigger
+        aria-label="Open menu"
+        className="-ml-2.5 flex size-11 items-center justify-center rounded-md"
+      >
         <Menu className="text-white" />
       </SheetTrigger>
 

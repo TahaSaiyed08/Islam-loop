@@ -67,7 +67,8 @@
         "checkedAt": "2026-11-24",
         "quoteHashes": [
           "ec1cbb9714ae21c3"
-        ]
+        ],
+        "method": "script"
       }
     },
     {
@@ -151,7 +152,8 @@
         "checkedAt": "2026-11-24",
         "quoteHashes": [
           "5b228edc292d5715"
-        ]
+        ],
+        "method": "script"
       }
     },
     {
@@ -220,7 +222,8 @@
         "checkedAt": "2026-11-24",
         "quoteHashes": [
           "8730d10d26eb7cb1"
-        ]
+        ],
+        "method": "script"
       }
     },
     {
@@ -289,7 +292,8 @@
         "checkedAt": "2026-11-24",
         "quoteHashes": [
           "b91e402cbc0a1956"
-        ]
+        ],
+        "method": "script"
       }
     },
     {
@@ -358,7 +362,8 @@
         "checkedAt": "2026-11-24",
         "quoteHashes": [
           "c6074f9079dc6eee"
-        ]
+        ],
+        "method": "script"
       }
     },
     {
@@ -412,7 +417,8 @@
         "checkedAt": "2026-11-24",
         "quoteHashes": [
           "fd3bc3d51a6e43af"
-        ]
+        ],
+        "method": "script"
       }
     },
     {
