@@ -1,0 +1,281 @@
+{
+  "tier": 7,
+  "name": "Karbala & Moral Courage",
+  "units": [
+    {
+      "unit": 1
+    },
+    {
+      "unit": 2
+    },
+    {
+      "unit": 3
+    },
+    {
+      "unit": 4
+    }
+  ],
+  "lessons": [
+    {
+      "slug": "7.1.1",
+      "tier": 7,
+      "unit": 1,
+      "title": "Reform, Not Ambition",
+      "objective": "State Imam Husayn's stated purpose",
+      "sources": [],
+      "mechanic": "verse_decoder",
+      "questions": [],
+      "status": "DRAFT",
+      "candidates": [
+        "MAQTAL (Tier 7 rules in SYLLABUS 1.3 apply), chapter \"The Will\" (his will stating his aim)"
+      ],
+      "draftReason": "Source not yet read: the exact passage and quote still need to be confirmed from the source page (Al-Islam.org could not be read by the build environment)."
+    },
+    {
+      "slug": "7.1.2",
+      "tier": 7,
+      "unit": 1,
+      "title": "Refusing Coerced Allegiance",
+      "objective": "Understand saying no to an unjust demand",
+      "sources": [],
+      "mechanic": "scenario_dilemma",
+      "questions": [],
+      "status": "DRAFT",
+      "candidates": [
+        "MAQTAL (Tier 7 rules in SYLLABUS 1.3 apply), \"Departure from Medina\""
+      ],
+      "draftReason": "Source not yet read: the exact passage and quote still need to be confirmed from the source page (Al-Islam.org could not be read by the build environment)."
+    },
+    {
+      "slug": "7.1.3",
+      "tier": 7,
+      "unit": 1,
+      "title": "Leaving With Family",
+      "objective": "See the cost of a principled choice",
+      "sources": [],
+      "mechanic": "timeline_builder",
+      "questions": [],
+      "status": "DRAFT",
+      "candidates": [
+        "MAQTAL (Tier 7 rules in SYLLABUS 1.3 apply), \"Departure from Medina\""
+      ],
+      "draftReason": "Source not yet read: the exact passage and quote still need to be confirmed from the source page (Al-Islam.org could not be read by the build environment)."
+    },
+    {
+      "slug": "7.2.1",
+      "tier": 7,
+      "unit": 2,
+      "title": "In Mecca",
+      "objective": "Weigh options with integrity",
+      "sources": [],
+      "mechanic": "timeline_builder",
+      "questions": [],
+      "status": "DRAFT",
+      "candidates": [
+        "MAQTAL (Tier 7 rules in SYLLABUS 1.3 apply), \"In Mecca\""
+      ],
+      "draftReason": "Source not yet read: the exact passage and quote still need to be confirmed from the source page (Al-Islam.org could not be read by the build environment)."
+    },
+    {
+      "slug": "7.2.2",
+      "tier": 7,
+      "unit": 2,
+      "title": "Free to Leave",
+      "objective": "Respect others' free choice under danger",
+      "sources": [],
+      "mechanic": "scenario_dilemma",
+      "questions": [],
+      "status": "DRAFT",
+      "candidates": [
+        "MAQTAL (Tier 7 rules in SYLLABUS 1.3 apply) (the night before 'Ashura, when he releases his companions)"
+      ],
+      "draftReason": "Source not yet read: the exact passage and quote still need to be confirmed from the source page (Al-Islam.org could not be read by the build environment)."
+    },
+    {
+      "slug": "7.2.3",
+      "tier": 7,
+      "unit": 2,
+      "title": "Loyal Companions",
+      "objective": "Value loyalty that is chosen freely",
+      "sources": [],
+      "mechanic": "verse_decoder",
+      "questions": [],
+      "status": "DRAFT",
+      "candidates": [
+        "MAQTAL (Tier 7 rules in SYLLABUS 1.3 apply) (the companions' reply)"
+      ],
+      "draftReason": "Source not yet read: the exact passage and quote still need to be confirmed from the source page (Al-Islam.org could not be read by the build environment)."
+    },
+    {
+      "slug": "7.3.1",
+      "tier": 7,
+      "unit": 3,
+      "title": "An Appeal to Conscience",
+      "objective": "Speak to conscience before conflict",
+      "sources": [],
+      "mechanic": "verse_decoder",
+      "questions": [],
+      "status": "DRAFT",
+      "candidates": [
+        "MAQTAL (Tier 7 rules in SYLLABUS 1.3 apply) (Husayn's address on 'Ashura)"
+      ],
+      "draftReason": "Source not yet read: the exact passage and quote still need to be confirmed from the source page (Al-Islam.org could not be read by the build environment)."
+    },
+    {
+      "slug": "7.3.2",
+      "tier": 7,
+      "unit": 3,
+      "title": "Dignity Over Humiliation",
+      "objective": "Choose dignity under pressure",
+      "sources": [],
+      "mechanic": "scenario_dilemma",
+      "questions": [],
+      "status": "DRAFT",
+      "candidates": [
+        "MAQTAL (Tier 7 rules in SYLLABUS 1.3 apply) (candidate: his words on dignity and humiliation)"
+      ],
+      "draftReason": "Source not yet read: the exact passage and quote still need to be confirmed from the source page (Al-Islam.org could not be read by the build environment)."
+    },
+    {
+      "slug": "7.3.3",
+      "tier": 7,
+      "unit": 3,
+      "title": "Standing for Right",
+      "objective": "Connect courage with enjoining good",
+      "hook": "What does it cost to stand for what is right, and what does it protect?",
+      "sources": [
+        {
+          "key": "QURAN",
+          "role": "primary",
+          "book": "The Holy Qur'an, Surah Al 'Imran",
+          "author": "The Qur'an",
+          "translator": "Ali Quli Qara'i (Qara'i translation, via Tanzil)",
+          "locator": "3:104",
+          "url": "https://tanzil.net/#trans/en.qarai/3:104",
+          "quote": "There has to be a nation among you summoning to the good, bidding what is right, and forbidding what is wrong."
+        }
+      ],
+      "summary": "Surah Al 'Imran 3:104 calls for a community among the believers that summons to the good, bids what is right and forbids what is wrong, and says that they are the felicitous.",
+      "mechanic": "scenario_dilemma",
+      "questions": [
+        {
+          "type": "select",
+          "prompt": "What three things does 3:104 say that community does?",
+          "options": [
+            "Summons to the good, bids what is right, forbids what is wrong",
+            "Collects taxes, builds roads, keeps records",
+            "Avoids all disagreement"
+          ],
+          "correct": 0,
+          "explanation": "The verse lists summoning to the good, bidding what is right, and forbidding what is wrong."
+        },
+        {
+          "type": "select",
+          "prompt": "You see a classmate being bullied. Which response is closest to the verse?",
+          "options": [
+            "Speak up for what is right, calmly",
+            "Look away",
+            "Join the group"
+          ],
+          "correct": 0,
+          "explanation": "The verse values bidding what is right and forbidding what is wrong."
+        }
+      ],
+      "status": "PREVIEW",
+      "verification": {
+        "passed": true,
+        "checkedAt": "2026-11-24",
+        "quoteHashes": [
+          "be36410420cf9083"
+        ]
+      }
+    },
+    {
+      "slug": "7.4.1",
+      "tier": 7,
+      "unit": 4,
+      "title": "Patience in Loss",
+      "objective": "Respond to loss with patience",
+      "hook": "What do you say when something precious is taken from you?",
+      "sources": [
+        {
+          "key": "QURAN",
+          "role": "primary",
+          "book": "The Holy Qur'an, Surah al-Baqarah",
+          "author": "The Qur'an",
+          "translator": "Ali Quli Qara'i (Qara'i translation, via Tanzil)",
+          "locator": "2:155–157",
+          "url": "https://tanzil.net/#trans/en.qarai/2:155",
+          "quote": "Indeed we belong to Allah and to Him do we indeed return."
+        }
+      ],
+      "summary": "Surah al-Baqarah 2:155-157 says that people will be tested with fear, hunger and loss, gives good news to the patient, and gives the words with which the patient answer an affliction: \"Indeed we belong to Allah and to Him do we indeed return.\"",
+      "mechanic": "verse_decoder",
+      "questions": [
+        {
+          "type": "select",
+          "prompt": "What do the patient say when an affliction visits them, in 2:156?",
+          "options": [
+            "Indeed we belong to Allah and to Him do we indeed return",
+            "Why me?",
+            "Nothing can be done"
+          ],
+          "correct": 0,
+          "explanation": "The verse gives these words."
+        },
+        {
+          "type": "select",
+          "prompt": "What does the passage promise those who are patient?",
+          "options": [
+            "Good news, and the blessings of their Lord and His mercy",
+            "That they will never be tested",
+            "That loss will not happen"
+          ],
+          "correct": 0,
+          "explanation": "The passage gives good news to the patient and says they receive blessings and mercy."
+        }
+      ],
+      "status": "PREVIEW",
+      "verification": {
+        "passed": true,
+        "checkedAt": "2026-11-24",
+        "quoteHashes": [
+          "c27c105ede174c23"
+        ]
+      }
+    },
+    {
+      "slug": "7.4.2",
+      "tier": 7,
+      "unit": 4,
+      "title": "Prayer After Tragedy",
+      "objective": "See supplication as strength after grief",
+      "sources": [],
+      "mechanic": "scenario_dilemma",
+      "questions": [],
+      "status": "DRAFT",
+      "candidates": [
+        "SAHIFA (a supplication in hardship; confirm its number)"
+      ],
+      "draftReason": "Source not yet read: the exact passage and quote still need to be confirmed from the source page (Al-Islam.org could not be read by the build environment)."
+    },
+    {
+      "slug": "7.4.3",
+      "tier": 7,
+      "unit": 4,
+      "title": "Tier 7 Checkpoint",
+      "objective": "Review Tier 7",
+      "hook": "What does moral courage ask of us?",
+      "sources": [],
+      "summary": "Five questions drawn from the verified lessons in Tier 7. Pass with 4 of 5; you can retry as often as you like.",
+      "mechanic": "boss_checkpoint",
+      "questions": [],
+      "status": "PREVIEW",
+      "verification": {
+        "passed": true,
+        "checkedAt": "2026-11-24",
+        "quoteHashes": []
+      }
+    }
+  ]
+}

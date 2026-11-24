@@ -1,0 +1,479 @@
+{
+  "tier": 8,
+  "name": "Justice & Reason",
+  "units": [
+    {
+      "unit": 1
+    },
+    {
+      "unit": 2
+    },
+    {
+      "unit": 3
+    },
+    {
+      "unit": 4
+    }
+  ],
+  "lessons": [
+    {
+      "slug": "8.1.1",
+      "tier": 8,
+      "unit": 1,
+      "title": "Knowledge Guards You",
+      "objective": "Compare knowledge and wealth",
+      "sources": [],
+      "mechanic": "verse_decoder",
+      "questions": [],
+      "status": "DRAFT",
+      "candidates": [
+        "NAHJ Saying 147 (candidate: the saying to Kumayl)"
+      ],
+      "draftReason": "Source not yet read: the exact passage and quote still need to be confirmed from the source page (Al-Islam.org could not be read by the build environment)."
+    },
+    {
+      "slug": "8.1.2",
+      "tier": 8,
+      "unit": 1,
+      "title": "Those Who Know",
+      "objective": "Value knowledge and learning",
+      "hook": "Is a person who knows the same as one who does not?",
+      "sources": [
+        {
+          "key": "QURAN",
+          "role": "primary",
+          "book": "The Holy Qur'an, Surah az-Zumar",
+          "author": "The Qur'an",
+          "translator": "Ali Quli Qara'i (Qara'i translation, via Tanzil)",
+          "locator": "39:9",
+          "url": "https://tanzil.net/#trans/en.qarai/39:9",
+          "quote": "Are those who know equal to those who do not know?"
+        }
+      ],
+      "summary": "Surah az-Zumar 39:9 asks whether those who know are equal to those who do not know, and says that only those who possess intellect take admonition.",
+      "mechanic": "scenario_dilemma",
+      "questions": [
+        {
+          "type": "select",
+          "prompt": "What question does 39:9 ask?",
+          "options": [
+            "Are those who know equal to those who do not know?",
+            "Who is the richest?",
+            "Who spoke first?"
+          ],
+          "correct": 0,
+          "explanation": "The verse asks: Are those who know equal to those who do not know?"
+        },
+        {
+          "type": "select",
+          "prompt": "Who takes admonition, according to the verse?",
+          "options": [
+            "Those who possess intellect",
+            "Only the old",
+            "Only the loud"
+          ],
+          "correct": 0,
+          "explanation": "Only those who possess intellect take admonition."
+        }
+      ],
+      "status": "PREVIEW",
+      "verification": {
+        "passed": true,
+        "checkedAt": "2026-11-24",
+        "quoteHashes": [
+          "0e8928979044b0ad"
+        ]
+      }
+    },
+    {
+      "slug": "8.1.3",
+      "tier": 8,
+      "unit": 1,
+      "title": "Reflecting on Creation",
+      "objective": "Link reflection with faith",
+      "hook": "When did you last look at the sky and wonder?",
+      "sources": [
+        {
+          "key": "QURAN",
+          "role": "primary",
+          "book": "The Holy Qur'an, Surah Al 'Imran",
+          "author": "The Qur'an",
+          "translator": "Ali Quli Qara'i (Qara'i translation, via Tanzil)",
+          "locator": "3:190–191",
+          "url": "https://tanzil.net/#trans/en.qarai/3:190",
+          "quote": "reflect on the creation of the heavens and the earth [and say], ‘Our Lord, You have not created this in vain!"
+        }
+      ],
+      "summary": "Surah Al 'Imran 3:190-191 describes people who remember Allah standing, sitting and lying on their sides, and reflect on the creation of the heavens and the earth.",
+      "mechanic": "verse_decoder",
+      "questions": [
+        {
+          "type": "select",
+          "prompt": "What do they reflect on, in 3:191?",
+          "options": [
+            "The creation of the heavens and the earth",
+            "Their possessions",
+            "Other people's mistakes"
+          ],
+          "correct": 0,
+          "explanation": "The verse says they reflect on the creation of the heavens and the earth."
+        },
+        {
+          "type": "select",
+          "prompt": "What do they say after reflecting?",
+          "options": [
+            "Our Lord, You have not created this in vain",
+            "This happened by itself",
+            "Nothing at all"
+          ],
+          "correct": 0,
+          "explanation": "They say: Our Lord, You have not created this in vain!"
+        }
+      ],
+      "status": "PREVIEW",
+      "verification": {
+        "passed": true,
+        "checkedAt": "2026-11-24",
+        "quoteHashes": [
+          "32281f1078f1756a"
+        ]
+      }
+    },
+    {
+      "slug": "8.2.1",
+      "tier": 8,
+      "unit": 2,
+      "title": "Choice and Responsibility",
+      "objective": "Understand moral responsibility",
+      "sources": [],
+      "mechanic": "scenario_dilemma",
+      "questions": [],
+      "status": "DRAFT",
+      "candidates": [
+        "NAHJ Saying 78 (candidate; check the OCR typo, and if the text is corrupted, pick another saying on this theme)"
+      ],
+      "draftReason": "Source not yet read: the exact passage and quote still need to be confirmed from the source page (Al-Islam.org could not be read by the build environment)."
+    },
+    {
+      "slug": "8.2.2",
+      "tier": 8,
+      "unit": 2,
+      "title": "Each Soul's Effort",
+      "objective": "Own your actions",
+      "hook": "What is truly yours at the end of the day?",
+      "sources": [
+        {
+          "key": "QURAN",
+          "role": "primary",
+          "book": "The Holy Qur'an, Surah an-Najm",
+          "author": "The Qur'an",
+          "translator": "Ali Quli Qara'i (Qara'i translation, via Tanzil)",
+          "locator": "53:38–39",
+          "url": "https://tanzil.net/#trans/en.qarai/53:38",
+          "quote": "nothing belongs to man except what he strives for"
+        }
+      ],
+      "summary": "Surah an-Najm 53:38-39 says that no bearer shall bear another's burden, and that nothing belongs to man except what he strives for.",
+      "mechanic": "verse_decoder",
+      "questions": [
+        {
+          "type": "select",
+          "prompt": "What does 53:39 say belongs to man?",
+          "options": [
+            "What he strives for",
+            "What others strive for",
+            "Whatever he wishes"
+          ],
+          "correct": 0,
+          "explanation": "Nothing belongs to man except what he strives for."
+        },
+        {
+          "type": "select",
+          "prompt": "According to 53:38, what shall a bearer not do?",
+          "options": [
+            "Bear another's burden",
+            "Strive for himself",
+            "Learn"
+          ],
+          "correct": 0,
+          "explanation": "No bearer shall bear another's burden."
+        }
+      ],
+      "status": "PREVIEW",
+      "verification": {
+        "passed": true,
+        "checkedAt": "2026-11-24",
+        "quoteHashes": [
+          "d14311f14df76b7f"
+        ]
+      }
+    },
+    {
+      "slug": "8.2.3",
+      "tier": 8,
+      "unit": 2,
+      "title": "No Compulsion",
+      "objective": "Understand that faith cannot be forced",
+      "hook": "Can anyone be made to believe?",
+      "sources": [
+        {
+          "key": "QURAN",
+          "role": "primary",
+          "book": "The Holy Qur'an, Surah al-Baqarah",
+          "author": "The Qur'an",
+          "translator": "Ali Quli Qara'i (Qara'i translation, via Tanzil)",
+          "locator": "2:256",
+          "url": "https://tanzil.net/#trans/en.qarai/2:256",
+          "quote": "There is no compulsion in religion: rectitude has become distinct from error."
+        }
+      ],
+      "summary": "Surah al-Baqarah 2:256 begins by saying that there is no compulsion in religion, because rectitude has become distinct from error.",
+      "mechanic": "scenario_dilemma",
+      "questions": [
+        {
+          "type": "select",
+          "prompt": "What does the first part of 2:256 say?",
+          "options": [
+            "There is no compulsion in religion",
+            "Religion must be enforced",
+            "Faith can be bought"
+          ],
+          "correct": 0,
+          "explanation": "The verse opens: There is no compulsion in religion."
+        },
+        {
+          "type": "select",
+          "prompt": "A friend thinks forcing others to believe is justified. What does 2:256 say?",
+          "options": [
+            "There is no compulsion in religion",
+            "Force is the only way",
+            "Silence is required"
+          ],
+          "correct": 0,
+          "explanation": "The verse says there is no compulsion in religion."
+        }
+      ],
+      "status": "PREVIEW",
+      "verification": {
+        "passed": true,
+        "checkedAt": "2026-11-24",
+        "quoteHashes": [
+          "d309a8cf912e1be5"
+        ]
+      }
+    },
+    {
+      "slug": "8.3.1",
+      "tier": 8,
+      "unit": 3,
+      "title": "Beyond Comparison",
+      "objective": "Understand that God is unlike creation",
+      "sources": [],
+      "mechanic": "verse_decoder",
+      "questions": [],
+      "status": "DRAFT",
+      "candidates": [
+        "NAHJ Sermon 1 (a passage not used in Tier 1)"
+      ],
+      "draftReason": "Source not yet read: the exact passage and quote still need to be confirmed from the source page (Al-Islam.org could not be read by the build environment)."
+    },
+    {
+      "slug": "8.3.2",
+      "tier": 8,
+      "unit": 3,
+      "title": "Signs for People of Reason",
+      "objective": "Read the natural world as signs",
+      "hook": "What in the natural world makes you stop and think?",
+      "sources": [
+        {
+          "key": "QURAN",
+          "role": "primary",
+          "book": "The Holy Qur'an, Surah al-Baqarah",
+          "author": "The Qur'an",
+          "translator": "Ali Quli Qara'i (Qara'i translation, via Tanzil)",
+          "locator": "2:164",
+          "url": "https://tanzil.net/#trans/en.qarai/2:164",
+          "quote": "there are surely signs for a people who exercise their reason."
+        }
+      ],
+      "summary": "Surah al-Baqarah 2:164 lists signs in the creation of the heavens and the earth, the alternation of night and day, the ships at sea, the rain that revives the earth, the winds and the clouds, and says they are signs for a people who exercise their reason.",
+      "mechanic": "verse_decoder",
+      "questions": [
+        {
+          "type": "select",
+          "prompt": "For whom are these signs, according to 2:164?",
+          "options": [
+            "A people who exercise their reason",
+            "Only the learned",
+            "Only travellers"
+          ],
+          "correct": 0,
+          "explanation": "The verse says: signs for a people who exercise their reason."
+        },
+        {
+          "type": "select",
+          "prompt": "Which of these does the verse list as a sign?",
+          "options": [
+            "The alternation of night and day",
+            "A particular city",
+            "A coin"
+          ],
+          "correct": 0,
+          "explanation": "The verse lists the alternation of night and day among the signs."
+        }
+      ],
+      "status": "PREVIEW",
+      "verification": {
+        "passed": true,
+        "checkedAt": "2026-11-24",
+        "quoteHashes": [
+          "6f7e3f67885fe304"
+        ]
+      }
+    },
+    {
+      "slug": "8.3.3",
+      "tier": 8,
+      "unit": 3,
+      "title": "Oneness Revisited",
+      "objective": "Connect reason and oneness",
+      "hook": "How do reason and the oneness of God fit together?",
+      "sources": [
+        {
+          "key": "QURAN",
+          "role": "primary",
+          "book": "The Holy Qur'an, Surah al-Ikhlas",
+          "author": "The Qur'an",
+          "translator": "Ali Quli Qara'i (Qara'i translation, via Tanzil)",
+          "locator": "112:1–4",
+          "url": "https://tanzil.net/#trans/en.qarai/112:1",
+          "quote": "Say, ‘He is Allah, the One. Allah is the All-embracing. He neither begat, nor was begotten, nor has He any equal.’"
+        }
+      ],
+      "summary": "Surah al-Ikhlas 112:1-4 presents God's absolute unity and incomparability, a statement that Tier 1 introduced and that fits with a faith that invites reflection.",
+      "mechanic": "verse_decoder",
+      "questions": [
+        {
+          "type": "select",
+          "prompt": "Which phrase says that nothing is God's equal?",
+          "options": [
+            "Nor has He any equal",
+            "Allah is the All-embracing",
+            "Say"
+          ],
+          "correct": 0,
+          "explanation": "Verse 4 says nor has He any equal."
+        },
+        {
+          "type": "select",
+          "prompt": "What does 112:1 call Allah?",
+          "options": [
+            "The One",
+            "One of many",
+            "Unknown"
+          ],
+          "correct": 0,
+          "explanation": "The verse says: He is Allah, the One."
+        }
+      ],
+      "status": "PREVIEW",
+      "candidates": [
+        "NAHJ Sermon 1 recap: add when the page can be read."
+      ],
+      "verification": {
+        "passed": true,
+        "checkedAt": "2026-11-24",
+        "quoteHashes": [
+          "d0fef7b99db8a8e4"
+        ]
+      }
+    },
+    {
+      "slug": "8.4.1",
+      "tier": 8,
+      "unit": 4,
+      "title": "Justice for the Weak",
+      "objective": "Prioritise people with the least power",
+      "sources": [],
+      "mechanic": "scenario_dilemma",
+      "questions": [],
+      "status": "DRAFT",
+      "candidates": [
+        "NAHJ Letter 53 (candidate: passage on the lowest classes)"
+      ],
+      "draftReason": "Source not yet read: the exact passage and quote still need to be confirmed from the source page (Al-Islam.org could not be read by the build environment)."
+    },
+    {
+      "slug": "8.4.2",
+      "tier": 8,
+      "unit": 4,
+      "title": "God Commands Justice",
+      "objective": "Name justice, kindness and generosity together",
+      "hook": "Why might justice and kindness be named side by side?",
+      "sources": [
+        {
+          "key": "QURAN",
+          "role": "primary",
+          "book": "The Holy Qur'an, Surah an-Nahl",
+          "author": "The Qur'an",
+          "translator": "Ali Quli Qara'i (Qara'i translation, via Tanzil)",
+          "locator": "16:90",
+          "url": "https://tanzil.net/#trans/en.qarai/16:90",
+          "quote": "Indeed Allah enjoins justice and kindness, and generosity towards relatives"
+        }
+      ],
+      "summary": "Surah an-Nahl 16:90 says that Allah enjoins justice, kindness and generosity towards relatives, and forbids indecency, wrongdoing and aggression.",
+      "mechanic": "verse_decoder",
+      "questions": [
+        {
+          "type": "select",
+          "prompt": "Which three things does 16:90 say Allah enjoins?",
+          "options": [
+            "Justice, kindness, and generosity towards relatives",
+            "Silence, travel, trade",
+            "Fame, wealth, rank"
+          ],
+          "correct": 0,
+          "explanation": "The verse lists justice, kindness, and generosity towards relatives."
+        },
+        {
+          "type": "select",
+          "prompt": "What does the verse say Allah forbids?",
+          "options": [
+            "Indecency, wrongdoing and aggression",
+            "Asking questions",
+            "Rest"
+          ],
+          "correct": 0,
+          "explanation": "The verse forbids indecency, wrongdoing, and aggression."
+        }
+      ],
+      "status": "PREVIEW",
+      "verification": {
+        "passed": true,
+        "checkedAt": "2026-11-24",
+        "quoteHashes": [
+          "4ee463f6eb2229a7"
+        ]
+      }
+    },
+    {
+      "slug": "8.4.3",
+      "tier": 8,
+      "unit": 4,
+      "title": "Tier 8 Checkpoint",
+      "objective": "Review Tier 8",
+      "hook": "How do justice and reason work together?",
+      "sources": [],
+      "summary": "Five questions drawn from the verified lessons in Tier 8. Pass with 4 of 5; you can retry as often as you like.",
+      "mechanic": "boss_checkpoint",
+      "questions": [],
+      "status": "PREVIEW",
+      "verification": {
+        "passed": true,
+        "checkedAt": "2026-11-24",
+        "quoteHashes": []
+      }
+    }
+  ]
+}

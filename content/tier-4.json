@@ -1,0 +1,492 @@
+{
+  "tier": 4,
+  "name": "The Spirit of Worship",
+  "units": [
+    {
+      "unit": 1
+    },
+    {
+      "unit": 2
+    },
+    {
+      "unit": 3
+    },
+    {
+      "unit": 4
+    }
+  ],
+  "lessons": [
+    {
+      "slug": "4.1.1",
+      "tier": 4,
+      "unit": 1,
+      "title": "Present in Worship",
+      "objective": "Explain why presence of heart is the core of worship",
+      "sources": [],
+      "mechanic": "scenario_dilemma",
+      "questions": [],
+      "status": "DRAFT",
+      "candidates": [
+        "MIZAN Vol. 1, al-Fatiha 1:5 commentary (a passage not used in 2.2.2)"
+      ],
+      "draftReason": "Source not yet read: the exact passage and quote still need to be confirmed from the source page (Al-Islam.org could not be read by the build environment)."
+    },
+    {
+      "slug": "4.1.2",
+      "tier": 4,
+      "unit": 1,
+      "title": "\"I Am Near\"",
+      "objective": "Recognise God's nearness to the one who calls",
+      "hook": "What changes when you believe your call is heard?",
+      "sources": [
+        {
+          "key": "QURAN",
+          "role": "primary",
+          "book": "The Holy Qur'an, Surah al-Baqarah",
+          "author": "The Qur'an",
+          "translator": "Ali Quli Qara'i (Qara'i translation, via Tanzil)",
+          "locator": "2:186",
+          "url": "https://tanzil.net/#trans/en.qarai/2:186",
+          "quote": "I am indeed nearmost. I answer the supplicant’s call when he calls Me."
+        }
+      ],
+      "summary": "Surah al-Baqarah 2:186 says God is near and answers the one who calls on Him, and it asks people to respond to Him and to have faith in Him.",
+      "mechanic": "verse_decoder",
+      "questions": [
+        {
+          "type": "select",
+          "prompt": "What does 2:186 say about God's nearness?",
+          "options": [
+            "I am indeed nearmost",
+            "He is far from the supplicant",
+            "He answers only the learned"
+          ],
+          "correct": 0,
+          "explanation": "The verse says: I am indeed nearmost."
+        },
+        {
+          "type": "select",
+          "prompt": "What does God do when the supplicant calls, according to this quote?",
+          "options": [
+            "Answers the call",
+            "Waits for a better time",
+            "Stays silent"
+          ],
+          "correct": 0,
+          "explanation": "The quote says: I answer the supplicant's call when he calls Me."
+        }
+      ],
+      "status": "PREVIEW",
+      "verification": {
+        "passed": true,
+        "checkedAt": "2026-11-24",
+        "quoteHashes": [
+          "673464bde40df98d"
+        ]
+      }
+    },
+    {
+      "slug": "4.1.3",
+      "tier": 4,
+      "unit": 1,
+      "title": "Hearts at Rest",
+      "objective": "Link remembrance of God to inner calm",
+      "hook": "Where do you look for calm when your mind will not settle?",
+      "sources": [
+        {
+          "key": "QURAN",
+          "role": "primary",
+          "book": "The Holy Qur'an, Surah ar-Ra'd",
+          "author": "The Qur'an",
+          "translator": "Ali Quli Qara'i (Qara'i translation, via Tanzil)",
+          "locator": "13:28",
+          "url": "https://tanzil.net/#trans/en.qarai/13:28",
+          "quote": "Behold! The hearts find rest in Allah’s remembrance!"
+        }
+      ],
+      "summary": "Surah ar-Ra'd 13:28 links the remembrance of Allah with hearts finding rest.",
+      "mechanic": "scenario_dilemma",
+      "questions": [
+        {
+          "type": "select",
+          "prompt": "According to 13:28, where do hearts find rest?",
+          "options": [
+            "In Allah's remembrance",
+            "In busy distraction",
+            "In wealth"
+          ],
+          "correct": 0,
+          "explanation": "The verse says the hearts find rest in Allah's remembrance."
+        },
+        {
+          "type": "select",
+          "prompt": "You feel restless before an exam. Which response matches 13:28?",
+          "options": [
+            "Pause and remember God to settle the heart",
+            "Scroll until the feeling passes",
+            "Argue with a friend"
+          ],
+          "correct": 0,
+          "explanation": "The verse links remembrance of God with hearts finding rest."
+        }
+      ],
+      "status": "PREVIEW",
+      "verification": {
+        "passed": true,
+        "checkedAt": "2026-11-24",
+        "quoteHashes": [
+          "ef2bd50ba0147d1a"
+        ]
+      }
+    },
+    {
+      "slug": "4.2.1",
+      "tier": 4,
+      "unit": 2,
+      "title": "Beginning in God's Name",
+      "objective": "Explain beginning acts \"in the Name of Allah\"",
+      "sources": [],
+      "mechanic": "root_word_match",
+      "questions": [],
+      "status": "DRAFT",
+      "candidates": [
+        "MIZAN Vol. 1, al-Fatiha 1:1 commentary"
+      ],
+      "draftReason": "Source not yet read: the exact passage and quote still need to be confirmed from the source page (Al-Islam.org could not be read by the build environment)."
+    },
+    {
+      "slug": "4.2.2",
+      "tier": 4,
+      "unit": 2,
+      "title": "Praise Before Asking",
+      "objective": "Notice that praise comes before requests",
+      "hook": "Why might a prayer begin with praise before it asks for anything?",
+      "sources": [
+        {
+          "key": "QURAN",
+          "role": "primary",
+          "book": "The Holy Qur'an, Surah al-Fatihah",
+          "author": "The Qur'an",
+          "translator": "Ali Quli Qara'i (Qara'i translation, via Tanzil)",
+          "locator": "1:2–4",
+          "url": "https://tanzil.net/#trans/en.qarai/1:2",
+          "quote": "All praise belongs to Allah, Lord of all the worlds, the All-beneficent, the All-merciful, Master of the Day of Retribution."
+        },
+        {
+          "key": "QURAN",
+          "role": "cross",
+          "book": "The Holy Qur'an, Surah al-Fatihah",
+          "author": "The Qur'an",
+          "translator": "Ali Quli Qara'i (Qara'i translation, via Tanzil)",
+          "locator": "1:6",
+          "url": "https://tanzil.net/#trans/en.qarai/1:6",
+          "quote": "Guide us on the straight path,"
+        }
+      ],
+      "summary": "Surah al-Fatihah 1:2-4 is praise of Allah: Lord of all the worlds, the All-beneficent, the All-merciful, Master of the Day of Retribution. The request in the surah, \"Guide us on the straight path\" (1:6), comes after these verses.",
+      "mechanic": "timeline_builder",
+      "questions": [
+        {
+          "type": "order",
+          "prompt": "Put the opening of Surah al-Fatihah in order.",
+          "items": [
+            "Praise of Allah, Lord of all the worlds (1:2)",
+            "His mercy and sovereignty (1:3-4)",
+            "The request: guide us on the straight path (1:6)"
+          ],
+          "explanation": "The surah opens with praise, and the request for guidance comes after it."
+        },
+        {
+          "type": "select",
+          "prompt": "What do verses 1:2-4 contain?",
+          "options": [
+            "Praise of Allah",
+            "A request for wealth",
+            "A list of rules"
+          ],
+          "correct": 0,
+          "explanation": "These verses open with praise belonging to Allah."
+        }
+      ],
+      "status": "PREVIEW",
+      "candidates": [
+        "SAHIFA Supplication 1 (praise of God): add when the page can be read."
+      ],
+      "verification": {
+        "passed": true,
+        "checkedAt": "2026-11-24",
+        "quoteHashes": [
+          "571cfc9d6ed129d6",
+          "5c73ee9ef76139ca"
+        ]
+      }
+    },
+    {
+      "slug": "4.2.3",
+      "tier": 4,
+      "unit": 2,
+      "title": "Gratitude Increases",
+      "objective": "Connect gratitude with increase",
+      "hook": "What happens to what you have when you notice it with thanks?",
+      "sources": [
+        {
+          "key": "QURAN",
+          "role": "primary",
+          "book": "The Holy Qur'an, Surah Ibrahim",
+          "author": "The Qur'an",
+          "translator": "Ali Quli Qara'i (Qara'i translation, via Tanzil)",
+          "locator": "14:7",
+          "url": "https://tanzil.net/#trans/en.qarai/14:7",
+          "quote": "If you are grateful, I will surely enhance you [in blessing]"
+        }
+      ],
+      "summary": "Surah Ibrahim 14:7 gives Allah's promise that gratitude is met with increase in blessing.",
+      "mechanic": "scenario_dilemma",
+      "questions": [
+        {
+          "type": "select",
+          "prompt": "What is the promise in 14:7 for those who are grateful?",
+          "options": [
+            "Allah will surely enhance them in blessing",
+            "Nothing will change",
+            "They will be tested harder"
+          ],
+          "correct": 0,
+          "explanation": "The verse says: If you are grateful, I will surely enhance you."
+        },
+        {
+          "type": "select",
+          "prompt": "Which action matches the verse?",
+          "options": [
+            "Thanking those who helped you and noticing what you have",
+            "Listing only what is missing",
+            "Waiting until you have everything"
+          ],
+          "correct": 0,
+          "explanation": "The verse links gratitude with increase."
+        }
+      ],
+      "status": "PREVIEW",
+      "verification": {
+        "passed": true,
+        "checkedAt": "2026-11-24",
+        "quoteHashes": [
+          "4c5ce47143bfc51c"
+        ]
+      }
+    },
+    {
+      "slug": "4.3.1",
+      "tier": 4,
+      "unit": 3,
+      "title": "Morning and Evening",
+      "objective": "Use supplication to frame the day",
+      "sources": [],
+      "mechanic": "timeline_builder",
+      "questions": [],
+      "status": "DRAFT",
+      "candidates": [
+        "SAHIFA Supplication 6 (morning and evening, candidate)"
+      ],
+      "draftReason": "Source not yet read: the exact passage and quote still need to be confirmed from the source page (Al-Islam.org could not be read by the build environment)."
+    },
+    {
+      "slug": "4.3.2",
+      "tier": 4,
+      "unit": 3,
+      "title": "Turning Back",
+      "objective": "Understand repentance as returning, not despair",
+      "hook": "When you have fallen short, is the door still open?",
+      "sources": [
+        {
+          "key": "QURAN",
+          "role": "primary",
+          "book": "The Holy Qur'an, Surah az-Zumar",
+          "author": "The Qur'an",
+          "translator": "Ali Quli Qara'i (Qara'i translation, via Tanzil)",
+          "locator": "39:53",
+          "url": "https://tanzil.net/#trans/en.qarai/39:53",
+          "quote": "do not despair of the mercy of Allah. Indeed Allah will forgive all sins."
+        }
+      ],
+      "summary": "Surah az-Zumar 39:53 tells those who have wronged themselves not to despair of Allah's mercy, and says Allah will forgive all sins.",
+      "mechanic": "verse_decoder",
+      "questions": [
+        {
+          "type": "select",
+          "prompt": "What does 39:53 tell those who have committed excesses against themselves?",
+          "options": [
+            "Do not despair of the mercy of Allah",
+            "It is too late",
+            "Hide it from everyone"
+          ],
+          "correct": 0,
+          "explanation": "The verse says not to despair of Allah's mercy."
+        },
+        {
+          "type": "select",
+          "prompt": "What does the verse say Allah will do?",
+          "options": [
+            "Forgive all sins",
+            "Ignore the servant",
+            "Forgive only small mistakes"
+          ],
+          "correct": 0,
+          "explanation": "Indeed Allah will forgive all sins."
+        }
+      ],
+      "status": "PREVIEW",
+      "candidates": [
+        "SAHIFA Supplication 31 (repentance, candidate): add when the page can be read."
+      ],
+      "verification": {
+        "passed": true,
+        "checkedAt": "2026-11-24",
+        "quoteHashes": [
+          "4ee4648ac1b32ef5"
+        ]
+      }
+    },
+    {
+      "slug": "4.3.3",
+      "tier": 4,
+      "unit": 3,
+      "title": "Finishing the Book",
+      "objective": "Reflect on completing a reading of the Qur'an",
+      "sources": [],
+      "mechanic": "scenario_dilemma",
+      "questions": [],
+      "status": "DRAFT",
+      "candidates": [
+        "SAHIFA Supplication 42 (completing the Qur'an, candidate)"
+      ],
+      "draftReason": "Source not yet read: the exact passage and quote still need to be confirmed from the source page (Al-Islam.org could not be read by the build environment)."
+    },
+    {
+      "slug": "4.4.1",
+      "tier": 4,
+      "unit": 4,
+      "title": "Prayer Shapes Conduct",
+      "objective": "Link prayer with turning away from wrongdoing",
+      "hook": "Can what you do in prayer change what you do outside it?",
+      "sources": [
+        {
+          "key": "QURAN",
+          "role": "primary",
+          "book": "The Holy Qur'an, Surah al-'Ankabut",
+          "author": "The Qur'an",
+          "translator": "Ali Quli Qara'i (Qara'i translation, via Tanzil)",
+          "locator": "29:45",
+          "url": "https://tanzil.net/#trans/en.qarai/29:45",
+          "quote": "Indeed the prayer restrains from indecent and wrongful conduct"
+        }
+      ],
+      "summary": "Surah al-'Ankabut 29:45 says that prayer restrains from indecent and wrongful conduct.",
+      "mechanic": "scenario_dilemma",
+      "questions": [
+        {
+          "type": "select",
+          "prompt": "What does 29:45 say prayer does?",
+          "options": [
+            "Restrains from indecent and wrongful conduct",
+            "Replaces all other effort",
+            "Is only for special days"
+          ],
+          "correct": 0,
+          "explanation": "The verse says prayer restrains from indecent and wrongful conduct."
+        },
+        {
+          "type": "select",
+          "prompt": "After prayer you feel tempted to say something cruel. What does the verse point you to?",
+          "options": [
+            "Let the prayer hold you back from wrongful conduct",
+            "Say it anyway",
+            "Say it quietly"
+          ],
+          "correct": 0,
+          "explanation": "Prayer is described as restraining from wrongful conduct."
+        }
+      ],
+      "status": "PREVIEW",
+      "verification": {
+        "passed": true,
+        "checkedAt": "2026-11-24",
+        "quoteHashes": [
+          "68bea553b80b5b44"
+        ]
+      }
+    },
+    {
+      "slug": "4.4.2",
+      "tier": 4,
+      "unit": 4,
+      "title": "Giving as Worship",
+      "objective": "See charity as part of devotion",
+      "hook": "What grows when you give?",
+      "sources": [
+        {
+          "key": "QURAN",
+          "role": "primary",
+          "book": "The Holy Qur'an, Surah al-Baqarah",
+          "author": "The Qur'an",
+          "translator": "Ali Quli Qara'i (Qara'i translation, via Tanzil)",
+          "locator": "2:261",
+          "url": "https://tanzil.net/#trans/en.qarai/2:261",
+          "quote": "The parable of those who spend their wealth in the way of Allah is that of a grain which grows seven ears"
+        }
+      ],
+      "summary": "Surah al-Baqarah 2:261 gives a parable: those who spend their wealth in the way of Allah are like a grain which grows seven ears, in every ear a hundred grains.",
+      "mechanic": "verse_decoder",
+      "questions": [
+        {
+          "type": "select",
+          "prompt": "In the parable of 2:261, what is spending in the way of Allah compared to?",
+          "options": [
+            "A grain which grows seven ears",
+            "A stone",
+            "A passing cloud"
+          ],
+          "correct": 0,
+          "explanation": "The verse compares it to a grain which grows seven ears."
+        },
+        {
+          "type": "select",
+          "prompt": "What does the image suggest about giving?",
+          "options": [
+            "It grows many times over",
+            "It always shrinks what you have",
+            "It is wasted"
+          ],
+          "correct": 0,
+          "explanation": "One grain yields seven ears, in every ear a hundred grains."
+        }
+      ],
+      "status": "PREVIEW",
+      "verification": {
+        "passed": true,
+        "checkedAt": "2026-11-24",
+        "quoteHashes": [
+          "fd83b20de514970d"
+        ]
+      }
+    },
+    {
+      "slug": "4.4.3",
+      "tier": 4,
+      "unit": 4,
+      "title": "Tier 4 Checkpoint",
+      "objective": "Review Tier 4",
+      "hook": "What has grown in your understanding of worship?",
+      "sources": [],
+      "summary": "Five questions drawn from the verified lessons in Tier 4. Pass with 4 of 5; you can retry as often as you like.",
+      "mechanic": "boss_checkpoint",
+      "questions": [],
+      "status": "PREVIEW",
+      "verification": {
+        "passed": true,
+        "checkedAt": "2026-11-24",
+        "quoteHashes": []
+      }
+    }
+  ]
+}

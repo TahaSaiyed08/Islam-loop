@@ -1,0 +1,437 @@
+{
+  "tier": 10,
+  "name": "Modern Dilemmas",
+  "units": [
+    {
+      "unit": 1
+    },
+    {
+      "unit": 2
+    },
+    {
+      "unit": 3
+    },
+    {
+      "unit": 4
+    }
+  ],
+  "lessons": [
+    {
+      "slug": "10.1.1",
+      "tier": 10,
+      "unit": 1,
+      "title": "Verify Before You Share",
+      "objective": "Check news before passing it on",
+      "hook": "What do you do with a message that makes you want to forward it right now?",
+      "sources": [
+        {
+          "key": "QURAN",
+          "role": "primary",
+          "book": "The Holy Qur'an, Surah al-Hujurat",
+          "author": "The Qur'an",
+          "translator": "Ali Quli Qara'i (Qara'i translation, via Tanzil)",
+          "locator": "49:6",
+          "url": "https://tanzil.net/#trans/en.qarai/49:6",
+          "quote": "If a vicious character brings you some news, verify it, lest you should visit [harm] on some people out of ignorance"
+        }
+      ],
+      "summary": "Surah al-Hujurat 49:6 tells those who have faith to verify news brought by a vicious character, so that they do not harm people out of ignorance and then regret it.",
+      "mechanic": "scenario_dilemma",
+      "questions": [
+        {
+          "type": "select",
+          "prompt": "What does 49:6 say to do with news from a vicious character?",
+          "options": [
+            "Verify it",
+            "Pass it on quickly",
+            "Ignore it forever"
+          ],
+          "correct": 0,
+          "explanation": "The verse says: verify it."
+        },
+        {
+          "type": "select",
+          "prompt": "Why does the verse say to verify?",
+          "options": [
+            "So as not to harm people out of ignorance",
+            "To be first with the news",
+            "To win an argument"
+          ],
+          "correct": 0,
+          "explanation": "The verse warns against visiting harm on people out of ignorance."
+        }
+      ],
+      "status": "PREVIEW",
+      "verification": {
+        "passed": true,
+        "checkedAt": "2026-11-24",
+        "quoteHashes": [
+          "ec1cbb9714ae21c3"
+        ]
+      }
+    },
+    {
+      "slug": "10.1.2",
+      "tier": 10,
+      "unit": 1,
+      "title": "Viral Quotes",
+      "objective": "Test reports with reason",
+      "sources": [],
+      "mechanic": "scenario_dilemma",
+      "questions": [],
+      "status": "DRAFT",
+      "candidates": [
+        "NAHJ Saying 98 (reuse, with a new scenario)"
+      ],
+      "draftReason": "Source not yet read: the exact passage and quote still need to be confirmed from the source page (Al-Islam.org could not be read by the build environment)."
+    },
+    {
+      "slug": "10.1.3",
+      "tier": 10,
+      "unit": 1,
+      "title": "Saying \"I Don't Know\" Online",
+      "objective": "Practise honest uncertainty",
+      "sources": [],
+      "mechanic": "scenario_dilemma",
+      "questions": [],
+      "status": "DRAFT",
+      "candidates": [
+        "NAHJ Saying 82"
+      ],
+      "draftReason": "Source not yet read: the exact passage and quote still need to be confirmed from the source page (Al-Islam.org could not be read by the build environment)."
+    },
+    {
+      "slug": "10.2.1",
+      "tier": 10,
+      "unit": 2,
+      "title": "Made to Know One Another",
+      "objective": "Value human diversity",
+      "hook": "Why would diversity be built into humanity?",
+      "sources": [
+        {
+          "key": "QURAN",
+          "role": "primary",
+          "book": "The Holy Qur'an, Surah al-Hujurat",
+          "author": "The Qur'an",
+          "translator": "Ali Quli Qara'i (Qara'i translation, via Tanzil)",
+          "locator": "49:13",
+          "url": "https://tanzil.net/#trans/en.qarai/49:13",
+          "quote": "We created you from a male and a female, and made you nations and tribes that you may identify yourselves with one another."
+        }
+      ],
+      "summary": "Surah al-Hujurat 49:13 says that people were created from a male and a female and made into nations and tribes so that they may identify one another.",
+      "mechanic": "verse_decoder",
+      "questions": [
+        {
+          "type": "select",
+          "prompt": "Why were people made into nations and tribes, according to 49:13?",
+          "options": [
+            "So that they may identify themselves with one another",
+            "So that one may rule over the rest",
+            "So that they stay apart"
+          ],
+          "correct": 0,
+          "explanation": "The verse gives the reason: that you may identify yourselves with one another."
+        },
+        {
+          "type": "select",
+          "prompt": "In the verse, who was created from a male and a female?",
+          "options": [
+            "Mankind",
+            "Only one nation",
+            "Only the learned"
+          ],
+          "correct": 0,
+          "explanation": "The verse addresses mankind."
+        }
+      ],
+      "status": "PREVIEW",
+      "verification": {
+        "passed": true,
+        "checkedAt": "2026-11-24",
+        "quoteHashes": [
+          "5b228edc292d5715"
+        ]
+      }
+    },
+    {
+      "slug": "10.2.2",
+      "tier": 10,
+      "unit": 2,
+      "title": "Brother in Faith, Equal in Creation",
+      "objective": "Apply universal dignity at work and school",
+      "sources": [],
+      "mechanic": "scenario_dilemma",
+      "questions": [],
+      "status": "DRAFT",
+      "candidates": [
+        "NAHJ Letter 53 (two kinds)"
+      ],
+      "draftReason": "Source not yet read: the exact passage and quote still need to be confirmed from the source page (Al-Islam.org could not be read by the build environment)."
+    },
+    {
+      "slug": "10.2.3",
+      "tier": 10,
+      "unit": 2,
+      "title": "Fair Disagreement",
+      "objective": "Disagree with courtesy",
+      "hook": "How do you disagree without turning it into a fight?",
+      "sources": [
+        {
+          "key": "QURAN",
+          "role": "primary",
+          "book": "The Holy Qur'an, Surah an-Nahl",
+          "author": "The Qur'an",
+          "translator": "Ali Quli Qara'i (Qara'i translation, via Tanzil)",
+          "locator": "16:125",
+          "url": "https://tanzil.net/#trans/en.qarai/16:125",
+          "quote": "Invite to the way of your Lord with wisdom and good advice and dispute with them in a manner that is best."
+        }
+      ],
+      "summary": "Surah an-Nahl 16:125 asks for wisdom and good advice in inviting to the way of the Lord, and for disputing in the best manner.",
+      "mechanic": "scenario_dilemma",
+      "questions": [
+        {
+          "type": "select",
+          "prompt": "In what manner does 16:125 say to dispute?",
+          "options": [
+            "In a manner that is best",
+            "In a manner that wins",
+            "In a manner that is loudest"
+          ],
+          "correct": 0,
+          "explanation": "The verse says: dispute with them in a manner that is best."
+        },
+        {
+          "type": "select",
+          "prompt": "An online disagreement is getting personal. Which response fits the verse?",
+          "options": [
+            "Return to wisdom and good advice",
+            "Match their tone",
+            "Post a mocking reply"
+          ],
+          "correct": 0,
+          "explanation": "The verse asks for wisdom and good advice."
+        }
+      ],
+      "status": "PREVIEW",
+      "verification": {
+        "passed": true,
+        "checkedAt": "2026-11-24",
+        "quoteHashes": [
+          "8730d10d26eb7cb1"
+        ]
+      }
+    },
+    {
+      "slug": "10.3.1",
+      "tier": 10,
+      "unit": 3,
+      "title": "Truth Over Superstition",
+      "objective": "Reject superstition",
+      "sources": [],
+      "mechanic": "scenario_dilemma",
+      "questions": [],
+      "status": "DRAFT",
+      "candidates": [
+        "MESSAGE Ch. 55 (eclipse)"
+      ],
+      "draftReason": "Source not yet read: the exact passage and quote still need to be confirmed from the source page (Al-Islam.org could not be read by the build environment)."
+    },
+    {
+      "slug": "10.3.2",
+      "tier": 10,
+      "unit": 3,
+      "title": "Study the Heavens and Earth",
+      "objective": "See science as reflection",
+      "hook": "What does studying the world add to wonder?",
+      "sources": [
+        {
+          "key": "QURAN",
+          "role": "primary",
+          "book": "The Holy Qur'an, Surah Al 'Imran",
+          "author": "The Qur'an",
+          "translator": "Ali Quli Qara'i (Qara'i translation, via Tanzil)",
+          "locator": "3:190",
+          "url": "https://tanzil.net/#trans/en.qarai/3:190",
+          "quote": "in the creation of the heavens and the earth and the alternation of night and day, there are signs for those who possess intellect"
+        }
+      ],
+      "summary": "Surah Al 'Imran 3:190 says that in the creation of the heavens and the earth and the alternation of night and day there are signs for those who possess intellect.",
+      "mechanic": "verse_decoder",
+      "questions": [
+        {
+          "type": "select",
+          "prompt": "For whom are the signs in 3:190?",
+          "options": [
+            "Those who possess intellect",
+            "Only astronomers",
+            "Only the old"
+          ],
+          "correct": 0,
+          "explanation": "The verse says signs for those who possess intellect."
+        },
+        {
+          "type": "select",
+          "prompt": "Which does the verse name among the signs?",
+          "options": [
+            "The alternation of night and day",
+            "A particular book",
+            "A price"
+          ],
+          "correct": 0,
+          "explanation": "The alternation of night and day is named."
+        }
+      ],
+      "status": "PREVIEW",
+      "verification": {
+        "passed": true,
+        "checkedAt": "2026-11-24",
+        "quoteHashes": [
+          "b91e402cbc0a1956"
+        ]
+      }
+    },
+    {
+      "slug": "10.3.3",
+      "tier": 10,
+      "unit": 3,
+      "title": "Do Every Job Well",
+      "objective": "Bring excellence to study and work",
+      "sources": [],
+      "mechanic": "scenario_dilemma",
+      "questions": [],
+      "status": "DRAFT",
+      "candidates": [
+        "MESSAGE Ch. 55 (\"solid way\")"
+      ],
+      "draftReason": "Source not yet read: the exact passage and quote still need to be confirmed from the source page (Al-Islam.org could not be read by the build environment)."
+    },
+    {
+      "slug": "10.4.1",
+      "tier": 10,
+      "unit": 4,
+      "title": "Don't Waste",
+      "objective": "Practise moderation in consumption",
+      "hook": "What do you throw away that you could have used?",
+      "sources": [
+        {
+          "key": "QURAN",
+          "role": "primary",
+          "book": "The Holy Qur'an, Surah al-A'raf",
+          "author": "The Qur'an",
+          "translator": "Ali Quli Qara'i (Qara'i translation, via Tanzil)",
+          "locator": "7:31",
+          "url": "https://tanzil.net/#trans/en.qarai/7:31",
+          "quote": "eat and drink, but do not waste; indeed, He does not like the wasteful."
+        }
+      ],
+      "summary": "Surah al-A'raf 7:31 permits eating and drinking, but says not to waste, because Allah does not like the wasteful.",
+      "mechanic": "scenario_dilemma",
+      "questions": [
+        {
+          "type": "select",
+          "prompt": "What does 7:31 say about eating and drinking?",
+          "options": [
+            "Eat and drink, but do not waste",
+            "Fast always",
+            "Eat without limit"
+          ],
+          "correct": 0,
+          "explanation": "The verse says: eat and drink, but do not waste."
+        },
+        {
+          "type": "select",
+          "prompt": "You are served more than you can finish. Which choice fits the verse?",
+          "options": [
+            "Take what you will use and avoid waste",
+            "Throw the rest away",
+            "Take extra for no reason"
+          ],
+          "correct": 0,
+          "explanation": "The verse says Allah does not like the wasteful."
+        }
+      ],
+      "status": "PREVIEW",
+      "verification": {
+        "passed": true,
+        "checkedAt": "2026-11-24",
+        "quoteHashes": [
+          "c6074f9079dc6eee"
+        ]
+      }
+    },
+    {
+      "slug": "10.4.2",
+      "tier": 10,
+      "unit": 4,
+      "title": "The Middle Way With Money",
+      "objective": "Balance spending",
+      "hook": "Where is the balance between spending too much and too little?",
+      "sources": [
+        {
+          "key": "QURAN",
+          "role": "primary",
+          "book": "The Holy Qur'an, Surah al-Furqan",
+          "author": "The Qur'an",
+          "translator": "Ali Quli Qara'i (Qara'i translation, via Tanzil)",
+          "locator": "25:67",
+          "url": "https://tanzil.net/#trans/en.qarai/25:67",
+          "quote": "neither wasteful nor tightfisted when spending, but balanced between these [two extremes]"
+        }
+      ],
+      "summary": "Surah al-Furqan 25:67 describes those who are neither wasteful nor tightfisted when spending, but balanced between the two extremes.",
+      "mechanic": "scenario_dilemma",
+      "questions": [
+        {
+          "type": "select",
+          "prompt": "How does 25:67 describe spending?",
+          "options": [
+            "Balanced between wastefulness and tightfistedness",
+            "As wasteful as possible",
+            "As tight as possible"
+          ],
+          "correct": 0,
+          "explanation": "The verse says balanced between these two extremes."
+        },
+        {
+          "type": "select",
+          "prompt": "You receive a gift of money. Which plan fits the verse?",
+          "options": [
+            "Spend with balance, neither wasting nor hoarding",
+            "Spend it all at once",
+            "Never touch it"
+          ],
+          "correct": 0,
+          "explanation": "The verse praises balance between waste and tightfistedness."
+        }
+      ],
+      "status": "PREVIEW",
+      "verification": {
+        "passed": true,
+        "checkedAt": "2026-11-24",
+        "quoteHashes": [
+          "fd3bc3d51a6e43af"
+        ]
+      }
+    },
+    {
+      "slug": "10.4.3",
+      "tier": 10,
+      "unit": 4,
+      "title": "Final Checkpoint and Next Steps",
+      "objective": "Review Tier 10",
+      "hook": "What will you carry forward, and who will you learn from?",
+      "sources": [],
+      "summary": "Five questions drawn from the verified lessons in Tier 10. Pass with 4 of 5; you can retry as often as you like.",
+      "mechanic": "boss_checkpoint",
+      "questions": [],
+      "status": "PREVIEW",
+      "verification": {
+        "passed": true,
+        "checkedAt": "2026-11-24",
+        "quoteHashes": []
+      }
+    }
+  ]
+}

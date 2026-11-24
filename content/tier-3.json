@@ -1,0 +1,684 @@
+{
+  "tier": 3,
+  "name": "The Prophet's Character",
+  "units": [
+    {
+      "unit": 1,
+      "name": "Patience, Honesty & Trustworthiness"
+    },
+    {
+      "unit": 2,
+      "name": "Protecting the Vulnerable & Speaking Truth"
+    },
+    {
+      "unit": 3,
+      "name": "Resilience & Gratitude Under Rejection"
+    },
+    {
+      "unit": 4,
+      "name": "Tenderness, Craftsmanship & Truth Over Superstition"
+    }
+  ],
+  "lessons": [
+    {
+      "slug": "3.1.1",
+      "tier": 3,
+      "unit": 1,
+      "title": "The Shepherd's School of Patience",
+      "objective": "Explain why The Message Chapter 9 links Prophet Muhammad's early work as a shepherd to developing forbearance and patience.",
+      "hook": "Why would caring for a flock in quiet hills prepare a person to lead and guide people later in life?",
+      "sources": [
+        {
+          "key": "MESSAGE",
+          "role": "primary",
+          "book": "The Message",
+          "author": "Ja'far Subhani",
+          "edition": "Islamic Seminary Publications (Al-Islam.org edition)",
+          "locator": "Ch. 9",
+          "url": "https://www.al-islam.org/message-jafar-subhani",
+          "quote": "All the Prophets have been shepherds for some time before attaining to the position of prophethood"
+        }
+      ],
+      "summary": "Chapter 9 explains that Prophet Muhammad tended sheep in Makkah before prophethood, noting that pastoral work cultivated gradual patience, forbearance, and quiet reflection on the natural order.",
+      "familyNote": "The quoted statement is narrated directly from Prophet Muhammad in Chapter 9.",
+      "mechanic": "scenario_dilemma",
+      "questions": [
+        {
+          "type": "select",
+          "prompt": "What does the quoted line say about the Prophets and shepherding?",
+          "options": [
+            "All the Prophets were shepherds for some time before prophethood",
+            "Only Muhammad kept sheep",
+            "Shepherds were never leaders"
+          ],
+          "correct": 0,
+          "explanation": "The quote says all the Prophets were shepherds for some time."
+        },
+        {
+          "type": "select",
+          "prompt": "Which quality did pastoral work cultivate, according to Chapter 9?",
+          "options": [
+            "Patience and forbearance",
+            "Competition",
+            "Haste"
+          ],
+          "correct": 0,
+          "explanation": "The chapter says it cultivated gradual patience and forbearance."
+        }
+      ],
+      "status": "DRAFT",
+      "draftReason": "Not yet verified — MESSAGE Ch. 9: source unreachable: HTTP 403 (the site blocks automated readers; save the page by hand as .cache/pages/www_al_islam_org_message_jafar_subhani.html)",
+      "verification": {
+        "passed": false,
+        "checkedAt": "2026-11-24",
+        "quoteHashes": [
+          null
+        ]
+      }
+    },
+    {
+      "slug": "3.1.2",
+      "tier": 3,
+      "unit": 1,
+      "title": "Earned Trust: Khadijah's Regard",
+      "objective": "Describe how Prophet Muhammad's reputation for truthfulness, honesty, and good morals earned Khadijah's trust before their marriage.",
+      "hook": "What kind of track record makes someone trust you with their entire livelihood before they even meet you in business?",
+      "sources": [
+        {
+          "key": "MESSAGE",
+          "role": "primary",
+          "book": "The Message",
+          "author": "Ja'far Subhani",
+          "edition": "Islamic Seminary Publications (Al-Islam.org edition)",
+          "locator": "Ch. 9",
+          "url": "https://www.al-islam.org/message-jafar-subhani",
+          "quote": "The thing which has inspired my regard for you is your truthfulness, honesty and good morals."
+        }
+      ],
+      "summary": "Chapter 9 records that Khadijah invited Muhammad to lead her trade caravan to Syria because of his established reputation for truthfulness, honesty, and character, and that he accepted only the originally agreed pay even when offered extra.",
+      "familyNote": "Khadijah, later the first woman to embrace Islam and the Prophet's closest partner, recognized his moral integrity years before revelation (Ch. 9).",
+      "mechanic": "scenario_dilemma",
+      "questions": [
+        {
+          "type": "select",
+          "prompt": "What inspired Khadijah's regard for Muhammad, in the quote?",
+          "options": [
+            "His truthfulness, honesty and good morals",
+            "His wealth",
+            "His family name alone"
+          ],
+          "correct": 0,
+          "explanation": "She names truthfulness, honesty and good morals."
+        },
+        {
+          "type": "select",
+          "prompt": "You are offered extra pay beyond what was agreed. Which response matches the chapter's example?",
+          "options": [
+            "Accept only what was agreed",
+            "Take the extra quietly",
+            "Demand even more"
+          ],
+          "correct": 0,
+          "explanation": "He accepted only the originally agreed pay even when offered extra."
+        }
+      ],
+      "status": "DRAFT",
+      "draftReason": "Not yet verified — MESSAGE Ch. 9: source unreachable: HTTP 403 (the site blocks automated readers; save the page by hand as .cache/pages/www_al_islam_org_message_jafar_subhani.html)",
+      "verification": {
+        "passed": false,
+        "checkedAt": "2026-11-24",
+        "quoteHashes": [
+          null
+        ]
+      }
+    },
+    {
+      "slug": "3.1.3",
+      "tier": 3,
+      "unit": 1,
+      "title": "Character Over Wealth",
+      "objective": "Contrast passing material wealth with what lasts, as Abu Talib expressed it at the Prophet's marriage to Khadijah.",
+      "hook": "When people evaluate a potential partner or friend, what lasts longer: wealth or character?",
+      "sources": [
+        {
+          "key": "MESSAGE",
+          "role": "primary",
+          "book": "The Message",
+          "author": "Ja'far Subhani",
+          "edition": "Islamic Seminary Publications (Al-Islam.org edition)",
+          "locator": "Ch. 9",
+          "url": "https://www.al-islam.org/message-jafar-subhani",
+          "quote": "yet wealth is a passing shadow, and origin and lineage is something permanent"
+        }
+      ],
+      "summary": "Chapter 9 recounts that Abu Talib introduced Muhammad at his wedding by saying that wealth is a passing shadow while origin and lineage are permanent, and that Muhammad handed his trade earnings to help support his uncle.",
+      "familyNote": "Abu Talib, who raised and protected the Prophet, and Khadijah both prioritized virtue over material status (Ch. 9).",
+      "mechanic": "root_word_match",
+      "questions": [
+        {
+          "type": "select",
+          "prompt": "In Abu Talib's words, wealth is...",
+          "options": [
+            "A passing shadow",
+            "Something permanent",
+            "The best measure of a person"
+          ],
+          "correct": 0,
+          "explanation": "He calls wealth a passing shadow."
+        },
+        {
+          "type": "select",
+          "prompt": "In the same words, what is permanent?",
+          "options": [
+            "Origin and lineage",
+            "Property",
+            "Trade profit"
+          ],
+          "correct": 0,
+          "explanation": "Origin and lineage are called something permanent."
+        }
+      ],
+      "status": "DRAFT",
+      "draftReason": "Not yet verified — MESSAGE Ch. 9: source unreachable: HTTP 403 (the site blocks automated readers; save the page by hand as .cache/pages/www_al_islam_org_message_jafar_subhani.html)",
+      "verification": {
+        "passed": false,
+        "checkedAt": "2026-11-24",
+        "quoteHashes": [
+          null
+        ]
+      }
+    },
+    {
+      "slug": "3.2.1",
+      "tier": 3,
+      "unit": 2,
+      "title": "Seeking Refuge Under a Just Ruler",
+      "objective": "Explain why Prophet Muhammad advised persecuted early Muslims to migrate to Ethiopia under a just Christian ruler.",
+      "hook": "When vulnerable people face persecution at home, what matters more in choosing a safe haven: shared background or justice?",
+      "sources": [
+        {
+          "key": "MESSAGE",
+          "role": "primary",
+          "book": "The Message",
+          "author": "Ja'far Subhani",
+          "edition": "Islamic Seminary Publications (Al-Islam.org edition)",
+          "locator": "Ch. 17",
+          "url": "https://www.al-islam.org/message-jafar-subhani",
+          "quote": "on account of the presence of a mighty and just ruler, nobody is oppressed there"
+        }
+      ],
+      "summary": "Chapter 17 recounts how Prophet Muhammad directed unprotected Muslims facing torture in Makkah to seek sanctuary in Ethiopia specifically because its ruler was known for justice and did not tolerate oppression.",
+      "familyNote": "The Prophet himself praised a Christian monarch's justice, and his cousin Ja'far ibn Abi Talib led the second group of migrants (Ch. 17).",
+      "mechanic": "scenario_dilemma",
+      "questions": [
+        {
+          "type": "select",
+          "prompt": "Why was Ethiopia chosen as a refuge?",
+          "options": [
+            "Its ruler was just and nobody was oppressed there",
+            "It was close to Makkah",
+            "Its people shared the same background"
+          ],
+          "correct": 0,
+          "explanation": "The quote cites a mighty and just ruler under whom nobody is oppressed."
+        },
+        {
+          "type": "select",
+          "prompt": "Which priority is behind the Prophet's guidance?",
+          "options": [
+            "Safety and justice",
+            "Familiar surroundings",
+            "Trade opportunities"
+          ],
+          "correct": 0,
+          "explanation": "The chapter stresses the ruler's justice."
+        }
+      ],
+      "status": "DRAFT",
+      "draftReason": "Not yet verified — MESSAGE Ch. 17: source unreachable: HTTP 403 (the site blocks automated readers; save the page by hand as .cache/pages/www_al_islam_org_message_jafar_subhani.html)",
+      "verification": {
+        "passed": false,
+        "checkedAt": "2026-11-24",
+        "quoteHashes": [
+          null
+        ]
+      }
+    },
+    {
+      "slug": "3.2.2",
+      "tier": 3,
+      "unit": 2,
+      "title": "Ja'far's Portrait of Prophetic Ethics",
+      "objective": "Summarize how Ja'far ibn Abi Talib described Prophet Muhammad's moral teachings before the King of Ethiopia.",
+      "hook": "If someone outside Islam asked you to summarize the Prophet's message in 30 seconds, which ethical changes would you mention first?",
+      "sources": [
+        {
+          "key": "MESSAGE",
+          "role": "primary",
+          "book": "The Message",
+          "author": "Ja'far Subhani",
+          "edition": "Islamic Seminary Publications (Al-Islam.org edition)",
+          "locator": "Ch. 17",
+          "url": "https://www.al-islam.org/message-jafar-subhani",
+          "quote": "He also ordered us to return the things entrusted to us by others; to avoid impurities, to behave well with our kinsmen and neighbours"
+        }
+      ],
+      "summary": "Before the Ethiopian court, Ja'far described Islam's transformation of society: worshipping one God, returning trusts, treating kin and neighbors well, and rejecting bloodshed, false testimony, and exploiting orphans.",
+      "familyNote": "Ja'far ibn Abi Talib, the Prophet's cousin, served as spokesman for the refugees, presenting the Prophet's ethics with calm honesty (Ch. 17).",
+      "mechanic": "verse_decoder",
+      "questions": [
+        {
+          "type": "select",
+          "prompt": "Which duty does the quote say the Prophet ordered?",
+          "options": [
+            "Returning the things entrusted to us by others",
+            "Keeping every gift received",
+            "Avoiding neighbours"
+          ],
+          "correct": 0,
+          "explanation": "The quote says to return the things entrusted by others."
+        },
+        {
+          "type": "select",
+          "prompt": "How does the quote say to treat kin and neighbours?",
+          "options": [
+            "To behave well with them",
+            "To keep away from them",
+            "To compete with them"
+          ],
+          "correct": 0,
+          "explanation": "It says to behave well with our kinsmen and neighbours."
+        }
+      ],
+      "status": "DRAFT",
+      "draftReason": "Not yet verified — MESSAGE Ch. 17: source unreachable: HTTP 403 (the site blocks automated readers; save the page by hand as .cache/pages/www_al_islam_org_message_jafar_subhani.html)",
+      "verification": {
+        "passed": false,
+        "checkedAt": "2026-11-24",
+        "quoteHashes": [
+          null
+        ]
+      }
+    },
+    {
+      "slug": "3.2.3",
+      "tier": 3,
+      "unit": 2,
+      "title": "Integrity That Cannot Be Bought",
+      "objective": "Recognize fair hearing and refusal of bribery as shared ethical standards honored in The Message Chapter 17.",
+      "hook": "When someone offers gifts to sway your judgment before you hear the other side, what does integrity demand?",
+      "sources": [
+        {
+          "key": "MESSAGE",
+          "role": "primary",
+          "book": "The Message",
+          "author": "Ja'far Subhani",
+          "edition": "Islamic Seminary Publications (Al-Islam.org edition)",
+          "locator": "Ch. 17",
+          "url": "https://www.al-islam.org/message-jafar-subhani",
+          "quote": "God has not taken any bribe from me while giving me this authority."
+        }
+      ],
+      "summary": "Chapter 17 records that the Negus of Ethiopia refused to expel the Muslim refugees without hearing them first, listened carefully to Ja'far, and returned the envoys' gifts rather than sell justice.",
+      "familyNote": "Ja'far ibn Abi Talib, the Prophet's cousin, spoke for the refugees before the Negus (Ch. 17).",
+      "mechanic": "scenario_dilemma",
+      "questions": [
+        {
+          "type": "select",
+          "prompt": "What did the Negus do with the envoys' gifts?",
+          "options": [
+            "Returned them rather than sell justice",
+            "Kept them quietly",
+            "Shared them with the court"
+          ],
+          "correct": 0,
+          "explanation": "The chapter says he returned the gifts."
+        },
+        {
+          "type": "select",
+          "prompt": "Pressure builds to dismiss a weaker party unheard. Which response matches the chapter?",
+          "options": [
+            "Hear them fully before deciding",
+            "Decide for the powerful side",
+            "Delay forever"
+          ],
+          "correct": 0,
+          "explanation": "The Negus refused to expel the refugees without hearing them first."
+        }
+      ],
+      "status": "DRAFT",
+      "draftReason": "Not yet verified — MESSAGE Ch. 17: source unreachable: HTTP 403 (the site blocks automated readers; save the page by hand as .cache/pages/www_al_islam_org_message_jafar_subhani.html)",
+      "verification": {
+        "passed": false,
+        "checkedAt": "2026-11-24",
+        "quoteHashes": [
+          null
+        ]
+      }
+    },
+    {
+      "slug": "3.3.1",
+      "tier": 3,
+      "unit": 3,
+      "title": "Prayer in the Garden of Ta'if",
+      "objective": "Describe Prophet Muhammad's humility and reliance on God after being rejected and injured in Ta'if.",
+      "hook": "When you try your hardest to do good and get met with ridicule and harm instead, where do you turn?",
+      "sources": [
+        {
+          "key": "MESSAGE",
+          "role": "primary",
+          "book": "The Message",
+          "author": "Ja'far Subhani",
+          "edition": "Islamic Seminary Publications (Al-Islam.org edition)",
+          "locator": "Ch. 23",
+          "url": "https://www.al-islam.org/message-jafar-subhani",
+          "quote": "O Lord! I present my weakness and lack of strength before You. You are the kind Nourisher. You are the helper of the weak."
+        },
+        {
+          "key": "MESSAGE",
+          "role": "family",
+          "book": "The Message",
+          "author": "Ja'far Subhani",
+          "edition": "Islamic Seminary Publications (Al-Islam.org edition)",
+          "locator": "Ch. 23",
+          "url": "https://www.al-islam.org/message-jafar-subhani",
+          "quote": "Don't cry. Allah is the Protector of your father."
+        }
+      ],
+      "summary": "After losing both Abu Talib and Khadijah and being pelted out of Ta'if, the Prophet took shelter in a garden and turned to God in honest vulnerability rather than bitterness or despair.",
+      "familyNote": "Earlier in the same chapter, when dust was thrown on his head after Abu Talib's death, his daughter washed his head and face and he comforted her:",
+      "mechanic": "scenario_dilemma",
+      "questions": [
+        {
+          "type": "select",
+          "prompt": "In the garden, how did the Prophet turn to God?",
+          "options": [
+            "With honest admission of weakness",
+            "With bitterness",
+            "With silence and despair"
+          ],
+          "correct": 0,
+          "explanation": "He presented his weakness and lack of strength before God."
+        },
+        {
+          "type": "select",
+          "prompt": "After public rejection, which response matches the chapter?",
+          "options": [
+            "Turn to God in grounded honesty",
+            "Answer in anger",
+            "Give up all effort"
+          ],
+          "correct": 0,
+          "explanation": "He turned to God rather than bitterness or despair."
+        }
+      ],
+      "status": "DRAFT",
+      "draftReason": "Not yet verified — MESSAGE Ch. 23: source unreachable: HTTP 403 (the site blocks automated readers; save the page by hand as .cache/pages/www_al_islam_org_message_jafar_subhani.html)",
+      "verification": {
+        "passed": false,
+        "checkedAt": "2026-11-24",
+        "quoteHashes": [
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "slug": "3.3.2",
+      "tier": 3,
+      "unit": 3,
+      "title": "Kinship Across Faith: The Encounter with 'Adas",
+      "objective": "Recognize Prophet Muhammad's warmth and respect for earlier prophets during his encounter with the Christian servant 'Adas.",
+      "hook": "How can one simple act of mindfulness and respect turn a tense moment with a stranger into genuine human connection?",
+      "sources": [
+        {
+          "key": "MESSAGE",
+          "role": "primary",
+          "book": "The Message",
+          "author": "Ja'far Subhani",
+          "edition": "Islamic Seminary Publications (Al-Islam.org edition)",
+          "locator": "Ch. 23",
+          "url": "https://www.al-islam.org/message-jafar-subhani",
+          "quote": "My brother Yunus was Allah's Prophet like myself"
+        }
+      ],
+      "summary": "When 'Adas, a Christian servant from Nineveh, brought grapes to the wounded Prophet and heard him begin with God's name, the Prophet warmly spoke of Prophet Yunus (Jonah) as his brother, moving 'Adas deeply.",
+      "familyNote": "Prophet Muhammad's words model honoring earlier prophets and treating a marginalized servant with full dignity (Ch. 23).",
+      "mechanic": "timeline_builder",
+      "questions": [
+        {
+          "type": "order",
+          "prompt": "Put the encounter in order.",
+          "items": [
+            "'Adas brings grapes",
+            "The Prophet begins with God's name",
+            "The Prophet speaks of Yunus as his brother",
+            "'Adas is moved deeply"
+          ],
+          "explanation": "This is the sequence in the chapter's account."
+        },
+        {
+          "type": "select",
+          "prompt": "How did the Prophet speak of Yunus?",
+          "options": [
+            "As his brother, a Prophet like himself",
+            "As a stranger",
+            "As a rival"
+          ],
+          "correct": 0,
+          "explanation": "He said: My brother Yunus was Allah's Prophet like myself."
+        }
+      ],
+      "status": "DRAFT",
+      "draftReason": "Not yet verified — MESSAGE Ch. 23: source unreachable: HTTP 403 (the site blocks automated readers; save the page by hand as .cache/pages/www_al_islam_org_message_jafar_subhani.html)",
+      "verification": {
+        "passed": false,
+        "checkedAt": "2026-11-24",
+        "quoteHashes": [
+          null
+        ]
+      }
+    },
+    {
+      "slug": "3.3.3",
+      "tier": 3,
+      "unit": 3,
+      "title": "Never Forgetting a Kindness",
+      "objective": "Explain how Prophet Muhammad remembered and honored the protection shown to him by Mut'am bin Adi, even though Mut'am was not a Muslim.",
+      "hook": "Should you stay loyal and grateful to someone who stood up for you when you needed help, even if they don't share your faith?",
+      "sources": [
+        {
+          "key": "MESSAGE",
+          "role": "primary",
+          "book": "The Message",
+          "author": "Ja'far Subhani",
+          "edition": "Islamic Seminary Publications (Al-Islam.org edition)",
+          "locator": "Ch. 23",
+          "url": "https://www.al-islam.org/message-jafar-subhani",
+          "quote": "Muhammad should come straight to my house."
+        }
+      ],
+      "summary": "Chapter 23 records that Mut'am bin Adi, an idol-worshipper, escorted the Prophet safely back into Makkah, and years later after Badr the Prophet remembered Mut'am's kindness with profound gratitude.",
+      "familyNote": "The Prophet's lasting gratitude toward Mut'am highlights how Islam honors moral courage and loyalty regardless of religious background (Ch. 23).",
+      "mechanic": "scenario_dilemma",
+      "questions": [
+        {
+          "type": "select",
+          "prompt": "What did Mut'am bin Adi do for the Prophet?",
+          "options": [
+            "Escorted him safely back into Makkah",
+            "Opposed his return",
+            "Ignored him"
+          ],
+          "correct": 0,
+          "explanation": "The chapter says he escorted the Prophet back into Makkah."
+        },
+        {
+          "type": "select",
+          "prompt": "How did the Prophet treat that kindness later?",
+          "options": [
+            "He remembered it with gratitude",
+            "He forgot it",
+            "He refused to mention it"
+          ],
+          "correct": 0,
+          "explanation": "After Badr he remembered Mut'am's kindness with profound gratitude."
+        }
+      ],
+      "status": "DRAFT",
+      "draftReason": "Not yet verified — MESSAGE Ch. 23: source unreachable: HTTP 403 (the site blocks automated readers; save the page by hand as .cache/pages/www_al_islam_org_message_jafar_subhani.html)",
+      "verification": {
+        "passed": false,
+        "checkedAt": "2026-11-24",
+        "quoteHashes": [
+          null
+        ]
+      }
+    },
+    {
+      "slug": "3.4.1",
+      "tier": 3,
+      "unit": 4,
+      "title": "Tears of Mercy: Gentleness Toward Children",
+      "objective": "Explain how Prophet Muhammad combined genuine human grief with submission to God and explicit tenderness toward children.",
+      "hook": "Does strong faith mean hiding your tears when someone you love passes away, or feeling grief honestly?",
+      "sources": [
+        {
+          "key": "MESSAGE",
+          "role": "primary",
+          "book": "The Message",
+          "author": "Ja'far Subhani",
+          "edition": "Islamic Seminary Publications (Al-Islam.org edition)",
+          "locator": "Ch. 55",
+          "url": "https://www.al-islam.org/message-jafar-subhani",
+          "quote": "Be gentle to your children and display kind sentiments for them."
+        }
+      ],
+      "summary": "When his infant son Ibrahim passed away, Prophet Muhammad wept openly while submitting to God's will, explaining that weeping for loved ones is a sign of mercy and compassion rather than weakness.",
+      "familyNote": "The Prophet's tender mourning for his son Ibrahim and his words on gentleness to children show emotional depth alongside spiritual steadiness (Ch. 55).",
+      "mechanic": "scenario_dilemma",
+      "questions": [
+        {
+          "type": "select",
+          "prompt": "How did the Prophet respond to the death of his son Ibrahim?",
+          "options": [
+            "He wept openly while submitting to God's will",
+            "He hid all emotion",
+            "He turned away from God"
+          ],
+          "correct": 0,
+          "explanation": "He wept openly while submitting to God's will."
+        },
+        {
+          "type": "select",
+          "prompt": "Someone says grief contradicts faith. What does the chapter's example say?",
+          "options": [
+            "Weeping is a sign of mercy and compassion, not weakness",
+            "Weeping shows weak faith",
+            "Grief should never be shown"
+          ],
+          "correct": 0,
+          "explanation": "The Prophet explained that weeping for loved ones is mercy and compassion."
+        }
+      ],
+      "status": "DRAFT",
+      "draftReason": "Not yet verified — MESSAGE Ch. 55: source unreachable: HTTP 403 (the site blocks automated readers; save the page by hand as .cache/pages/www_al_islam_org_message_jafar_subhani.html)",
+      "verification": {
+        "passed": false,
+        "checkedAt": "2026-11-24",
+        "quoteHashes": [
+          null
+        ]
+      }
+    },
+    {
+      "slug": "3.4.2",
+      "tier": 3,
+      "unit": 4,
+      "title": "Excellence in Every Task",
+      "objective": "Apply Prophet Muhammad's instruction on doing every job thoroughly, even in small details.",
+      "hook": "Why would someone pause during a moment of personal grief just to smooth out an uneven corner of earth?",
+      "sources": [
+        {
+          "key": "MESSAGE",
+          "role": "primary",
+          "book": "The Message",
+          "author": "Ja'far Subhani",
+          "edition": "Islamic Seminary Publications (Al-Islam.org edition)",
+          "locator": "Ch. 55",
+          "url": "https://www.al-islam.org/message-jafar-subhani",
+          "quote": "Whenever anyone of you does a job he should endeavour to do it in a solid way"
+        }
+      ],
+      "summary": "Noticing a small gap in his son Ibrahim's grave, Prophet Muhammad sat down and leveled it with his own hands, teaching that whatever task a person undertakes should be done soundly and with care.",
+      "familyNote": "Prophet Muhammad turned a quiet, practical gesture into a lasting ethic of craftsmanship and diligence (Ch. 55).",
+      "mechanic": "scenario_dilemma",
+      "questions": [
+        {
+          "type": "select",
+          "prompt": "What did the Prophet do at his son's grave?",
+          "options": [
+            "Leveled a small gap with his own hands",
+            "Left it as it was",
+            "Asked others to do it"
+          ],
+          "correct": 0,
+          "explanation": "He sat down and leveled the gap with his own hands."
+        },
+        {
+          "type": "select",
+          "prompt": "Your school project is nearly done and nobody would notice a rough part. What does the quote suggest?",
+          "options": [
+            "Do it in a solid way anyway",
+            "Leave it, nobody will notice",
+            "Start something new"
+          ],
+          "correct": 0,
+          "explanation": "Whenever anyone does a job he should endeavour to do it in a solid way."
+        }
+      ],
+      "status": "DRAFT",
+      "draftReason": "Not yet verified — MESSAGE Ch. 55: source unreachable: HTTP 403 (the site blocks automated readers; save the page by hand as .cache/pages/www_al_islam_org_message_jafar_subhani.html)",
+      "verification": {
+        "passed": false,
+        "checkedAt": "2026-11-24",
+        "quoteHashes": [
+          null
+        ]
+      }
+    },
+    {
+      "slug": "3.4.3",
+      "tier": 3,
+      "unit": 4,
+      "title": "Tier 3 Checkpoint: Truth Over Superstition",
+      "objective": "Synthesize Tier 3 around Prophet Muhammad's refusal to exploit superstition during the solar eclipse on the day Ibrahim died.",
+      "hook": "If a rare cosmic event happened on the day of your personal tragedy and crowds thought it proved your greatness, would you correct them?",
+      "sources": [
+        {
+          "key": "MESSAGE",
+          "role": "cross",
+          "book": "The Message",
+          "author": "Ja'far Subhani",
+          "edition": "Islamic Seminary Publications (Al-Islam.org edition)",
+          "locator": "Ch. 55",
+          "url": "https://www.al-islam.org/message-jafar-subhani",
+          "quote": "They are not eclipsed on account of the death or birth of anyone."
+        }
+      ],
+      "summary": "When a solar eclipse coincided with Ibrahim's death and people linked the two, Prophet Muhammad publicly corrected them, stating that the sun and moon follow God's laws of nature and are never eclipsed for anyone's birth or death.",
+      "familyNote": "Prophet Muhammad chose truth and natural law over self-promotion, uniting honesty, compassion, and intellectual integrity (Ch. 55).",
+      "mechanic": "boss_checkpoint",
+      "questions": [],
+      "status": "DRAFT",
+      "verification": {
+        "passed": false,
+        "checkedAt": "2026-11-24",
+        "quoteHashes": [
+          null
+        ]
+      },
+      "draftReason": "No verified lessons in this tier yet."
+    }
+  ]
+}

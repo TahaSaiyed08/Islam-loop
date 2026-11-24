@@ -7,17 +7,15 @@ export default defineConfig([
   ...nextVitals,
   ...nextTypescript,
   prettier,
-  {
-    files: ["components/modals/*.tsx"],
-    rules: {
-      "react-hooks/set-state-in-effect": "off",
-    },
-  },
   globalIgnores([
     "node_modules/**",
     ".next/**",
     "out/**",
     "build/**",
     "next-env.d.ts",
+    "playwright-report/**",
+    "test-results/**",
+    ".cache/**",
+    ".ua/**",
   ]),
 ]);

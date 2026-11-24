@@ -1,0 +1,186 @@
+{
+  "questions": [
+    {
+      "id": "Q1",
+      "tier": 1,
+      "lesson": "1.3.1",
+      "prompt": "A friend asks you an obscure question about Islam that you genuinely don't know. Which response best matches Islamic intellectual ethics?",
+      "options": [
+        "Offer your best guess so you do not look uninformed",
+        "Say \"I do not know\" honestly instead of guessing",
+        "Change the subject and hope they forget"
+      ],
+      "correct": 1,
+      "explanation": "Saying \"I do not know\" honestly is the habit taught in Nahj al-Balagha Saying 82."
+    },
+    {
+      "id": "Q1b",
+      "tier": 1,
+      "lesson": "1.2.1",
+      "prompt": "Which statement about God appears in Surah al-Ikhlas (112)?",
+      "options": [
+        "He has a partner who shares His rule",
+        "He neither begat, nor was begotten, nor has He any equal",
+        "He is one power among many"
+      ],
+      "correct": 1,
+      "explanation": "Surah al-Ikhlas ends: He neither begat, nor was begotten, nor has He any equal."
+    },
+    {
+      "id": "Q2",
+      "tier": 1,
+      "lesson": "1.2.2",
+      "prompt": "Someone argues that God must live in a specific physical place in the sky to be \"near\" to humans. How does Imam Ali describe this in Sermon 1?",
+      "options": [
+        "God is near only to people who travel to certain places",
+        "God is far from creation in every sense",
+        "God is near to creation without physical contact and distinct without physical distance"
+      ],
+      "correct": 2,
+      "explanation": "Sermon 1 says He is with everything but not in physical nearness, and different from everything but not in physical separation."
+    },
+    {
+      "id": "Q6",
+      "tier": 1,
+      "lesson": "1.4.3",
+      "prompt": "In a diverse society, what bond does Nahj al-Balagha Letter 53 say you share with someone who does not follow your religion?",
+      "options": [
+        "No bond at all",
+        "Equal dignity as a fellow human being in creation",
+        "A bond of rivalry"
+      ],
+      "correct": 1,
+      "explanation": "Letter 53 says people are either your brother in religion or one like you in creation."
+    },
+    {
+      "id": "Q3",
+      "tier": 2,
+      "lesson": "2.3.2",
+      "prompt": "You read a single Qur'an verse that seems puzzling on its own. What is the first method Al-Mizan uses to understand it?",
+      "options": [
+        "Choose the reading that sounds best to you",
+        "Read it alongside related verses across the Qur'an and within its chapter's unified theme",
+        "Rely on one popular opinion"
+      ],
+      "correct": 1,
+      "explanation": "Al-Mizan explains the Qur'an with the help of the Qur'an itself."
+    },
+    {
+      "id": "Q3b",
+      "tier": 2,
+      "lesson": "2.1.3",
+      "prompt": "According to Surah al-'Alaq 96:6-7, what can happen when a person considers himself without need?",
+      "options": [
+        "He becomes more careful",
+        "He becomes rebellious",
+        "He becomes more generous"
+      ],
+      "correct": 1,
+      "explanation": "The verse says man becomes rebellious when he considers himself without need."
+    },
+    {
+      "id": "Q4",
+      "tier": 3,
+      "lesson": "3.2.1",
+      "prompt": "When early Muslims were persecuted in Makkah, why did Prophet Muhammad send a group to a Christian kingdom in Ethiopia?",
+      "options": [
+        "Because it was the nearest country to Makkah",
+        "Because its people already followed the Prophet",
+        "Because its ruler was known for justice and protecting people from oppression"
+      ],
+      "correct": 2,
+      "explanation": "The Message, Chapter 17: a mighty and just ruler, under whom nobody is oppressed."
+    },
+    {
+      "id": "Q5",
+      "tier": 3,
+      "lesson": "3.4.3",
+      "prompt": "A solar eclipse occurred the day the Prophet's infant son Ibrahim died, and people assumed the sky was mourning him. How did the Prophet respond?",
+      "options": [
+        "He accepted it as a sign of his greatness",
+        "He corrected them publicly, explaining that eclipses follow natural laws and do not occur for anyone's birth or death",
+        "He asked people not to speak about it"
+      ],
+      "correct": 1,
+      "explanation": "The Message, Chapter 55: the sun and moon are not eclipsed on account of anyone's death or birth."
+    },
+    {
+      "id": "Q7",
+      "tier": 4,
+      "lesson": "4.1.3",
+      "prompt": "According to Surah ar-Ra'd 13:28, where do hearts find rest?",
+      "options": [
+        "In remembrance of Allah",
+        "In wealth and rank",
+        "In constant distraction"
+      ],
+      "correct": 0,
+      "explanation": "The verse says the hearts find rest in Allah's remembrance."
+    },
+    {
+      "id": "Q8",
+      "tier": 5,
+      "lesson": "5.2.2",
+      "prompt": "Surah Al 'Imran 3:134 describes the virtuous as those who do what with their anger?",
+      "options": [
+        "Let it grow",
+        "Pass it on to others",
+        "Suppress it"
+      ],
+      "correct": 2,
+      "explanation": "The verse describes those who suppress their anger and excuse the faults of the people."
+    },
+    {
+      "id": "Q10",
+      "tier": 7,
+      "lesson": "7.4.1",
+      "prompt": "Surah al-Baqarah 2:156 gives the words the patient say when an affliction visits them. Which are they?",
+      "options": [
+        "Indeed we belong to Allah and to Him do we indeed return",
+        "Why has this happened to me?",
+        "Nothing can be done now"
+      ],
+      "correct": 0,
+      "explanation": "The verse gives: Indeed we belong to Allah and to Him do we indeed return."
+    },
+    {
+      "id": "Q11",
+      "tier": 8,
+      "lesson": "8.2.3",
+      "prompt": "What does the first clause of Surah al-Baqarah 2:256 say about religion?",
+      "options": [
+        "Religion may be enforced",
+        "There is no compulsion in religion",
+        "Religion is a private matter for scholars"
+      ],
+      "correct": 1,
+      "explanation": "The verse opens: There is no compulsion in religion."
+    },
+    {
+      "id": "Q12",
+      "tier": 9,
+      "lesson": "9.1.3",
+      "prompt": "Surah Al 'Imran 3:7 calls the definitive verses \"the mother of the Book\". What is a careful way to read one unclear line?",
+      "options": [
+        "Build a rule from it at once",
+        "Look at the clearer verses and its surrounding passage first",
+        "Share it before checking anything"
+      ],
+      "correct": 1,
+      "explanation": "The clause points to the definitive verses as the core of the Book, so context comes first."
+    },
+    {
+      "id": "Q13",
+      "tier": 10,
+      "lesson": "10.1.1",
+      "prompt": "According to Surah al-Hujurat 49:6, what should you do with news brought by a vicious character?",
+      "options": [
+        "Verify it",
+        "Pass it on quickly",
+        "Believe it if it is exciting"
+      ],
+      "correct": 0,
+      "explanation": "The verse says: verify it, lest you visit harm on some people out of ignorance."
+    }
+  ]
+}

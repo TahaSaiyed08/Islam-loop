@@ -1,0 +1,204 @@
+{
+  "tier": 6,
+  "name": "The Prophet's Family",
+  "units": [
+    {
+      "unit": 1
+    },
+    {
+      "unit": 2
+    },
+    {
+      "unit": 3
+    },
+    {
+      "unit": 4
+    }
+  ],
+  "lessons": [
+    {
+      "slug": "6.1.1",
+      "tier": 6,
+      "unit": 1,
+      "title": "Khadijah's Trust",
+      "objective": "Describe Khadijah's support of the Prophet",
+      "sources": [],
+      "mechanic": "timeline_builder",
+      "questions": [],
+      "status": "DRAFT",
+      "candidates": [
+        "MESSAGE Ch. 9 (a passage not used in Tier 3)"
+      ],
+      "draftReason": "Source not yet read: the exact passage and quote still need to be confirmed from the source page (Al-Islam.org could not be read by the build environment)."
+    },
+    {
+      "slug": "6.1.2",
+      "tier": 6,
+      "unit": 1,
+      "title": "The Year of Sorrow",
+      "objective": "Understand the loss of Abu Talib and Khadijah",
+      "sources": [],
+      "mechanic": "timeline_builder",
+      "questions": [],
+      "status": "DRAFT",
+      "candidates": [
+        "MESSAGE Ch. 23 (passage on their deaths)"
+      ],
+      "draftReason": "Source not yet read: the exact passage and quote still need to be confirmed from the source page (Al-Islam.org could not be read by the build environment)."
+    },
+    {
+      "slug": "6.1.3",
+      "tier": 6,
+      "unit": 1,
+      "title": "Abu Talib's Protection",
+      "objective": "Value loyalty and protection of the vulnerable",
+      "sources": [],
+      "mechanic": "scenario_dilemma",
+      "questions": [],
+      "status": "DRAFT",
+      "candidates": [
+        "MESSAGE Ch. 9 or Ch. 23 (Abu Talib passages)"
+      ],
+      "draftReason": "Source not yet read: the exact passage and quote still need to be confirmed from the source page (Al-Islam.org could not be read by the build environment)."
+    },
+    {
+      "slug": "6.2.1",
+      "tier": 6,
+      "unit": 2,
+      "title": "A Simple Marriage",
+      "objective": "Learn from the simplicity of Fatimah and Ali's marriage",
+      "sources": [],
+      "mechanic": "scenario_dilemma",
+      "questions": [],
+      "status": "DRAFT",
+      "candidates": [
+        "MESSAGE Ch. 28 (read in full and screen first; if it fails screening, the lesson stays DRAFT)"
+      ],
+      "draftReason": "Source not yet read: the exact passage and quote still need to be confirmed from the source page (Al-Islam.org could not be read by the build environment)."
+    },
+    {
+      "slug": "6.2.2",
+      "tier": 6,
+      "unit": 2,
+      "title": "Habituate Your Heart to Mercy",
+      "objective": "See mercy as a trained habit",
+      "sources": [],
+      "mechanic": "verse_decoder",
+      "questions": [],
+      "status": "DRAFT",
+      "candidates": [
+        "NAHJ Letter 53 (candidate: passage on mercy toward the people)"
+      ],
+      "draftReason": "Source not yet read: the exact passage and quote still need to be confirmed from the source page (Al-Islam.org could not be read by the build environment)."
+    },
+    {
+      "slug": "6.2.3",
+      "tier": 6,
+      "unit": 2,
+      "title": "Knowledge for the Young",
+      "objective": "Value learning early in life",
+      "sources": [],
+      "mechanic": "scenario_dilemma",
+      "questions": [],
+      "status": "DRAFT",
+      "candidates": [
+        "NAHJ Letter 31 (passage on youth and learning)"
+      ],
+      "draftReason": "Source not yet read: the exact passage and quote still need to be confirmed from the source page (Al-Islam.org could not be read by the build environment)."
+    },
+    {
+      "slug": "6.3.1",
+      "tier": 6,
+      "unit": 3,
+      "title": "Ja'far, the Spokesman",
+      "objective": "Speak truth calmly under pressure",
+      "sources": [],
+      "mechanic": "scenario_dilemma",
+      "questions": [],
+      "status": "DRAFT",
+      "candidates": [
+        "MESSAGE Ch. 17 (a passage not used in Tier 3)"
+      ],
+      "draftReason": "Source not yet read: the exact passage and quote still need to be confirmed from the source page (Al-Islam.org could not be read by the build environment)."
+    },
+    {
+      "slug": "6.3.2",
+      "tier": 6,
+      "unit": 3,
+      "title": "Refugees With Dignity",
+      "objective": "Honour those who protect the persecuted",
+      "sources": [],
+      "mechanic": "verse_decoder",
+      "questions": [],
+      "status": "DRAFT",
+      "candidates": [
+        "MESSAGE Ch. 17"
+      ],
+      "draftReason": "Source not yet read: the exact passage and quote still need to be confirmed from the source page (Al-Islam.org could not be read by the build environment)."
+    },
+    {
+      "slug": "6.3.3",
+      "tier": 6,
+      "unit": 3,
+      "title": "Family in Hardship",
+      "objective": "See steadfastness in the boycott and hard years",
+      "sources": [],
+      "mechanic": "timeline_builder",
+      "questions": [],
+      "status": "DRAFT",
+      "candidates": [
+        "MESSAGE Ch. 23 (or another cleared chapter)"
+      ],
+      "draftReason": "Source not yet read: the exact passage and quote still need to be confirmed from the source page (Al-Islam.org could not be read by the build environment)."
+    },
+    {
+      "slug": "6.4.1",
+      "tier": 6,
+      "unit": 4,
+      "title": "The Teacher in Supplication",
+      "objective": "Meet Imam Zayn al-Abidin through his prayers",
+      "sources": [],
+      "mechanic": "verse_decoder",
+      "questions": [],
+      "status": "DRAFT",
+      "candidates": [
+        "SAHIFA introduction or Supplication 1"
+      ],
+      "draftReason": "Source not yet read: the exact passage and quote still need to be confirmed from the source page (Al-Islam.org could not be read by the build environment)."
+    },
+    {
+      "slug": "6.4.2",
+      "tier": 6,
+      "unit": 4,
+      "title": "Praying for Others",
+      "objective": "Learn to pray for others, not only yourself",
+      "sources": [],
+      "mechanic": "scenario_dilemma",
+      "questions": [],
+      "status": "DRAFT",
+      "candidates": [
+        "SAHIFA (a supplication for others; confirm its number and title)"
+      ],
+      "draftReason": "Source not yet read: the exact passage and quote still need to be confirmed from the source page (Al-Islam.org could not be read by the build environment)."
+    },
+    {
+      "slug": "6.4.3",
+      "tier": 6,
+      "unit": 4,
+      "title": "Tier 6 Checkpoint",
+      "objective": "Review Tier 6",
+      "hook": "What have you learned about the Prophet's family?",
+      "sources": [],
+      "summary": "Five questions drawn from the verified lessons in Tier 6. Pass with 4 of 5; you can retry as often as you like.",
+      "mechanic": "boss_checkpoint",
+      "questions": [],
+      "status": "DRAFT",
+      "draftReason": "No verified lessons in this tier yet.",
+      "verification": {
+        "passed": false,
+        "checkedAt": "2026-11-24",
+        "quoteHashes": []
+      }
+    }
+  ]
+}

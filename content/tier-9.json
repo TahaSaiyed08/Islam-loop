@@ -1,0 +1,269 @@
+{
+  "tier": 9,
+  "name": "Reading Primary Texts",
+  "units": [
+    {
+      "unit": 1
+    },
+    {
+      "unit": 2
+    },
+    {
+      "unit": 3
+    },
+    {
+      "unit": 4
+    }
+  ],
+  "lessons": [
+    {
+      "slug": "9.1.1",
+      "tier": 9,
+      "unit": 1,
+      "title": "The Qur'an Explains Itself",
+      "objective": "Apply cross-referencing between verses",
+      "sources": [],
+      "mechanic": "scenario_dilemma",
+      "questions": [],
+      "status": "DRAFT",
+      "candidates": [
+        "MIZAN Foreword (a passage not used in 2.3.2)"
+      ],
+      "draftReason": "Source not yet read: the exact passage and quote still need to be confirmed from the source page (Al-Islam.org could not be read by the build environment)."
+    },
+    {
+      "slug": "9.1.2",
+      "tier": 9,
+      "unit": 1,
+      "title": "Chapters as Wholes",
+      "objective": "Read a chapter as one unit",
+      "sources": [],
+      "mechanic": "timeline_builder",
+      "questions": [],
+      "status": "DRAFT",
+      "candidates": [
+        "MIZAN Vol. 1, al-Fatiha commentary"
+      ],
+      "draftReason": "Source not yet read: the exact passage and quote still need to be confirmed from the source page (Al-Islam.org could not be read by the build environment)."
+    },
+    {
+      "slug": "9.1.3",
+      "tier": 9,
+      "unit": 1,
+      "title": "Context Before Conclusions",
+      "objective": "Avoid quoting a verse out of context",
+      "hook": "What goes wrong when one line is pulled out of its chapter?",
+      "sources": [
+        {
+          "key": "QURAN",
+          "role": "primary",
+          "book": "The Holy Qur'an, Surah Al 'Imran",
+          "author": "The Qur'an",
+          "translator": "Ali Quli Qara'i (Qara'i translation, via Tanzil)",
+          "locator": "3:7",
+          "url": "https://tanzil.net/#trans/en.qarai/3:7",
+          "quote": "Parts of it are definitive verses, which are the mother of the Book"
+        }
+      ],
+      "summary": "Surah Al 'Imran 3:7 says that parts of the Book are definitive verses, which are the mother of the Book. Only this clause is used here.",
+      "mechanic": "scenario_dilemma",
+      "questions": [
+        {
+          "type": "select",
+          "prompt": "What does this clause say about the definitive verses?",
+          "options": [
+            "They are the mother of the Book",
+            "They are optional",
+            "They are a later addition"
+          ],
+          "correct": 0,
+          "explanation": "The verse says: Parts of it are definitive verses, which are the mother of the Book."
+        },
+        {
+          "type": "select",
+          "prompt": "You read one unclear line online. What is a careful next step?",
+          "options": [
+            "Look at the surrounding passage and the clearer verses first",
+            "Share it at once",
+            "Build a rule from it"
+          ],
+          "correct": 0,
+          "explanation": "The clause points to the definitive verses as the core of the Book."
+        }
+      ],
+      "status": "PREVIEW",
+      "verification": {
+        "passed": true,
+        "checkedAt": "2026-11-24",
+        "quoteHashes": [
+          "122b634a54dda931"
+        ]
+      }
+    },
+    {
+      "slug": "9.2.1",
+      "tier": 9,
+      "unit": 2,
+      "title": "Who Compiled Nahj al-Balagha",
+      "objective": "Know al-Sharif al-Radi's role",
+      "sources": [],
+      "mechanic": "timeline_builder",
+      "questions": [],
+      "status": "DRAFT",
+      "candidates": [
+        "NAHJ Al-Islam.org introduction page"
+      ],
+      "draftReason": "Source not yet read: the exact passage and quote still need to be confirmed from the source page (Al-Islam.org could not be read by the build environment)."
+    },
+    {
+      "slug": "9.2.2",
+      "tier": 9,
+      "unit": 2,
+      "title": "Numbers Differ by Edition",
+      "objective": "Understand why the same saying has different numbers",
+      "sources": [],
+      "mechanic": "scenario_dilemma",
+      "questions": [],
+      "status": "DRAFT",
+      "candidates": [
+        "NAHJ introduction / edition note (if no source states it, the lesson stays DRAFT)"
+      ],
+      "draftReason": "Source not yet read: the exact passage and quote still need to be confirmed from the source page (Al-Islam.org could not be read by the build environment)."
+    },
+    {
+      "slug": "9.2.3",
+      "tier": 9,
+      "unit": 2,
+      "title": "Reading a Saying Closely",
+      "objective": "Practise close reading",
+      "sources": [],
+      "mechanic": "verse_decoder",
+      "questions": [],
+      "status": "DRAFT",
+      "candidates": [
+        "NAHJ Saying 82 (full five teachings)"
+      ],
+      "draftReason": "Source not yet read: the exact passage and quote still need to be confirmed from the source page (Al-Islam.org could not be read by the build environment)."
+    },
+    {
+      "slug": "9.3.1",
+      "tier": 9,
+      "unit": 3,
+      "title": "Reading Supplications",
+      "objective": "Read prayers as teaching texts",
+      "sources": [],
+      "mechanic": "verse_decoder",
+      "questions": [],
+      "status": "DRAFT",
+      "candidates": [
+        "SAHIFA introduction"
+      ],
+      "draftReason": "Source not yet read: the exact passage and quote still need to be confirmed from the source page (Al-Islam.org could not be read by the build environment)."
+    },
+    {
+      "slug": "9.3.2",
+      "tier": 9,
+      "unit": 3,
+      "title": "Ethics Inside Prayer",
+      "objective": "Find the ethics inside a supplication",
+      "sources": [],
+      "mechanic": "verse_decoder",
+      "questions": [],
+      "status": "DRAFT",
+      "candidates": [
+        "SAHIFA Supplication 20 (a passage not used in 5.2.1)"
+      ],
+      "draftReason": "Source not yet read: the exact passage and quote still need to be confirmed from the source page (Al-Islam.org could not be read by the build environment)."
+    },
+    {
+      "slug": "9.3.3",
+      "tier": 9,
+      "unit": 3,
+      "title": "Praying in Your Own Words",
+      "objective": "Turn reading into personal reflection",
+      "sources": [],
+      "mechanic": "scenario_dilemma",
+      "questions": [],
+      "status": "DRAFT",
+      "candidates": [
+        "SAHIFA Supplication 1"
+      ],
+      "draftReason": "Source not yet read: the exact passage and quote still need to be confirmed from the source page (Al-Islam.org could not be read by the build environment)."
+    },
+    {
+      "slug": "9.4.1",
+      "tier": 9,
+      "unit": 4,
+      "title": "Reading Biography Critically",
+      "objective": "Tell a narration apart from an author's commentary",
+      "sources": [],
+      "mechanic": "scenario_dilemma",
+      "questions": [],
+      "status": "DRAFT",
+      "candidates": [
+        "MESSAGE (preface or a cleared chapter)"
+      ],
+      "draftReason": "Source not yet read: the exact passage and quote still need to be confirmed from the source page (Al-Islam.org could not be read by the build environment)."
+    },
+    {
+      "slug": "9.4.2",
+      "tier": 9,
+      "unit": 4,
+      "title": "How This Site Checks Quotes",
+      "objective": "Understand the verification process",
+      "hook": "How can you tell that a quote on a website is really in its source?",
+      "sources": [],
+      "siteOnly": true,
+      "summary": "Every quote on this site is copied from its source page, or from the Qara'i translation for Qur'an verses. A checker looks the quote up in the source and it must match word for word. A lesson whose quote does not match stays hidden.",
+      "mechanic": "timeline_builder",
+      "questions": [
+        {
+          "type": "order",
+          "prompt": "Put the steps of checking a quote in order.",
+          "items": [
+            "The quote is copied from the source",
+            "The checker looks it up in the source",
+            "The match must be word for word",
+            "A lesson that fails stays hidden"
+          ],
+          "explanation": "These are the steps described on the About and Sources pages."
+        },
+        {
+          "type": "select",
+          "prompt": "What happens to a lesson whose quote does not match its source?",
+          "options": [
+            "It stays hidden",
+            "It is shown with a warning",
+            "The quote is edited to fit"
+          ],
+          "correct": 0,
+          "explanation": "A lesson whose quote fails verification stays hidden, and quotes are never edited to pass."
+        }
+      ],
+      "status": "PREVIEW",
+      "verification": {
+        "passed": true,
+        "checkedAt": "2026-11-24",
+        "quoteHashes": []
+      }
+    },
+    {
+      "slug": "9.4.3",
+      "tier": 9,
+      "unit": 4,
+      "title": "Tier 9 Checkpoint",
+      "objective": "Review Tier 9",
+      "hook": "How do you read a primary text carefully?",
+      "sources": [],
+      "summary": "Five questions drawn from the verified lessons in Tier 9. Pass with 4 of 5; you can retry as often as you like.",
+      "mechanic": "boss_checkpoint",
+      "questions": [],
+      "status": "PREVIEW",
+      "verification": {
+        "passed": true,
+        "checkedAt": "2026-11-24",
+        "quoteHashes": []
+      }
+    }
+  ]
+}

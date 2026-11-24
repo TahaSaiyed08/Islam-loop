@@ -1,0 +1,709 @@
+{
+  "tier": 2,
+  "name": "The Living Qur'an",
+  "units": [
+    {
+      "unit": 1,
+      "name": "The First Word: Reading & Humility"
+    },
+    {
+      "unit": 2,
+      "name": "Opening the Book: Surah al-Fatihah"
+    },
+    {
+      "unit": 3,
+      "name": "How to Read the Qur'an"
+    },
+    {
+      "unit": 4,
+      "name": "Living the Book"
+    }
+  ],
+  "lessons": [
+    {
+      "slug": "2.1.1",
+      "tier": 2,
+      "unit": 1,
+      "title": "Beginning with \"Read\"",
+      "objective": "Examine Surah al-'Alaq 96:1 as the Qur'an's opening call to read in the name of the Creator.",
+      "hook": "Why is it striking that the first revealed word of the Qur'an is an invitation to read?",
+      "sources": [
+        {
+          "key": "QURAN",
+          "role": "primary",
+          "book": "The Holy Qur'an, Surah al-'Alaq",
+          "author": "The Qur'an",
+          "translator": "Ali Quli Qara'i (Qara'i translation, via Tanzil)",
+          "locator": "96:1",
+          "url": "https://tanzil.net/#trans/en.qarai/96:1",
+          "quote": "Read in the Name of your Lord who created;"
+        }
+      ],
+      "summary": "Surah al-'Alaq 96:1 opens revelation by tying reading and learning directly to the Creator. The word for \"read\" comes from the Arabic root q-r-', which is also the root of recitation and of the word Qur'an.",
+      "mechanic": "root_word_match",
+      "questions": [
+        {
+          "type": "select",
+          "prompt": "In 96:1, reading is tied to whose name?",
+          "options": [
+            "The name of your Lord who created",
+            "The name of the reader",
+            "No name at all"
+          ],
+          "correct": 0,
+          "explanation": "The verse says: Read in the Name of your Lord who created."
+        },
+        {
+          "type": "select",
+          "prompt": "Which pair is connected to the root q-r-' in this lesson?",
+          "options": [
+            "Recitation and Qur'an",
+            "Pen and paper",
+            "Prayer and fasting"
+          ],
+          "correct": 0,
+          "explanation": "The lesson links the root q-r-' to recitation and to the word Qur'an."
+        }
+      ],
+      "status": "PREVIEW",
+      "verification": {
+        "passed": true,
+        "checkedAt": "2026-11-24",
+        "quoteHashes": [
+          "292763a9b5ba4fbf"
+        ]
+      }
+    },
+    {
+      "slug": "2.1.2",
+      "tier": 2,
+      "unit": 1,
+      "title": "The Pen & Knowledge",
+      "objective": "Connect Surah al-'Alaq 96:4-5's mention of teaching by the pen with the value of knowledge and clear thinking.",
+      "hook": "How does writing turn temporary ideas into a legacy that outlives a single person?",
+      "sources": [
+        {
+          "key": "QURAN",
+          "role": "primary",
+          "book": "The Holy Qur'an, Surah al-'Alaq",
+          "author": "The Qur'an",
+          "translator": "Ali Quli Qara'i (Qara'i translation, via Tanzil)",
+          "locator": "96:4–5",
+          "url": "https://tanzil.net/#trans/en.qarai/96:4",
+          "quote": "who taught by the pen, taught man what he did not know."
+        },
+        {
+          "key": "NAHJ",
+          "role": "family",
+          "book": "Nahj al-Balagha",
+          "author": "Compiled by al-Sharif al-Radi",
+          "translator": "Sayed Ali Reza",
+          "edition": "Al-Islam.org edition",
+          "locator": "Saying 5",
+          "url": "https://www.al-islam.org/nahjul-balagha-part-2-letters-and-sayings",
+          "quote": "Knowledge is a venerable estate; good manners are new dresses; and thinking is clear mirror."
+        }
+      ],
+      "summary": "Surah al-'Alaq 96:4-5 highlights teaching by the pen and granting humanity knowledge it did not previously possess.",
+      "familyNote": "From Nahj al-Balagha, Saying 5 (compiled by al-Sharif al-Radi, tr. Sayed Ali Reza):",
+      "mechanic": "verse_decoder",
+      "questions": [
+        {
+          "type": "select",
+          "prompt": "By what does 96:4-5 say man was taught?",
+          "options": [
+            "The pen",
+            "The sword",
+            "Silence"
+          ],
+          "correct": 0,
+          "explanation": "The verse says: who taught by the pen."
+        },
+        {
+          "type": "select",
+          "prompt": "What did man receive, according to 96:4-5?",
+          "options": [
+            "What he did not know",
+            "Only what he already knew",
+            "Nothing new"
+          ],
+          "correct": 0,
+          "explanation": "He was taught what he did not know."
+        }
+      ],
+      "status": "PREVIEW",
+      "verification": {
+        "passed": true,
+        "checkedAt": "2026-11-24",
+        "quoteHashes": [
+          "ac2d32d18213a112",
+          null
+        ]
+      }
+    },
+    {
+      "slug": "2.1.3",
+      "tier": 2,
+      "unit": 1,
+      "title": "The Trap of Self-Sufficiency",
+      "objective": "Identify the warning against human arrogance and perceived self-sufficiency in Surah al-'Alaq 96:6-7.",
+      "hook": "Why do people often become less careful about ethics right after they feel completely independent?",
+      "sources": [
+        {
+          "key": "QURAN",
+          "role": "primary",
+          "book": "The Holy Qur'an, Surah al-'Alaq",
+          "author": "The Qur'an",
+          "translator": "Ali Quli Qara'i (Qara'i translation, via Tanzil)",
+          "locator": "96:6–7",
+          "url": "https://tanzil.net/#trans/en.qarai/96:6",
+          "quote": "Indeed man becomes rebellious when he considers himself without need."
+        }
+      ],
+      "summary": "Surah al-'Alaq 96:6-7 warns that seeing oneself as self-sufficient can lead to transgression.",
+      "mechanic": "scenario_dilemma",
+      "questions": [
+        {
+          "type": "select",
+          "prompt": "What happens when man considers himself without need, in 96:6-7?",
+          "options": [
+            "He becomes rebellious",
+            "He becomes wiser",
+            "He becomes more humble"
+          ],
+          "correct": 0,
+          "explanation": "The verse says man becomes rebellious when he considers himself without need."
+        },
+        {
+          "type": "select",
+          "prompt": "A team leader says, 'I do not need anyone's advice.' What does the verse warn about?",
+          "options": [
+            "Seeing yourself as self-sufficient can lead to transgression",
+            "Asking advice is weakness",
+            "Leaders should never delegate"
+          ],
+          "correct": 0,
+          "explanation": "The warning is against considering oneself without need."
+        }
+      ],
+      "status": "PREVIEW",
+      "verification": {
+        "passed": true,
+        "checkedAt": "2026-11-24",
+        "quoteHashes": [
+          "ca77a16c73c2ef81"
+        ]
+      }
+    },
+    {
+      "slug": "2.2.1",
+      "tier": 2,
+      "unit": 2,
+      "title": "Names of Mercy: al-Rahman and al-Rahim",
+      "objective": "Recall how Al-Mizan Vol. 1 presents the classical distinction between al-Rahman and al-Rahim in Surah al-Fatihah 1:1.",
+      "hook": "Why does the opening verse of the Qur'an use two different Arabic words derived from mercy (rahmah) side by side?",
+      "sources": [
+        {
+          "key": "MIZAN",
+          "role": "primary",
+          "book": "Al-Mizan: An Exegesis of the Qur'an, Vol. 1",
+          "author": "Allamah Sayyid Muhammad Husayn Tabataba'i",
+          "translator": "Sayyid Sa'eed Akhtar Rizvi (WOFIS)",
+          "edition": "Al-Islam.org edition",
+          "locator": "Vol. 1, Surah al-Fatiha 1:1-5 (Traditions)",
+          "url": "https://www.al-islam.org/al-mizan-exegesis-quran-volume-1-sayyid-muhammad-husayn-tabatabai",
+          "quote": "ar-Rahman (the Beneficent) is a special name with a general attribute; and ar-Rahim (the Merciful) is a general name with a special attribute."
+        }
+      ],
+      "summary": "In Al-Mizan Vol. 1, Allamah Tabataba'i notes that both al-Rahman and al-Rahim derive from al-rahmah (mercy) and quotes Imam Ja'far al-Sadiq's concise distinction between a special name with a general attribute and a general name with a special attribute.",
+      "familyNote": "The quoted distinction comes directly from Imam Ja'far al-Sadiq, cited in Al-Mizan Vol. 1.",
+      "mechanic": "root_word_match",
+      "questions": [
+        {
+          "type": "select",
+          "prompt": "In the quoted description, ar-Rahman is...",
+          "options": [
+            "A special name with a general attribute",
+            "A general name with a special attribute",
+            "A name for the Day of Judgement"
+          ],
+          "correct": 0,
+          "explanation": "ar-Rahman is described as a special name with a general attribute."
+        },
+        {
+          "type": "select",
+          "prompt": "In the quoted description, ar-Rahim is...",
+          "options": [
+            "A special name with a general attribute",
+            "A general name with a special attribute",
+            "Unrelated to mercy"
+          ],
+          "correct": 1,
+          "explanation": "ar-Rahim is described as a general name with a special attribute."
+        }
+      ],
+      "status": "DRAFT",
+      "draftReason": "Not yet verified — MIZAN Vol. 1, Surah al-Fatiha 1:1-5 (Traditions): source unreachable: HTTP 403 (the site blocks automated readers; save the page by hand as .cache/pages/www_al_islam_org_al_mizan_exegesis_quran_volume_1_sayyid_muhammad_husayn_tabatabai.html)",
+      "verification": {
+        "passed": false,
+        "checkedAt": "2026-11-24",
+        "quoteHashes": [
+          null
+        ]
+      }
+    },
+    {
+      "slug": "2.2.2",
+      "tier": 2,
+      "unit": 2,
+      "title": "Presence in Worship (1:5)",
+      "objective": "Explain Allamah Tabataba'i's insight on Surah al-Fatihah 1:5 that true worship requires conscious presence.",
+      "hook": "What separates going through the motions of a routine from actually being present in it?",
+      "sources": [
+        {
+          "key": "MIZAN",
+          "role": "primary",
+          "book": "Al-Mizan: An Exegesis of the Qur'an, Vol. 1",
+          "author": "Allamah Sayyid Muhammad Husayn Tabataba'i",
+          "translator": "Sayyid Sa'eed Akhtar Rizvi (WOFIS)",
+          "edition": "Al-Islam.org edition",
+          "locator": "Vol. 1, Surah al-Fatiha, verse 5 commentary",
+          "url": "https://www.al-islam.org/al-mizan-exegesis-quran-volume-1-sayyid-muhammad-husayn-tabatabai",
+          "quote": "The true worship, therefore, is that in which the worshipped and the worshipper both are present."
+        }
+      ],
+      "summary": "Al-Mizan Vol. 1 explains that 1:5 shifts to direct address (\"You\") so the worshipper stands consciously present before God rather than offering an empty form.",
+      "mechanic": "verse_decoder",
+      "questions": [
+        {
+          "type": "select",
+          "prompt": "In this passage, what makes worship true?",
+          "options": [
+            "Both the worshipped and the worshipper are present",
+            "Long recitation alone",
+            "Being seen by others"
+          ],
+          "correct": 0,
+          "explanation": "The quote says true worship is where both are present."
+        },
+        {
+          "type": "select",
+          "prompt": "Why does 1:5 shift to saying 'You'?",
+          "options": [
+            "So the worshipper stands consciously present before God",
+            "To make the verse shorter",
+            "To change the subject"
+          ],
+          "correct": 0,
+          "explanation": "The summary says direct address places the worshipper before God, not offering an empty form."
+        }
+      ],
+      "status": "DRAFT",
+      "draftReason": "Not yet verified — MIZAN Vol. 1, Surah al-Fatiha, verse 5 commentary: source unreachable: HTTP 403 (the site blocks automated readers; save the page by hand as .cache/pages/www_al_islam_org_al_mizan_exegesis_quran_volume_1_sayyid_muhammad_husayn_tabatabai.html)",
+      "verification": {
+        "passed": false,
+        "checkedAt": "2026-11-24",
+        "quoteHashes": [
+          null
+        ]
+      }
+    },
+    {
+      "slug": "2.2.3",
+      "tier": 2,
+      "unit": 2,
+      "title": "Reading a Chapter as a Unified Whole",
+      "objective": "Explain why Al-Mizan Vol. 1 treats each Qur'anic chapter as a single coherent unit with a unified aim.",
+      "hook": "Why does reading one sentence out of a chapter often miss the point of the whole page?",
+      "sources": [
+        {
+          "key": "MIZAN",
+          "role": "primary",
+          "book": "Al-Mizan: An Exegesis of the Qur'an, Vol. 1",
+          "author": "Allamah Sayyid Muhammad Husayn Tabataba'i",
+          "translator": "Sayyid Sa'eed Akhtar Rizvi (WOFIS)",
+          "edition": "Al-Islam.org edition",
+          "locator": "Vol. 1, Surah al-Fatiha, verse 1 commentary",
+          "url": "https://www.al-islam.org/al-mizan-exegesis-quran-volume-1-sayyid-muhammad-husayn-tabatabai",
+          "quote": "every chapter is a single unit in structure and in fullness of meaning"
+        }
+      ],
+      "summary": "Al-Mizan Vol. 1 explains that every Qur'anic chapter has its own thematic unity; in Surah al-Fatihah, the verses flow as a single arc from praise to servitude to praying for guidance.",
+      "mechanic": "timeline_builder",
+      "questions": [
+        {
+          "type": "order",
+          "prompt": "Order the three-part flow of Surah al-Fatihah described in Al-Mizan.",
+          "items": [
+            "Praise",
+            "Servitude",
+            "Prayer for guidance"
+          ],
+          "explanation": "The verses flow from praise to servitude to praying for guidance."
+        },
+        {
+          "type": "select",
+          "prompt": "What does the quote say about each chapter?",
+          "options": [
+            "It is a single unit in structure and fullness of meaning",
+            "It is a list of separate sayings",
+            "It is unrelated to its own verses"
+          ],
+          "correct": 0,
+          "explanation": "Each chapter is a single unit in structure and in fullness of meaning."
+        }
+      ],
+      "status": "DRAFT",
+      "draftReason": "Not yet verified — MIZAN Vol. 1, Surah al-Fatiha, verse 1 commentary: source unreachable: HTTP 403 (the site blocks automated readers; save the page by hand as .cache/pages/www_al_islam_org_al_mizan_exegesis_quran_volume_1_sayyid_muhammad_husayn_tabatabai.html)",
+      "verification": {
+        "passed": false,
+        "checkedAt": "2026-11-24",
+        "quoteHashes": [
+          null
+        ]
+      }
+    },
+    {
+      "slug": "2.3.1",
+      "tier": 2,
+      "unit": 3,
+      "title": "Readiness for Guidance (2:2-3)",
+      "objective": "Identify the qualities associated with guidance at the opening of Surah al-Baqarah (2:2-3).",
+      "hook": "Why can two people read the same text and walk away with completely different levels of insight?",
+      "sources": [
+        {
+          "key": "QURAN",
+          "role": "primary",
+          "book": "The Holy Qur'an, Surah al-Baqarah",
+          "author": "The Qur'an",
+          "translator": "Ali Quli Qara'i (Qara'i translation, via Tanzil)",
+          "locator": "2:2–3",
+          "url": "https://tanzil.net/#trans/en.qarai/2:2",
+          "quote": "This is the Book, there is no doubt in it, a guidance to the Godwary, who believe in the Unseen, maintain the prayer, and spend out of what We have provided for them;"
+        }
+      ],
+      "summary": "Surah al-Baqarah 2:2-3 introduces the Qur'an as guidance for the God-conscious, linking inner conviction with prayer and sharing what one has been provided.",
+      "mechanic": "verse_decoder",
+      "questions": [
+        {
+          "type": "select",
+          "prompt": "In 2:2-3, the Book is a guidance to whom?",
+          "options": [
+            "The Godwary",
+            "Only scholars",
+            "Only the wealthy"
+          ],
+          "correct": 0,
+          "explanation": "The verse says a guidance to the Godwary."
+        },
+        {
+          "type": "select",
+          "prompt": "Which three qualities does 2:3 connect with the Godwary?",
+          "options": [
+            "Believing in the Unseen, maintaining prayer, spending from what was provided",
+            "Travelling, trading, building",
+            "Fasting, silence, retreat"
+          ],
+          "correct": 0,
+          "explanation": "The verse lists belief in the Unseen, maintaining the prayer, and spending out of what has been provided."
+        }
+      ],
+      "status": "PREVIEW",
+      "verification": {
+        "passed": true,
+        "checkedAt": "2026-11-24",
+        "quoteHashes": [
+          "fd8fee39039dd23d"
+        ]
+      }
+    },
+    {
+      "slug": "2.3.2",
+      "tier": 2,
+      "unit": 3,
+      "title": "Explaining the Qur'an with the Qur'an",
+      "objective": "Describe Allamah Tabataba'i's core method in Al-Mizan: explaining the Qur'an with the help of the Qur'an itself.",
+      "hook": "How do you keep from distorting a book when a single line seems unclear on its own?",
+      "sources": [
+        {
+          "key": "MIZAN",
+          "role": "primary",
+          "book": "Al-Mizan: An Exegesis of the Qur'an, Vol. 1",
+          "author": "Allamah Sayyid Muhammad Husayn Tabataba'i",
+          "translator": "Sayyid Sa'eed Akhtar Rizvi (WOFIS)",
+          "edition": "Al-Islam.org edition",
+          "locator": "Vol. 1, Foreword",
+          "url": "https://www.al-islam.org/al-mizan-exegesis-quran-volume-1-sayyid-muhammad-husayn-tabatabai",
+          "quote": "the author made a detailed plan to explain the Qur'an with the help of the Qur'an itself"
+        }
+      ],
+      "summary": "The WOFIS Foreword to Al-Mizan Vol. 1 explains that Allamah Tabataba'i built his commentary around letting related verses of the Qur'an illuminate one another rather than isolating single lines.",
+      "mechanic": "scenario_dilemma",
+      "questions": [
+        {
+          "type": "select",
+          "prompt": "What method is Al-Mizan built around, according to the Foreword?",
+          "options": [
+            "Explaining the Qur'an with the Qur'an itself",
+            "Relying on opinion alone",
+            "Reading one line in isolation"
+          ],
+          "correct": 0,
+          "explanation": "The author planned to explain the Qur'an with the help of the Qur'an itself."
+        },
+        {
+          "type": "select",
+          "prompt": "One verse seems unclear on its own. Which approach fits?",
+          "options": [
+            "Read it alongside related verses",
+            "Pick the reading you prefer",
+            "Skip the verse"
+          ],
+          "correct": 0,
+          "explanation": "Related verses illuminate one another."
+        }
+      ],
+      "status": "DRAFT",
+      "draftReason": "Not yet verified — MIZAN Vol. 1, Foreword: source unreachable: HTTP 403 (the site blocks automated readers; save the page by hand as .cache/pages/www_al_islam_org_al_mizan_exegesis_quran_volume_1_sayyid_muhammad_husayn_tabatabai.html)",
+      "verification": {
+        "passed": false,
+        "checkedAt": "2026-11-24",
+        "quoteHashes": [
+          null
+        ]
+      }
+    },
+    {
+      "slug": "2.3.3",
+      "tier": 2,
+      "unit": 3,
+      "title": "Past, Future, and Present",
+      "objective": "Summarize Imam Ali's description of the Qur'an's three time horizons in Nahj al-Balagha Saying 313.",
+      "hook": "Is the Qur'an mainly about ancient history, the future, or how to live today?",
+      "sources": [
+        {
+          "key": "NAHJ",
+          "role": "primary",
+          "book": "Nahj al-Balagha",
+          "author": "Compiled by al-Sharif al-Radi",
+          "translator": "Sayed Ali Reza",
+          "edition": "Al-Islam.org edition",
+          "locator": "Saying 313",
+          "url": "https://www.al-islam.org/nahjul-balagha-part-2-letters-and-sayings",
+          "quote": "The Qur'an contains news about the past, foretellings about the future and commandments for the present."
+        },
+        {
+          "key": "NAHJ",
+          "role": "family",
+          "book": "Nahj al-Balagha",
+          "author": "Compiled by al-Sharif al-Radi",
+          "translator": "Sayed Ali Reza",
+          "edition": "Al-Islam.org edition",
+          "locator": "Letter 53",
+          "url": "https://www.al-islam.org/nahjul-balagha-part-2-letters-and-sayings",
+          "quote": "Referring to Allah means to act according to what is clear in His Book."
+        }
+      ],
+      "summary": "Saying 313 describes the Qur'an as speaking across three dimensions at once: accounts of the past, foretellings of the future, and ethical guidance for the present.",
+      "familyNote": "Imam Ali connects this to action in Letter 53:",
+      "mechanic": "timeline_builder",
+      "questions": [
+        {
+          "type": "order",
+          "prompt": "Put the three horizons in the order Saying 313 gives them.",
+          "items": [
+            "News about the past",
+            "Foretellings about the future",
+            "Commandments for the present"
+          ],
+          "explanation": "The saying lists the past, then the future, then the present."
+        },
+        {
+          "type": "select",
+          "prompt": "According to Saying 313, what does the Qur'an contain for the present?",
+          "options": [
+            "Commandments",
+            "Only stories",
+            "Predictions only"
+          ],
+          "correct": 0,
+          "explanation": "It contains commandments for the present."
+        }
+      ],
+      "status": "DRAFT",
+      "draftReason": "Not yet verified — NAHJ Saying 313: source unreachable: HTTP 403 (the site blocks automated readers; save the page by hand as .cache/pages/www_al_islam_org_nahjul_balagha_part_2_letters_and_sayings.html)",
+      "verification": {
+        "passed": false,
+        "checkedAt": "2026-11-24",
+        "quoteHashes": [
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "slug": "2.4.1",
+      "tier": 2,
+      "unit": 4,
+      "title": "Feasible, Steady Recitation (73:20)",
+      "objective": "Connect Surah al-Muzzammil 73:20 to sustainable, realistic engagement with the Qur'an.",
+      "hook": "Why does consistency in small amounts usually outlast intense bursts that lead to burnout?",
+      "sources": [
+        {
+          "key": "QURAN",
+          "role": "primary",
+          "book": "The Holy Qur'an, Surah al-Muzzammil",
+          "author": "The Qur'an",
+          "translator": "Ali Quli Qara'i (Qara'i translation, via Tanzil)",
+          "locator": "73:20",
+          "url": "https://tanzil.net/#trans/en.qarai/73:20",
+          "quote": "So recite as much of the Quran as is feasible"
+        }
+      ],
+      "summary": "Surah al-Muzzammil 73:20 encourages reciting as much of the Qur'an as is feasible, grounding spiritual habits in realism rather than burnout.",
+      "mechanic": "scenario_dilemma",
+      "questions": [
+        {
+          "type": "select",
+          "prompt": "How much does 73:20 say to recite?",
+          "options": [
+            "As much as is feasible",
+            "As much as possible in one night",
+            "Only the short chapters"
+          ],
+          "correct": 0,
+          "explanation": "The verse says: recite as much of the Quran as is feasible."
+        },
+        {
+          "type": "select",
+          "prompt": "You have a busy schedule. Which plan fits 73:20?",
+          "options": [
+            "A small amount you can keep up every day",
+            "Nothing until you are free",
+            "A huge amount for a week, then stop"
+          ],
+          "correct": 0,
+          "explanation": "The verse grounds the habit in what is feasible, not in burnout."
+        }
+      ],
+      "status": "PREVIEW",
+      "verification": {
+        "passed": true,
+        "checkedAt": "2026-11-24",
+        "quoteHashes": [
+          "8c05f8bbb480cde9"
+        ]
+      }
+    },
+    {
+      "slug": "2.4.2",
+      "tier": 2,
+      "unit": 4,
+      "title": "Living What You Recite (2:44)",
+      "objective": "Reflect on aligning one's own conduct with the principles one recites and recommends to others.",
+      "hook": "Why is it easier to point out what others should do than to hold ourselves to the same standard?",
+      "sources": [
+        {
+          "key": "QURAN",
+          "role": "primary",
+          "book": "The Holy Qur'an, Surah al-Baqarah",
+          "author": "The Qur'an",
+          "translator": "Ali Quli Qara'i (Qara'i translation, via Tanzil)",
+          "locator": "2:44",
+          "url": "https://tanzil.net/#trans/en.qarai/2:44",
+          "quote": "Will you bid others to piety and forget yourselves, while you recite the Book? Do you not exercise your reason?"
+        },
+        {
+          "key": "NAHJ",
+          "role": "family",
+          "book": "Nahj al-Balagha",
+          "author": "Compiled by al-Sharif al-Radi",
+          "translator": "Sayed Ali Reza",
+          "edition": "Al-Islam.org edition",
+          "locator": "Letter 31",
+          "url": "https://www.al-islam.org/nahjul-balagha-part-2-letters-and-sayings",
+          "quote": "Make yourself the measure (for dealings) between you and others. Thus, you should desire for others what you desire for yourself"
+        }
+      ],
+      "summary": "Surah al-Baqarah 2:44 questions those who urge others to righteousness while forgetting themselves despite reciting the Book.",
+      "familyNote": "From Nahj al-Balagha, Letter 31 (compiled by al-Sharif al-Radi, tr. Sayed Ali Reza):",
+      "mechanic": "scenario_dilemma",
+      "questions": [
+        {
+          "type": "select",
+          "prompt": "What does 2:44 question?",
+          "options": [
+            "Urging others to piety while forgetting yourselves",
+            "Reciting the Book",
+            "Using reason"
+          ],
+          "correct": 0,
+          "explanation": "The verse questions bidding others to piety while forgetting yourselves."
+        },
+        {
+          "type": "select",
+          "prompt": "A message tells everyone how to behave, but its writer ignores the same advice. What does 2:44 ask?",
+          "options": [
+            "That your own conduct match what you urge on others",
+            "That you stop reciting",
+            "That you give no advice at all"
+          ],
+          "correct": 0,
+          "explanation": "The verse asks about forgetting yourselves while urging others."
+        }
+      ],
+      "status": "PREVIEW",
+      "verification": {
+        "passed": true,
+        "checkedAt": "2026-11-24",
+        "quoteHashes": [
+          "6741de59b978470b",
+          null
+        ]
+      }
+    },
+    {
+      "slug": "2.4.3",
+      "tier": 2,
+      "unit": 4,
+      "title": "Tier 2 Checkpoint: Seeing Signs Without Forgetting the Creator",
+      "objective": "Synthesize Tier 2 around Al-Mizan Vol. 1's principle that looking at creation should remind the heart of God rather than distract from Him.",
+      "hook": "When you admire something remarkable in the world, does it pull your attention away from its Source or point back toward it?",
+      "sources": [
+        {
+          "key": "MIZAN",
+          "role": "cross",
+          "book": "Al-Mizan: An Exegesis of the Qur'an, Vol. 1",
+          "author": "Allamah Sayyid Muhammad Husayn Tabataba'i",
+          "translator": "Sayyid Sa'eed Akhtar Rizvi (WOFIS)",
+          "edition": "Al-Islam.org edition",
+          "locator": "Vol. 1, Surah al-Fatiha, verse 5 commentary",
+          "url": "https://www.al-islam.org/al-mizan-exegesis-quran-volume-1-sayyid-muhammad-husayn-tabatabai",
+          "quote": "Nothing in the creation can hide the divine presence, nor should looking at these things make one forgetful of Allah."
+        },
+        {
+          "key": "QURAN",
+          "role": "cross",
+          "book": "The Holy Qur'an, Surah Fussilat",
+          "author": "The Qur'an",
+          "translator": "Ali Quli Qara'i (Qara'i translation, via Tanzil)",
+          "locator": "41:53",
+          "url": "https://tanzil.net/#trans/en.qarai/41:53",
+          "quote": "Is it not sufficient that your Lord is witness to all things?"
+        }
+      ],
+      "summary": "Al-Mizan Vol. 1 teaches that creation belongs to God and should never veil the observer from Him; every sign in the universe and within oneself points back to the Creator.",
+      "mechanic": "boss_checkpoint",
+      "questions": [],
+      "status": "PREVIEW",
+      "verification": {
+        "passed": true,
+        "checkedAt": "2026-11-24",
+        "quoteHashes": [
+          null,
+          "0f426e87496adb5f"
+        ]
+      }
+    }
+  ]
+}

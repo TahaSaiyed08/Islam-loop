@@ -1,0 +1,532 @@
+{
+  "tier": 5,
+  "name": "Ethics & Emotional Mastery",
+  "units": [
+    {
+      "unit": 1
+    },
+    {
+      "unit": 2
+    },
+    {
+      "unit": 3
+    },
+    {
+      "unit": 4
+    }
+  ],
+  "lessons": [
+    {
+      "slug": "5.1.1",
+      "tier": 5,
+      "unit": 1,
+      "title": "Think Before You Speak",
+      "objective": "Practise pausing before speech",
+      "sources": [],
+      "mechanic": "scenario_dilemma",
+      "questions": [],
+      "status": "DRAFT",
+      "candidates": [
+        "NAHJ Saying 40 (candidate: the wise person's tongue is behind his heart)"
+      ],
+      "draftReason": "Source not yet read: the exact passage and quote still need to be confirmed from the source page (Al-Islam.org could not be read by the build environment)."
+    },
+    {
+      "slug": "5.1.2",
+      "tier": 5,
+      "unit": 1,
+      "title": "No Mockery, No Spying",
+      "objective": "Name three harms of speech and suspicion",
+      "hook": "How many ways can careless words and suspicion hurt a community?",
+      "sources": [
+        {
+          "key": "QURAN",
+          "role": "primary",
+          "book": "The Holy Qur'an, Surah al-Hujurat",
+          "author": "The Qur'an",
+          "translator": "Ali Quli Qara'i (Qara'i translation, via Tanzil)",
+          "locator": "49:11",
+          "url": "https://tanzil.net/#trans/en.qarai/49:11",
+          "quote": "Let not any people ridicule another people"
+        },
+        {
+          "key": "QURAN",
+          "role": "primary",
+          "book": "The Holy Qur'an, Surah al-Hujurat",
+          "author": "The Qur'an",
+          "translator": "Ali Quli Qara'i (Qara'i translation, via Tanzil)",
+          "locator": "49:12",
+          "url": "https://tanzil.net/#trans/en.qarai/49:12",
+          "quote": "do not spy on one another or backbite."
+        }
+      ],
+      "summary": "Surah al-Hujurat 49:11-12 warns against ridiculing others, and against spying and backbiting. Verse 12 also says to avoid much suspicion.",
+      "mechanic": "verse_decoder",
+      "questions": [
+        {
+          "type": "select",
+          "prompt": "Which of these does 49:11-12 tell you not to do?",
+          "options": [
+            "Ridicule another people, spy, or backbite",
+            "Ask for advice",
+            "Keep promises"
+          ],
+          "correct": 0,
+          "explanation": "The verses name ridicule, spying and backbiting."
+        },
+        {
+          "type": "select",
+          "prompt": "Your group chat starts mocking a classmate. What does 49:11 point you to?",
+          "options": [
+            "Do not join in the ridicule",
+            "Join in, it is only a joke",
+            "Forward it to others"
+          ],
+          "correct": 0,
+          "explanation": "The verse says not to let any people ridicule another people."
+        }
+      ],
+      "status": "PREVIEW",
+      "verification": {
+        "passed": true,
+        "checkedAt": "2026-11-24",
+        "quoteHashes": [
+          "353d65541f393851",
+          "b34b4513b666defd"
+        ]
+      }
+    },
+    {
+      "slug": "5.1.3",
+      "tier": 5,
+      "unit": 1,
+      "title": "Kind Words",
+      "objective": "Choose kind speech in conflict",
+      "hook": "What would change in your last argument if you had chosen kind words?",
+      "sources": [
+        {
+          "key": "QURAN",
+          "role": "primary",
+          "book": "The Holy Qur'an, Surah al-Baqarah",
+          "author": "The Qur'an",
+          "translator": "Ali Quli Qara'i (Qara'i translation, via Tanzil)",
+          "locator": "2:83",
+          "url": "https://tanzil.net/#trans/en.qarai/2:83",
+          "quote": "speak kindly to people"
+        }
+      ],
+      "summary": "In Surah al-Baqarah 2:83, among the things Allah took a pledge about is to speak kindly to people.",
+      "mechanic": "scenario_dilemma",
+      "questions": [
+        {
+          "type": "select",
+          "prompt": "What does 2:83 list among the commitments?",
+          "options": [
+            "Speak kindly to people",
+            "Speak only when angry",
+            "Avoid people"
+          ],
+          "correct": 0,
+          "explanation": "The verse says: speak kindly to people."
+        },
+        {
+          "type": "select",
+          "prompt": "A disagreement is heating up. Which choice matches the verse?",
+          "options": [
+            "Keep your words kind",
+            "Raise your voice to win",
+            "Go silent and resent"
+          ],
+          "correct": 0,
+          "explanation": "The clause asks for kind speech."
+        }
+      ],
+      "status": "PREVIEW",
+      "verification": {
+        "passed": true,
+        "checkedAt": "2026-11-24",
+        "quoteHashes": [
+          "12e8720ddbf69f67"
+        ]
+      }
+    },
+    {
+      "slug": "5.2.1",
+      "tier": 5,
+      "unit": 2,
+      "title": "Asking for Noble Character",
+      "objective": "Treat good character as something you ask for and work on",
+      "sources": [],
+      "mechanic": "verse_decoder",
+      "questions": [],
+      "status": "DRAFT",
+      "candidates": [
+        "SAHIFA Supplication 20 (noble moral traits, candidate)"
+      ],
+      "draftReason": "Source not yet read: the exact passage and quote still need to be confirmed from the source page (Al-Islam.org could not be read by the build environment)."
+    },
+    {
+      "slug": "5.2.2",
+      "tier": 5,
+      "unit": 2,
+      "title": "Swallowing Anger",
+      "objective": "Practise restraint and forgiveness",
+      "hook": "What does it take to hold back when you feel wronged?",
+      "sources": [
+        {
+          "key": "QURAN",
+          "role": "primary",
+          "book": "The Holy Qur'an, Surah Al 'Imran",
+          "author": "The Qur'an",
+          "translator": "Ali Quli Qara'i (Qara'i translation, via Tanzil)",
+          "locator": "3:134",
+          "url": "https://tanzil.net/#trans/en.qarai/3:134",
+          "quote": "suppress their anger, and excuse [the faults of] the people"
+        }
+      ],
+      "summary": "Surah Al 'Imran 3:134 describes those who suppress their anger and excuse the faults of the people, and says Allah loves the virtuous.",
+      "mechanic": "scenario_dilemma",
+      "questions": [
+        {
+          "type": "select",
+          "prompt": "What does 3:134 say about anger?",
+          "options": [
+            "Suppress it",
+            "Let it out at once",
+            "Pass it on to others"
+          ],
+          "correct": 0,
+          "explanation": "The verse describes those who suppress their anger."
+        },
+        {
+          "type": "select",
+          "prompt": "Someone makes a mistake that bothers you. Which response matches the verse?",
+          "options": [
+            "Excuse their fault and let it go",
+            "Hold it against them forever",
+            "Get back at them"
+          ],
+          "correct": 0,
+          "explanation": "The verse says to excuse the faults of the people."
+        }
+      ],
+      "status": "PREVIEW",
+      "verification": {
+        "passed": true,
+        "checkedAt": "2026-11-24",
+        "quoteHashes": [
+          "81dc9f60aa4d2fea"
+        ]
+      }
+    },
+    {
+      "slug": "5.2.3",
+      "tier": 5,
+      "unit": 2,
+      "title": "Patience and Prayer",
+      "objective": "Use patience as strength, not passivity",
+      "hook": "How do you keep going when things are hard?",
+      "sources": [
+        {
+          "key": "QURAN",
+          "role": "primary",
+          "book": "The Holy Qur'an, Surah al-Baqarah",
+          "author": "The Qur'an",
+          "translator": "Ali Quli Qara'i (Qara'i translation, via Tanzil)",
+          "locator": "2:153",
+          "url": "https://tanzil.net/#trans/en.qarai/2:153",
+          "quote": "Take recourse in patience and prayer; indeed Allah is with the patient."
+        }
+      ],
+      "summary": "Surah al-Baqarah 2:153 tells those who have faith to take recourse in patience and prayer, and says Allah is with the patient.",
+      "mechanic": "scenario_dilemma",
+      "questions": [
+        {
+          "type": "select",
+          "prompt": "What does 2:153 say to take recourse in?",
+          "options": [
+            "Patience and prayer",
+            "Anger and haste",
+            "Distraction"
+          ],
+          "correct": 0,
+          "explanation": "The verse says: Take recourse in patience and prayer."
+        },
+        {
+          "type": "select",
+          "prompt": "Who is Allah with, according to the verse?",
+          "options": [
+            "The patient",
+            "Only the fast",
+            "Only the rich"
+          ],
+          "correct": 0,
+          "explanation": "Indeed Allah is with the patient."
+        }
+      ],
+      "status": "PREVIEW",
+      "verification": {
+        "passed": true,
+        "checkedAt": "2026-11-24",
+        "quoteHashes": [
+          "790acd6b593b957d"
+        ]
+      }
+    },
+    {
+      "slug": "5.3.1",
+      "tier": 5,
+      "unit": 3,
+      "title": "Honouring Parents",
+      "objective": "Show respect and gentleness to parents",
+      "hook": "What would gentleness toward your parents look like today?",
+      "sources": [
+        {
+          "key": "QURAN",
+          "role": "primary",
+          "book": "The Holy Qur'an, Surah al-Isra",
+          "author": "The Qur'an",
+          "translator": "Ali Quli Qara'i (Qara'i translation, via Tanzil)",
+          "locator": "17:23–24",
+          "url": "https://tanzil.net/#trans/en.qarai/17:23",
+          "quote": "do not say to them, ‘Fie!’ And do not chide them, but speak to them noble words."
+        }
+      ],
+      "summary": "Surah al-Isra 17:23-24 enjoins kindness to parents: not saying \"Fie!\" to them, not chiding them, speaking noble words, and lowering the wing of humility to them out of mercy.",
+      "mechanic": "scenario_dilemma",
+      "questions": [
+        {
+          "type": "select",
+          "prompt": "What does 17:23-24 say to speak to parents?",
+          "options": [
+            "Noble words",
+            "Sharp words",
+            "No words"
+          ],
+          "correct": 0,
+          "explanation": "The verse says to speak to them noble words."
+        },
+        {
+          "type": "select",
+          "prompt": "A parent repeats the same story for the third time. Which response fits the verse?",
+          "options": [
+            "Listen patiently and answer gently",
+            "Sigh and say 'Fie!'",
+            "Walk away"
+          ],
+          "correct": 0,
+          "explanation": "The verse forbids saying 'Fie!' and chiding."
+        }
+      ],
+      "status": "PREVIEW",
+      "candidates": [
+        "SAHIFA Supplication 24 (for parents, candidate): add when the page can be read."
+      ],
+      "verification": {
+        "passed": true,
+        "checkedAt": "2026-11-24",
+        "quoteHashes": [
+          "2007e443f74c287b"
+        ]
+      }
+    },
+    {
+      "slug": "5.3.2",
+      "tier": 5,
+      "unit": 3,
+      "title": "Neighbours and Friends",
+      "objective": "Widen kindness to neighbours and companions",
+      "hook": "Who lives closest to you, and how well do you know them?",
+      "sources": [
+        {
+          "key": "QURAN",
+          "role": "primary",
+          "book": "The Holy Qur'an, Surah an-Nisa",
+          "author": "The Qur'an",
+          "translator": "Ali Quli Qara'i (Qara'i translation, via Tanzil)",
+          "locator": "4:36",
+          "url": "https://tanzil.net/#trans/en.qarai/4:36",
+          "quote": "be good to parents, the relatives, the orphans, the needy, the near neighbour and the distant neighbour, the companion at your side"
+        }
+      ],
+      "summary": "Surah an-Nisa 4:36 calls for goodness toward parents, relatives, orphans, the needy, the near and the distant neighbour, and the companion at one's side.",
+      "mechanic": "verse_decoder",
+      "questions": [
+        {
+          "type": "select",
+          "prompt": "Which neighbours does 4:36 mention?",
+          "options": [
+            "The near neighbour and the distant neighbour",
+            "Only the near neighbour",
+            "Only those you like"
+          ],
+          "correct": 0,
+          "explanation": "The verse names both the near and the distant neighbour."
+        },
+        {
+          "type": "select",
+          "prompt": "Who else does the verse list for goodness?",
+          "options": [
+            "The orphans and the needy",
+            "Only rulers",
+            "Only friends"
+          ],
+          "correct": 0,
+          "explanation": "The verse lists relatives, orphans and the needy."
+        }
+      ],
+      "status": "PREVIEW",
+      "candidates": [
+        "SAHIFA Supplication 26 (neighbours and friends, candidate): add when the page can be read."
+      ],
+      "verification": {
+        "passed": true,
+        "checkedAt": "2026-11-24",
+        "quoteHashes": [
+          "bd163e12763ba054"
+        ]
+      }
+    },
+    {
+      "slug": "5.3.3",
+      "tier": 5,
+      "unit": 3,
+      "title": "A Father's Advice",
+      "objective": "Learn from Letter 31's counsel to youth",
+      "sources": [],
+      "mechanic": "scenario_dilemma",
+      "questions": [],
+      "status": "DRAFT",
+      "candidates": [
+        "NAHJ Letter 31 (a passage not used in Tiers 1-2)"
+      ],
+      "draftReason": "Source not yet read: the exact passage and quote still need to be confirmed from the source page (Al-Islam.org could not be read by the build environment)."
+    },
+    {
+      "slug": "5.4.1",
+      "tier": 5,
+      "unit": 4,
+      "title": "Fair Even Against Yourself",
+      "objective": "Stand for justice when it costs you",
+      "hook": "When was it last hard to tell the truth because it counted against you?",
+      "sources": [
+        {
+          "key": "QURAN",
+          "role": "primary",
+          "book": "The Holy Qur'an, Surah an-Nisa",
+          "author": "The Qur'an",
+          "translator": "Ali Quli Qara'i (Qara'i translation, via Tanzil)",
+          "locator": "4:135",
+          "url": "https://tanzil.net/#trans/en.qarai/4:135",
+          "quote": "Be maintainers of justice and witnesses for the sake of Allah, even if it should be against yourselves or [your] parents and near relatives"
+        }
+      ],
+      "summary": "Surah an-Nisa 4:135 asks those who have faith to be maintainers of justice and witnesses for the sake of Allah, even when it goes against themselves, their parents or near relatives.",
+      "mechanic": "scenario_dilemma",
+      "questions": [
+        {
+          "type": "select",
+          "prompt": "Even against whom does 4:135 say to uphold justice?",
+          "options": [
+            "Yourselves, parents and near relatives",
+            "Only strangers",
+            "Only the powerful"
+          ],
+          "correct": 0,
+          "explanation": "The verse names yourselves, parents and near relatives."
+        },
+        {
+          "type": "select",
+          "prompt": "Your friend did wrong and you are asked to testify. Which choice fits the verse?",
+          "options": [
+            "Testify truthfully for the sake of Allah",
+            "Shade the story to protect them",
+            "Refuse to answer"
+          ],
+          "correct": 0,
+          "explanation": "The verse asks for witnesses for the sake of Allah, even against near relatives."
+        }
+      ],
+      "status": "PREVIEW",
+      "verification": {
+        "passed": true,
+        "checkedAt": "2026-11-24",
+        "quoteHashes": [
+          "27fd3eb286e535ef"
+        ]
+      }
+    },
+    {
+      "slug": "5.4.2",
+      "tier": 5,
+      "unit": 4,
+      "title": "Fair to Those You Dislike",
+      "objective": "Keep justice when you dislike someone",
+      "hook": "Can you be fair to someone you do not like?",
+      "sources": [
+        {
+          "key": "QURAN",
+          "role": "primary",
+          "book": "The Holy Qur'an, Surah al-Ma'idah",
+          "author": "The Qur'an",
+          "translator": "Ali Quli Qara'i (Qara'i translation, via Tanzil)",
+          "locator": "5:8",
+          "url": "https://tanzil.net/#trans/en.qarai/5:8",
+          "quote": "ill feeling for a people should never lead you to be unfair. Be fair; that is nearer to Godwariness"
+        }
+      ],
+      "summary": "Surah al-Ma'idah 5:8 says that ill feeling for a people should never lead to unfairness, and that being fair is nearer to Godwariness.",
+      "mechanic": "scenario_dilemma",
+      "questions": [
+        {
+          "type": "select",
+          "prompt": "What should ill feeling for a people never lead you to, in 5:8?",
+          "options": [
+            "Being unfair",
+            "Being quiet",
+            "Being generous"
+          ],
+          "correct": 0,
+          "explanation": "The verse says ill feeling should never lead you to be unfair."
+        },
+        {
+          "type": "select",
+          "prompt": "You dislike a coworker but must judge their work. Which response fits the verse?",
+          "options": [
+            "Judge fairly",
+            "Mark them down",
+            "Ask someone else to do it"
+          ],
+          "correct": 0,
+          "explanation": "Be fair; that is nearer to Godwariness."
+        }
+      ],
+      "status": "PREVIEW",
+      "verification": {
+        "passed": true,
+        "checkedAt": "2026-11-24",
+        "quoteHashes": [
+          "114f01e3c4526de9"
+        ]
+      }
+    },
+    {
+      "slug": "5.4.3",
+      "tier": 5,
+      "unit": 4,
+      "title": "Tier 5 Checkpoint",
+      "objective": "Review Tier 5",
+      "hook": "Which habits of character do you want to practise this week?",
+      "sources": [],
+      "summary": "Five questions drawn from the verified lessons in Tier 5. Pass with 4 of 5; you can retry as often as you like.",
+      "mechanic": "boss_checkpoint",
+      "questions": [],
+      "status": "PREVIEW",
+      "verification": {
+        "passed": true,
+        "checkedAt": "2026-11-24",
+        "quoteHashes": []
+      }
+    }
+  ]
+}

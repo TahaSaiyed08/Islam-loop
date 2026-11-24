@@ -40,3 +40,9 @@ next-env.d.ts
 # testing tools
 /ngrok
 /stripe
+
+# The Roadmap
+/.ua/
+/.cache/
+/playwright-report/
+/test-results/

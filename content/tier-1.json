@@ -1,0 +1,703 @@
+{
+  "tier": 1,
+  "name": "Architecture of Meaning",
+  "units": [
+    {
+      "unit": 1,
+      "name": "The Built-In Compass (Fitrah, Wisdom & Time)"
+    },
+    {
+      "unit": 2,
+      "name": "Beyond Caricatures of God (Tawhid)"
+    },
+    {
+      "unit": 3,
+      "name": "Faith, Humility & Critical Thinking"
+    },
+    {
+      "unit": 4,
+      "name": "Freedom, Gratitude & Shared Humanity"
+    }
+  ],
+  "lessons": [
+    {
+      "slug": "1.1.1",
+      "tier": 1,
+      "unit": 1,
+      "title": "The Innate Compass (Fitrah)",
+      "objective": "Identify the Qur'anic concept of fitrah as humanity's innate orientation toward truth.",
+      "hook": "Why do people across every culture share an instinctive pull toward fairness, awe, and meaning?",
+      "sources": [
+        {
+          "key": "QURAN",
+          "role": "primary",
+          "book": "The Holy Qur'an, Surah al-Rum",
+          "author": "The Qur'an",
+          "translator": "Ali Quli Qara'i (Qara'i translation, via Tanzil)",
+          "locator": "30:30",
+          "url": "https://tanzil.net/#trans/en.qarai/30:30",
+          "quote": "So set your heart as a person of pure faith on this religion, the original nature endowed by Allah according to which He originated mankind"
+        }
+      ],
+      "summary": "Surah al-Rum 30:30 grounds human spirituality in fitrah, the original nature created by God, inviting learners to recognize truth as something deeply aligned with human nature.",
+      "mechanic": "root_word_match",
+      "questions": [
+        {
+          "type": "select",
+          "prompt": "According to 30:30, what is fitrah?",
+          "options": [
+            "The original nature endowed by Allah",
+            "A habit picked up from the surroundings",
+            "A rule agreed by a community"
+          ],
+          "correct": 0,
+          "explanation": "The verse calls it the original nature endowed by Allah, according to which He originated mankind."
+        },
+        {
+          "type": "select",
+          "prompt": "Match the root f-t-r (fitrah) to its meaning in this lesson.",
+          "options": [
+            "External habit",
+            "Original nature",
+            "Passing mood"
+          ],
+          "correct": 1,
+          "explanation": "In this verse fitrah means the original nature, not something learned from outside."
+        }
+      ],
+      "status": "PREVIEW",
+      "verification": {
+        "passed": true,
+        "checkedAt": "2026-11-24",
+        "quoteHashes": [
+          "3301a54c2464e856"
+        ]
+      }
+    },
+    {
+      "slug": "1.1.2",
+      "tier": 1,
+      "unit": 1,
+      "title": "Wisdom, Refinement & Consultation",
+      "objective": "Contrast lasting inner wealth (wisdom and refinement) with ignorance, and recognize consultation as a core support.",
+      "hook": "If you lost all your possessions tomorrow, what kind of wealth would still protect your judgment?",
+      "sources": [
+        {
+          "key": "NAHJ",
+          "role": "primary",
+          "book": "Nahj al-Balagha",
+          "author": "Compiled by al-Sharif al-Radi",
+          "translator": "Sayed Ali Reza",
+          "edition": "Al-Islam.org edition",
+          "locator": "Saying 54",
+          "url": "https://www.al-islam.org/nahjul-balagha-part-2-letters-and-sayings",
+          "quote": "There is no wealth like wisdom, no destitution like ignorance, no inheritance like refinement and no support like consultation."
+        }
+      ],
+      "summary": "Saying 54 teaches that wisdom outweighs material wealth, ignorance is the deepest poverty, refined character is the finest inheritance, and seeking counsel is the strongest support.",
+      "familyNote": "Imam Ali ibn Abi Talib frames consultation and wisdom as practical anchors for everyday decisions (Saying 54).",
+      "mechanic": "scenario_dilemma",
+      "questions": [
+        {
+          "type": "select",
+          "prompt": "In Saying 54, which is called the strongest support?",
+          "options": [
+            "Consultation",
+            "Property",
+            "A loud argument"
+          ],
+          "correct": 0,
+          "explanation": "The saying says there is no support like consultation."
+        },
+        {
+          "type": "select",
+          "prompt": "You face a big life decision and feel the urge to act at once. Which choice fits Saying 54?",
+          "options": [
+            "Ask people of sound judgment for counsel first",
+            "Decide alone to save time",
+            "Follow whoever speaks loudest"
+          ],
+          "correct": 0,
+          "explanation": "Saying 54 treats consultation as the strongest support."
+        }
+      ],
+      "status": "DRAFT",
+      "draftReason": "Not yet verified — NAHJ Saying 54: source unreachable: HTTP 403 (the site blocks automated readers; save the page by hand as .cache/pages/www_al_islam_org_nahjul_balagha_part_2_letters_and_sayings.html)",
+      "verification": {
+        "passed": false,
+        "checkedAt": "2026-11-24",
+        "quoteHashes": [
+          null
+        ]
+      }
+    },
+    {
+      "slug": "1.1.3",
+      "tier": 1,
+      "unit": 1,
+      "title": "The Formula Against Loss",
+      "objective": "Identify the themes of Surah al-'Asr (103:1-3): faith, righteous action, truth, and patience.",
+      "hook": "What four habits separate a life well spent from one that slips away?",
+      "sources": [
+        {
+          "key": "QURAN",
+          "role": "primary",
+          "book": "The Holy Qur'an, Surah al-'Asr",
+          "author": "The Qur'an",
+          "translator": "Ali Quli Qara'i (Qara'i translation, via Tanzil)",
+          "locator": "103:1–3",
+          "url": "https://tanzil.net/#trans/en.qarai/103:1",
+          "quote": "By Time! Man is indeed in loss, except those who have faith and do righteous deeds, and enjoin one another to [follow] the truth, and enjoin one another to patience."
+        }
+      ],
+      "summary": "Surah al-'Asr 103:1-3 links faith and righteous deeds with mutually encouraging one another to truth and patience.",
+      "mechanic": "verse_decoder",
+      "questions": [
+        {
+          "type": "select",
+          "prompt": "Which four things does Surah al-'Asr name as the way out of loss?",
+          "options": [
+            "Faith, righteous deeds, urging one another to truth, urging one another to patience",
+            "Wealth, fame, power, leisure",
+            "Silence, travel, trade, study"
+          ],
+          "correct": 0,
+          "explanation": "The verse lists faith, righteous deeds, and enjoining truth and patience on one another."
+        },
+        {
+          "type": "select",
+          "prompt": "A friend is discouraged and wants to give up a good habit. Which response matches 103:3?",
+          "options": [
+            "Encourage them gently to patience and to hold to what is true",
+            "Tell them it is their own business",
+            "Criticise them for being weak"
+          ],
+          "correct": 0,
+          "explanation": "The surah describes people who enjoin one another to truth and patience."
+        }
+      ],
+      "status": "PREVIEW",
+      "verification": {
+        "passed": true,
+        "checkedAt": "2026-11-24",
+        "quoteHashes": [
+          "9aae218d6461456e"
+        ]
+      }
+    },
+    {
+      "slug": "1.2.1",
+      "tier": 1,
+      "unit": 2,
+      "title": "Pure Oneness (Surah al-Ikhlas)",
+      "objective": "Study Surah al-Ikhlas (112:1-4) as the Qur'an's concise statement of divine oneness.",
+      "hook": "How do you speak about an infinite Creator without shrinking God into a human-sized image?",
+      "sources": [
+        {
+          "key": "QURAN",
+          "role": "primary",
+          "book": "The Holy Qur'an, Surah al-Ikhlas",
+          "author": "The Qur'an",
+          "translator": "Ali Quli Qara'i (Qara'i translation, via Tanzil)",
+          "locator": "112:1–4",
+          "url": "https://tanzil.net/#trans/en.qarai/112:1",
+          "quote": "Say, ‘He is Allah, the One. Allah is the All-embracing. He neither begat, nor was begotten, nor has He any equal.’"
+        }
+      ],
+      "summary": "Surah al-Ikhlas 112:1-4 presents God's absolute unity and incomparability in four brief verses.",
+      "mechanic": "verse_decoder",
+      "questions": [
+        {
+          "type": "select",
+          "prompt": "Which statement is in Surah al-Ikhlas?",
+          "options": [
+            "He neither begat, nor was begotten, nor has He any equal",
+            "He has a partner in creation",
+            "He is one of many powers"
+          ],
+          "correct": 0,
+          "explanation": "Verse 4 says He neither begat, nor was begotten, nor has any equal."
+        },
+        {
+          "type": "select",
+          "prompt": "Which idea do the words 'nor has He any equal' clear away?",
+          "options": [
+            "That anything in creation is God's equal",
+            "That God is One",
+            "That God is all-embracing"
+          ],
+          "correct": 0,
+          "explanation": "If nothing is His equal, no creature can be set beside Him."
+        }
+      ],
+      "status": "PREVIEW",
+      "candidates": [
+        "Paired with NAHJ Sermon 1 in lessons 1.2.2-1.2.3."
+      ],
+      "verification": {
+        "passed": true,
+        "checkedAt": "2026-11-24",
+        "quoteHashes": [
+          "d0fef7b99db8a8e4"
+        ]
+      }
+    },
+    {
+      "slug": "1.2.2",
+      "tier": 1,
+      "unit": 2,
+      "title": "With Everything, Beyond Physical Limits",
+      "objective": "Explain how Imam Ali describes God's nearness without physical contact and distinction without physical distance.",
+      "hook": "If God is not a physical object in a location, what does it mean to say God is close to everything?",
+      "sources": [
+        {
+          "key": "NAHJ",
+          "role": "primary",
+          "book": "Nahj al-Balagha",
+          "author": "Compiled by al-Sharif al-Radi",
+          "translator": "Sayed Ali Reza",
+          "edition": "Al-Islam.org edition",
+          "locator": "Sermon 1",
+          "url": "https://www.al-islam.org/nahjul-balagha-part-1-sermons",
+          "quote": "He is with everything but not in physical nearness. He is different from everything but not in physical separation."
+        },
+        {
+          "key": "QURAN",
+          "role": "cross",
+          "book": "The Holy Qur'an, Surah ash-Shura",
+          "author": "The Qur'an",
+          "translator": "Ali Quli Qara'i (Qara'i translation, via Tanzil)",
+          "locator": "42:11",
+          "url": "https://tanzil.net/#trans/en.qarai/42:11",
+          "quote": "Nothing is like Him, and He is the All-hearing, the All-seeing."
+        }
+      ],
+      "summary": "Sermon 1 teaches that God is present with all creation without being physically attached to it, and utterly distinct from creation without being physically distant.",
+      "familyNote": "Imam Ali opens Nahj al-Balagha by clearing away physical analogies for God so learners approach Tawhid with clarity (Sermon 1).",
+      "mechanic": "scenario_dilemma",
+      "questions": [
+        {
+          "type": "select",
+          "prompt": "In Sermon 1, God is 'with everything'. In what way?",
+          "options": [
+            "Not in physical nearness",
+            "By sitting inside objects",
+            "By living in one place in the sky"
+          ],
+          "correct": 0,
+          "explanation": "The sermon says He is with everything but not in physical nearness."
+        },
+        {
+          "type": "select",
+          "prompt": "Which way of speaking about God accidentally suggests a physical place?",
+          "options": [
+            "'God sits up in the clouds, far from us'",
+            "'God is with everything, but not in physical nearness'",
+            "'Nothing is like Him'"
+          ],
+          "correct": 0,
+          "explanation": "Sitting somewhere implies physical space, which the sermon sets aside."
+        }
+      ],
+      "status": "DRAFT",
+      "draftReason": "Not yet verified — NAHJ Sermon 1: source unreachable: HTTP 403 (the site blocks automated readers; save the page by hand as .cache/pages/www_al_islam_org_nahjul_balagha_part_1_sermons.html)",
+      "verification": {
+        "passed": false,
+        "checkedAt": "2026-11-24",
+        "quoteHashes": [
+          null,
+          "f16461b19291ef8c"
+        ]
+      }
+    },
+    {
+      "slug": "1.2.3",
+      "tier": 1,
+      "unit": 2,
+      "title": "Acknowledgement Leads to Testimony",
+      "objective": "Explain why Nahj al-Balagha Sermon 1 calls acknowledging God the starting point of religion rather than the end.",
+      "hook": "Why isn't privately agreeing that God exists the finish line of faith?",
+      "sources": [
+        {
+          "key": "NAHJ",
+          "role": "primary",
+          "book": "Nahj al-Balagha",
+          "author": "Compiled by al-Sharif al-Radi",
+          "translator": "Sayed Ali Reza",
+          "edition": "Al-Islam.org edition",
+          "locator": "Sermon 1",
+          "url": "https://www.al-islam.org/nahjul-balagha-part-1-sermons",
+          "quote": "The foremost in religion is the acknowledgement of Him, the perfection of acknowledging Him is to testify Him"
+        }
+      ],
+      "summary": "Sermon 1 states that religion begins with acknowledging God and matures when that acknowledgement becomes genuine testimony.",
+      "familyNote": "Imam Ali sets out a progressive path of knowing God in Sermon 1, moving from initial recognition to wholehearted affirmation.",
+      "mechanic": "timeline_builder",
+      "questions": [
+        {
+          "type": "order",
+          "prompt": "Put the progression in Sermon 1 in order.",
+          "items": [
+            "Acknowledging God is the first step of religion",
+            "The acknowledgement matures",
+            "It reaches perfection as genuine testimony"
+          ],
+          "explanation": "Religion begins with acknowledgement, and its perfection is to testify."
+        },
+        {
+          "type": "select",
+          "prompt": "According to Sermon 1, what comes first in religion?",
+          "options": [
+            "Acknowledgement of Him",
+            "Testimony alone",
+            "Private silence"
+          ],
+          "correct": 0,
+          "explanation": "The foremost in religion is the acknowledgement of Him."
+        }
+      ],
+      "status": "DRAFT",
+      "draftReason": "Not yet verified — NAHJ Sermon 1: source unreachable: HTTP 403 (the site blocks automated readers; save the page by hand as .cache/pages/www_al_islam_org_nahjul_balagha_part_1_sermons.html)",
+      "verification": {
+        "passed": false,
+        "checkedAt": "2026-11-24",
+        "quoteHashes": [
+          null
+        ]
+      }
+    },
+    {
+      "slug": "1.3.1",
+      "tier": 1,
+      "unit": 3,
+      "title": "The Courage to Say \"I Do Not Know\"",
+      "objective": "Practice intellectual honesty by admitting when you do not know an answer.",
+      "hook": "When someone asks you a hard question you genuinely cannot answer, why is guessing worse than saying \"I don't know\"?",
+      "sources": [
+        {
+          "key": "NAHJ",
+          "role": "primary",
+          "book": "Nahj al-Balagha",
+          "author": "Compiled by al-Sharif al-Radi",
+          "translator": "Sayed Ali Reza",
+          "edition": "Al-Islam.org edition",
+          "locator": "Saying 82",
+          "url": "https://www.al-islam.org/nahjul-balagha-part-2-letters-and-sayings",
+          "quote": "no one should feel ashamed of saying 'I do not know' when he is asked a matter which he does not know"
+        }
+      ],
+      "summary": "Saying 82 removes any stigma from admitting ignorance, teaching that honest humility is preferable to pretending to know.",
+      "familyNote": "Imam Ali models epistemic humility as a foundational habit for every learner (Saying 82).",
+      "mechanic": "scenario_dilemma",
+      "questions": [
+        {
+          "type": "select",
+          "prompt": "A friend asks you an obscure question about Islam you cannot answer. What does Saying 82 point you to?",
+          "options": [
+            "Say honestly that you do not know",
+            "Give a confident guess",
+            "Change the subject"
+          ],
+          "correct": 0,
+          "explanation": "No one should feel ashamed of saying 'I do not know'."
+        },
+        {
+          "type": "select",
+          "prompt": "What does Saying 82 say about admitting you do not know?",
+          "options": [
+            "No one should be ashamed of it",
+            "It is a sign of weakness",
+            "Only teachers may say it"
+          ],
+          "correct": 0,
+          "explanation": "The saying removes the shame from honest ignorance."
+        }
+      ],
+      "status": "DRAFT",
+      "draftReason": "Not yet verified — NAHJ Saying 82: source unreachable: HTTP 403 (the site blocks automated readers; save the page by hand as .cache/pages/www_al_islam_org_nahjul_balagha_part_2_letters_and_sayings.html)",
+      "verification": {
+        "passed": false,
+        "checkedAt": "2026-11-24",
+        "quoteHashes": [
+          null
+        ]
+      }
+    },
+    {
+      "slug": "1.3.2",
+      "tier": 1,
+      "unit": 3,
+      "title": "Testing What You Hear",
+      "objective": "Apply intelligence and reflection when evaluating a reported statement rather than repeating it uncritically.",
+      "hook": "When a dramatic religious quote goes viral online, what should you do before sharing it?",
+      "sources": [
+        {
+          "key": "NAHJ",
+          "role": "primary",
+          "book": "Nahj al-Balagha",
+          "author": "Compiled by al-Sharif al-Radi",
+          "translator": "Sayed Ali Reza",
+          "edition": "Al-Islam.org edition",
+          "locator": "Saying 98",
+          "url": "https://www.al-islam.org/nahjul-balagha-part-2-letters-and-sayings",
+          "quote": "When you hear a tradition test it according to the criterion of intelligence not that of mere hearing"
+        }
+      ],
+      "summary": "Saying 98 urges learners to examine what they hear with active understanding and intelligence rather than passively repeating words.",
+      "familyNote": "Imam Ali distinguishes thoughtful comprehension from uncritical repetition (Saying 98).",
+      "mechanic": "scenario_dilemma",
+      "questions": [
+        {
+          "type": "select",
+          "prompt": "By what criterion should you test a tradition, according to Saying 98?",
+          "options": [
+            "Intelligence, not mere hearing",
+            "How many people share it",
+            "How dramatic it sounds"
+          ],
+          "correct": 0,
+          "explanation": "The saying says to use the criterion of intelligence, not mere hearing."
+        },
+        {
+          "type": "select",
+          "prompt": "A dramatic quote is going viral. Which response matches Saying 98?",
+          "options": [
+            "Pause and examine it with understanding before passing it on",
+            "Share it right away",
+            "Share it only if it moves you"
+          ],
+          "correct": 0,
+          "explanation": "Saying 98 asks for active understanding rather than repeating words."
+        }
+      ],
+      "status": "DRAFT",
+      "draftReason": "Not yet verified — NAHJ Saying 98: source unreachable: HTTP 403 (the site blocks automated readers; save the page by hand as .cache/pages/www_al_islam_org_nahjul_balagha_part_2_letters_and_sayings.html)",
+      "verification": {
+        "passed": false,
+        "checkedAt": "2026-11-24",
+        "quoteHashes": [
+          null
+        ]
+      }
+    },
+    {
+      "slug": "1.3.3",
+      "tier": 1,
+      "unit": 3,
+      "title": "Heart, Tongue, and Limbs",
+      "objective": "Define belief (iman) through the three aligned dimensions taught in Nahj al-Balagha Saying 227.",
+      "hook": "Is belief only an inner feeling, or does it require alignment between thoughts, words, and actions?",
+      "sources": [
+        {
+          "key": "NAHJ",
+          "role": "primary",
+          "book": "Nahj al-Balagha",
+          "author": "Compiled by al-Sharif al-Radi",
+          "translator": "Sayed Ali Reza",
+          "edition": "Al-Islam.org edition",
+          "locator": "Saying 227",
+          "url": "https://www.al-islam.org/nahjul-balagha-part-2-letters-and-sayings",
+          "quote": "Belief means appreciation with the heart, acknowledgement with the tongue, and action with the limbs."
+        }
+      ],
+      "summary": "Saying 227 defines belief as a three-part whole: inner appreciation in the heart, honest expression on the tongue, and lived action through the limbs.",
+      "familyNote": "Imam Ali reinforces this idea of belief as inner conviction joined to action.",
+      "mechanic": "root_word_match",
+      "questions": [
+        {
+          "type": "select",
+          "prompt": "In Saying 227, what is done with the heart?",
+          "options": [
+            "Appreciation",
+            "Acknowledgement",
+            "Action"
+          ],
+          "correct": 0,
+          "explanation": "Belief is appreciation with the heart."
+        },
+        {
+          "type": "select",
+          "prompt": "Which daily example matches 'action with the limbs'?",
+          "options": [
+            "Helping a neighbour carry heavy shopping",
+            "Quietly agreeing in your head",
+            "Saying you care without doing anything"
+          ],
+          "correct": 0,
+          "explanation": "Action with the limbs means belief shown through what you do."
+        }
+      ],
+      "status": "DRAFT",
+      "candidates": [
+        "NAHJ Saying 125 as a family note: the syllabus text contains an ellipsis; split into exact quotes before use."
+      ],
+      "draftReason": "Not yet verified — NAHJ Saying 227: source unreachable: HTTP 403 (the site blocks automated readers; save the page by hand as .cache/pages/www_al_islam_org_nahjul_balagha_part_2_letters_and_sayings.html)",
+      "verification": {
+        "passed": false,
+        "checkedAt": "2026-11-24",
+        "quoteHashes": [
+          null
+        ]
+      }
+    },
+    {
+      "slug": "1.4.1",
+      "tier": 1,
+      "unit": 4,
+      "title": "Created Free",
+      "objective": "Recognize human freedom and moral independence as a God-given dignity.",
+      "hook": "What social pressures or expectations quietly make people act like they belong to others instead of standing in their own dignity?",
+      "sources": [
+        {
+          "key": "NAHJ",
+          "role": "primary",
+          "book": "Nahj al-Balagha",
+          "author": "Compiled by al-Sharif al-Radi",
+          "translator": "Sayed Ali Reza",
+          "edition": "Al-Islam.org edition",
+          "locator": "Letter 31",
+          "url": "https://www.al-islam.org/nahjul-balagha-part-2-letters-and-sayings",
+          "quote": "Do not be the slave of others for Allah had made you free."
+        },
+        {
+          "key": "NAHJ",
+          "role": "family",
+          "book": "Nahj al-Balagha",
+          "author": "Compiled by al-Sharif al-Radi",
+          "translator": "Sayed Ali Reza",
+          "edition": "Al-Islam.org edition",
+          "locator": "Letter 31",
+          "url": "https://www.al-islam.org/nahjul-balagha-part-2-letters-and-sayings",
+          "quote": "the heart of a young man is like uncultivated land. It accepts whatever is strewn on it."
+        }
+      ],
+      "summary": "Letter 31 reminds young readers never to surrender their dignity to others, because God created every human being free.",
+      "familyNote": "In the same fatherly letter (Letter 31), Imam Ali writes about the open heart of the young.",
+      "mechanic": "scenario_dilemma",
+      "questions": [
+        {
+          "type": "select",
+          "prompt": "Why does Letter 31 say not to be the slave of others?",
+          "options": [
+            "Because Allah had made you free",
+            "Because others are unkind",
+            "Because freedom is rare"
+          ],
+          "correct": 0,
+          "explanation": "The letter gives the reason: Allah had made you free."
+        },
+        {
+          "type": "select",
+          "prompt": "Peer pressure pushes you to do something you disagree with. Which response keeps dignity and kindness?",
+          "options": [
+            "Decline politely without being unkind",
+            "Go along to avoid trouble",
+            "Mock the others"
+          ],
+          "correct": 0,
+          "explanation": "Letter 31 asks you not to give up your dignity to others, without calling for unkindness."
+        }
+      ],
+      "status": "DRAFT",
+      "draftReason": "Not yet verified — NAHJ Letter 31: source unreachable: HTTP 403 (the site blocks automated readers; save the page by hand as .cache/pages/www_al_islam_org_nahjul_balagha_part_2_letters_and_sayings.html)",
+      "verification": {
+        "passed": false,
+        "checkedAt": "2026-11-24",
+        "quoteHashes": [
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "slug": "1.4.2",
+      "tier": 1,
+      "unit": 4,
+      "title": "The Worship of Free People",
+      "objective": "Identify gratitude as the motivation behind what Saying 237 calls \"the worship of free men.\"",
+      "hook": "What is the difference between doing good to get a reward, doing good out of fear, and doing good out of gratitude?",
+      "sources": [
+        {
+          "key": "NAHJ",
+          "role": "primary",
+          "book": "Nahj al-Balagha",
+          "author": "Compiled by al-Sharif al-Radi",
+          "translator": "Sayed Ali Reza",
+          "edition": "Al-Islam.org edition",
+          "locator": "Saying 237",
+          "url": "https://www.al-islam.org/nahjul-balagha-part-2-letters-and-sayings",
+          "quote": "Still another group worshipped Allah out of gratefulness; this is the worship of free men."
+        }
+      ],
+      "summary": "Saying 237 highlights gratitude as the highest posture of devotion, describing worship offered out of thankfulness as the worship of free people.",
+      "familyNote": "Imam Ali elevates gratitude above fear or transaction as the hallmark of spiritual maturity (Saying 237).",
+      "mechanic": "scenario_dilemma",
+      "questions": [
+        {
+          "type": "select",
+          "prompt": "What does Saying 237 call worship offered out of gratefulness?",
+          "options": [
+            "The worship of free men",
+            "The worship of merchants",
+            "The worship of the cautious"
+          ],
+          "correct": 0,
+          "explanation": "The saying calls it the worship of free men."
+        },
+        {
+          "type": "select",
+          "prompt": "Which motivation reflects gratitude-driven devotion?",
+          "options": [
+            "Doing good because you feel thankful",
+            "Doing good only to earn a reward",
+            "Doing good out of fear"
+          ],
+          "correct": 0,
+          "explanation": "Gratitude, not fear or reward, is the motive Saying 237 highlights."
+        }
+      ],
+      "status": "DRAFT",
+      "draftReason": "Not yet verified — NAHJ Saying 237: source unreachable: HTTP 403 (the site blocks automated readers; save the page by hand as .cache/pages/www_al_islam_org_nahjul_balagha_part_2_letters_and_sayings.html)",
+      "verification": {
+        "passed": false,
+        "checkedAt": "2026-11-24",
+        "quoteHashes": [
+          null
+        ]
+      }
+    },
+    {
+      "slug": "1.4.3",
+      "tier": 1,
+      "unit": 4,
+      "title": "Tier 1 Checkpoint: Two Kinds of Humanity",
+      "objective": "Apply Letter 53's principle of universal human dignity across faith and background.",
+      "hook": "How should you treat someone who does not share your religious beliefs?",
+      "sources": [
+        {
+          "key": "NAHJ",
+          "role": "cross",
+          "book": "Nahj al-Balagha",
+          "author": "Compiled by al-Sharif al-Radi",
+          "translator": "Sayed Ali Reza",
+          "edition": "Al-Islam.org edition",
+          "locator": "Letter 53",
+          "url": "https://www.al-islam.org/nahjul-balagha-part-2-letters-and-sayings",
+          "quote": "they are of two kinds, either your brother in religion or one like you in creation."
+        }
+      ],
+      "summary": "Letter 53 instructs that every person belongs to one of two bonds, fellowship in faith or equality in shared human creation, establishing universal respect.",
+      "familyNote": "Imam Ali wrote this directive as a public-service principle for governing a diverse population with fairness (Letter 53).",
+      "mechanic": "boss_checkpoint",
+      "questions": [],
+      "status": "PREVIEW",
+      "verification": {
+        "passed": true,
+        "checkedAt": "2026-11-24",
+        "quoteHashes": [
+          null
+        ]
+      }
+    }
+  ]
+}
