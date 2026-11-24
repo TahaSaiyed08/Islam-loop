@@ -5,25 +5,58 @@ import { cva, type VariantProps } from "class-variance-authority";
 
 import { cn } from "@/lib/utils";
 
+// Ported from sanidhyy/duolingo-clone (MIT). Same variants and 3D press effect;
+// colours mapped to the Roadmap theme (brand teal, sand, rose).
 const buttonVariants = cva(
-  "inline-flex min-h-11 items-center justify-center gap-2 whitespace-nowrap rounded-lg px-5 text-base font-semibold disabled:pointer-events-none disabled:opacity-50",
+  "inline-flex items-center justify-center whitespace-nowrap rounded-xl text-sm font-bold ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 uppercase tracking-wide",
   {
     variants: {
       variant: {
-        primary: "bg-primary text-primary-foreground hover:bg-primary/90",
-        sand: "bg-accent text-accent-foreground hover:bg-accent/85",
-        outline: "border-2 border-input bg-card text-foreground hover:bg-muted",
-        ghost: "text-foreground hover:bg-muted",
-        danger: "bg-danger text-white hover:bg-danger/90",
+        default:
+          "bg-white text-black border-slate-200 border-2 border-b-4 active:border-b-2 hover:bg-slate-100 text-slate-500",
+
+        // custom
+        locked:
+          "bg-neutral-200 text-primary-foreground hover:bg-neutral-200/90 border-neutral-400 border-b-4 active:border-b-0",
+
+        primary:
+          "bg-sand text-foreground hover:bg-sand/90 border-sand-dark border-b-4 active:border-b-0",
+        primaryOutline: "bg-white text-sand-ink hover:bg-slate-100",
+
+        secondary:
+          "bg-brand text-white hover:bg-brand/90 border-brand-dark border-b-4 active:border-b-0",
+        secondaryOutline: "bg-white text-brand hover:bg-slate-100",
+
+        danger:
+          "bg-rose-600 text-white hover:bg-rose-600/90 border-rose-800 border-b-4 active:border-b-0",
+        dangerOutline: "bg-white text-rose-700 hover:bg-slate-100",
+
+        super:
+          "bg-brand-dark text-white hover:bg-brand-dark/90 border-black/60 border-b-4 active:border-b-0",
+        superOutline: "bg-white text-brand-dark hover:bg-slate-100",
+
+        ghost:
+          "bg-transparent text-slate-600 border-transparent border-0 hover:bg-slate-100",
+
+        sidebar:
+          "bg-transparent text-slate-600 border-2 border-transparent hover:bg-slate-100 transition-none",
+        sidebarOutline:
+          "bg-brand/10 text-brand border-brand/40 border-2 hover:bg-brand/15 transition-none",
       },
       size: {
-        default: "",
-        lg: "min-h-12 px-7 text-lg",
-        sm: "min-h-10 px-4 text-sm",
-        icon: "size-11 p-0",
+        default: "h-11 px-4 py-2",
+        sm: "h-9 px-3",
+        lg: "h-12 px-8",
+        icon: "h-10 w-10",
+
+        // custom
+        rounded: "rounded-full",
       },
     },
-    defaultVariants: { variant: "primary", size: "default" },
+    defaultVariants: {
+      variant: "default",
+      size: "default",
+    },
   }
 );
 

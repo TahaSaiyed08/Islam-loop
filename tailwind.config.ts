@@ -34,6 +34,8 @@ const config = {
           foreground: hsl("accent-foreground"),
         },
         card: { DEFAULT: hsl("card"), foreground: hsl("card-foreground") },
+        brand: { DEFAULT: hsl("brand"), dark: hsl("brand-dark") },
+        sand: { DEFAULT: hsl("sand"), dark: hsl("sand-dark"), ink: hsl("sand-ink") },
         success: { DEFAULT: hsl("success"), soft: hsl("success-soft") },
         danger: { DEFAULT: hsl("danger"), soft: hsl("danger-soft") },
       },

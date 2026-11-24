@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+html,
+body,
+:root {
+  @apply h-full;
+}
+
 /* The Roadmap design tokens. Deep teal, warm sand, off-white. See DESIGN.md. */
 @layer base {
   :root {
@@ -24,6 +30,12 @@
     --success-soft: 150 40% 91%;
     --danger: 8 62% 36%;
     --danger-soft: 10 70% 94%;
+    /* Ported UI palette: brand teal (secondary buttons, banners), sand (primary buttons). */
+    --brand: 184 62% 26%;
+    --brand-dark: 184 66% 17%;
+    --sand: 36 72% 66%;
+    --sand-dark: 33 58% 46%;
+    --sand-ink: 30 70% 26%;
     --radius: 0.875rem;
   }
 

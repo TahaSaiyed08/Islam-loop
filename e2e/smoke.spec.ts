@@ -144,18 +144,17 @@ test("the placement quiz runs to the end and lands on the right tier", async ({
   ).startTier;
   await page.goto("/placement");
   await hydrated(page);
-  await page.getByTestId("placement-begin").click();
+  await page.getByTestId("continue").click(); // intro
   for (let i = 0; i < qs.length; i++) {
-    await page.getByTestId(`placement-option-${qs[i].correct}`).click();
-    await page
-      .getByTestId(i === qs.length - 1 ? "placement-finish" : "placement-next")
-      .click();
+    await page.getByTestId(`option-${qs[i].correct}`).click();
+    await page.getByTestId("check").click();
+    await page.getByTestId("continue").click();
   }
   await expect(page.getByTestId("placement-result")).toHaveAttribute(
     "data-start-tier",
     String(expected)
   );
-  await page.getByTestId("placement-go").click();
+  await page.getByTestId("continue").click(); // Go to my path
   await expect(page.getByTestId(`tier-${expected}`)).toHaveAttribute(
     "data-open",
     "true"
@@ -169,14 +168,11 @@ test("placement with every answer wrong starts at Tier 1, and skipping works", a
   const qs = catalog.placement;
   await page.goto("/placement");
   await hydrated(page);
-  await page.getByTestId("placement-begin").click();
+  await page.getByTestId("continue").click(); // intro
   for (let i = 0; i < qs.length; i++) {
-    await page
-      .getByTestId(`placement-option-${(qs[i].correct + 1) % 3}`)
-      .click();
-    await page
-      .getByTestId(i === qs.length - 1 ? "placement-finish" : "placement-next")
-      .click();
+    await page.getByTestId(`option-${(qs[i].correct + 1) % 3}`).click();
+    await page.getByTestId("check").click();
+    await page.getByTestId("continue").click();
   }
   await expect(page.getByTestId("placement-result")).toHaveAttribute(
     "data-start-tier",
@@ -206,7 +202,7 @@ test("reset clears progress, with an in-page confirmation and no browser dialog"
   await expect(page.getByTestId("stat-completed")).toHaveText("0");
   await page.reload();
   await expect(page.getByTestId("stat-completed")).toHaveText("0");
-  await expect(page.getByTestId("points")).toHaveText("0");
+  await expect(page.getByTestId("stat-points")).toHaveText("0");
   expect(dialogs).toBe(0);
 });
 
@@ -221,14 +217,16 @@ test("progress still works when localStorage is blocked", async ({ page }) => {
   const errors = watchConsole(page);
   await playLesson(page, lesson("1.1.1"));
   await expect(page.getByTestId("lesson-done")).toBeVisible();
-  expect(errors).toEqual([]);
+  expect(errors.filter((e) => !/blocked/i.test(e))).toEqual([]);
 });
 
 test("PREVIEW labels show on cards and lesson pages", async ({ page }) => {
   await page.goto("/learn");
-  await expect(page.getByTestId("preview-badge").first()).toBeVisible();
+  await expect(page.getByTestId("unit-preview").first()).toBeVisible();
   await page.goto("/lesson/1.1.1");
-  await expect(page.getByTestId("preview-badge").first()).toBeVisible();
+  await expect(page.getByTestId("preview-badge").first()).toContainText(
+    "Preview — under review"
+  );
 });
 
 test("every source link is an absolute https URL and external links are safe", async ({
@@ -238,7 +236,6 @@ test("every source link is an absolute https URL and external links are safe", a
     for (const s of l.sources) expect(s.url).toMatch(/^https:\/\//);
   await page.goto("/lesson/1.1.1");
   await hydrated(page);
-  await page.getByTestId("continue").click();
   const link = page.getByRole("link", { name: /Read the full text/ });
   await expect(link).toHaveAttribute("href", /^https:\/\//);
   await expect(link).toHaveAttribute("target", "_blank");

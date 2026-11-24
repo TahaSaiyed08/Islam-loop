@@ -1,5 +1,7 @@
 import type { Metadata, Viewport } from "next";
 
+import { ExitModal } from "@/components/modals/exit-modal";
+import { PracticeModal } from "@/components/modals/practice-modal";
 import { ProgressInit } from "@/components/progress-init";
 import { SITE_DESCRIPTION, SITE_NAME, SITE_TAGLINE, siteUrl } from "@/lib/site";
 
@@ -29,13 +31,13 @@ export const viewport: Viewport = {
 
 export default function RootLayout({
   children,
-}: {
-  children: React.ReactNode;
-}) {
+}: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body className="min-h-screen">
+      <body>
         <ProgressInit />
+        <ExitModal />
+        <PracticeModal />
         {children}
       </body>
     </html>

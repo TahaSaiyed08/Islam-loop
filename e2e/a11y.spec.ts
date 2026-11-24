@@ -39,10 +39,9 @@ test("axe: lesson question, feedback and done screens", async ({ page }) => {
       (v) => `${v.id}: ${v.nodes.map((n) => n.target.join(" ")).join(" | ")}`
     );
   const found: string[] = [];
+  found.push(...(await run())); // source card
   await page.getByTestId("continue").click();
-  found.push(...(await run()));
-  await page.getByTestId("continue").click();
-  found.push(...(await run()));
+  found.push(...(await run())); // question
   await page.getByTestId("option-1").click();
   await page.getByTestId("check").click(); // wrong answer: red feedback panel
   found.push(...(await run()));
@@ -60,11 +59,10 @@ test("keyboard: a lesson can be played with the keyboard alone", async ({
 }) => {
   await page.goto("/lesson/1.1.1");
   await hydrated(page);
-  await page.keyboard.press("Enter"); // Begin
   await page.keyboard.press("Enter"); // source -> questions
   await page.keyboard.press("1"); // choose option 1
   await page.keyboard.press("Enter"); // check
-  await expect(page.getByTestId("feedback")).toBeVisible();
+  await expect(page.getByTestId("footer")).toHaveAttribute("data-status", /correct|wrong/);
   await page.keyboard.press("Enter"); // continue
   await page.keyboard.press("1");
   await page.keyboard.press("Enter");

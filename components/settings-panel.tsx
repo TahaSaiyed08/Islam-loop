@@ -48,7 +48,7 @@ export function SettingsPanel() {
         </p>
         {!confirming ? (
           <Button
-            variant="outline"
+            variant="default"
             className="mt-4"
             onClick={() => {
               setDone(false);
@@ -79,7 +79,7 @@ export function SettingsPanel() {
               >
                 Yes, erase it
               </Button>
-              <Button variant="outline" onClick={() => setConfirming(false)}>
+              <Button variant="default" onClick={() => setConfirming(false)}>
                 Cancel
               </Button>
             </div>

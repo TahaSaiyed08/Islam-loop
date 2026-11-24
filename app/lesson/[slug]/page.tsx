@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
-import { LessonPlayer } from "@/components/lesson/lesson-player";
 import { getCatalog } from "@/lib/catalog";
 import { SITE_NAME, siteUrl } from "@/lib/site";
+
+import { Quiz } from "../quiz";
 
 export const dynamicParams = false;
 
@@ -61,7 +62,7 @@ export default async function LessonPage({ params }: Props) {
           __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c"),
         }}
       />
-      <LessonPlayer lesson={lesson} nextSlug={nextSlug} tierName={tierName} />
+      <Quiz lesson={lesson} nextSlug={nextSlug} tierName={tierName} />
     </>
   );
 }

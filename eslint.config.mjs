@@ -17,5 +17,6 @@ export default defineConfig([
     "test-results/**",
     ".cache/**",
     ".ua/**",
+    ".claude/**",
   ]),
 ]);

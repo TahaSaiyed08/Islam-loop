@@ -1,8 +1,14 @@
 import { type Page, expect } from "@playwright/test";
 
+import { lessonToChallenges } from "../lib/challenges";
 import type { PlayableLesson } from "../lib/content";
 
 export { getCatalog } from "../lib/catalog";
+
+/** Waits until React has attached handlers (SSR HTML is visible before it is interactive). */
+export async function hydrated(page: Page) {
+  await expect(page.locator('[data-hydrated="true"]')).toBeVisible();
+}
 
 /** Plays a lesson through the real UI. `right` = answer correctly on the first try. */
 export async function playLesson(
@@ -11,28 +17,26 @@ export async function playLesson(
   right = true
 ) {
   await page.goto(`/lesson/${lesson.slug}`);
-  await expect(
-    page.locator('[data-testid="lesson-player"][data-hydrated="true"]')
-  ).toBeVisible();
-  await page.getByTestId("continue").click(); // Begin
-  const readable = lesson.sources.filter((s) => s.role !== "family");
-  for (let i = 0; i < readable.length; i++) {
-    await expect(page.getByTestId("source-card")).toBeVisible();
-    await page.getByTestId("continue").click();
-  }
-  for (const q of lesson.questions) {
-    if (q.type === "select") {
-      const pick = right ? q.correct : (q.correct + 1) % 3;
-      await page.getByTestId(`option-${pick}`).click();
+  await hydrated(page);
+  for (const c of lessonToChallenges(lesson)) {
+    if (c.type === "SOURCE") {
+      await page.getByTestId("continue").click();
+      continue;
+    }
+    if (c.type === "SELECT") {
+      const correct = c.options.findIndex((o) => o.correct);
+      await page
+        .getByTestId(`option-${right ? correct : (correct + 1) % 3}`)
+        .click();
     } else {
       const order = right
-        ? q.items.map((_, i) => i)
-        : q.items.map((_, i) => q.items.length - 1 - i);
+        ? c.items.map((_, i) => i)
+        : c.items.map((_, i) => c.items.length - 1 - i);
       for (const idx of order) await page.getByTestId(`pool-${idx}`).click();
     }
     await page.getByTestId("check").click();
-    await expect(page.getByTestId("feedback")).toHaveAttribute(
-      "data-result",
+    await expect(page.getByTestId("footer")).toHaveAttribute(
+      "data-status",
       right ? "correct" : "wrong"
     );
     await page.getByTestId("continue").click();
@@ -48,9 +52,4 @@ export function visibleText(html: string): string {
     .replace(/&#x27;|&#39;|&apos;/g, "'")
     .replace(/&quot;/g, '"')
     .replace(/\s+/g, " ");
-}
-
-/** Waits until React has attached handlers (SSR HTML is visible before it is interactive). */
-export async function hydrated(page: Page) {
-  await expect(page.locator('[data-hydrated="true"]')).toBeVisible();
 }
