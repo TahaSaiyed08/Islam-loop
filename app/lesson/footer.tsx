@@ -61,7 +61,10 @@ export const Footer = ({
     >
       <div className="mx-auto flex min-h-[100px] max-w-[1000px] flex-col gap-4 px-4 py-4 sm:flex-row sm:items-center sm:justify-between sm:px-6 lg:min-h-[140px] lg:px-10">
         {checked && (
-          <div className="flex items-center gap-x-4" role="status">
+          <div
+            className="animate-duo-slide-up flex items-center gap-x-4"
+            role="status"
+          >
             <div
               aria-hidden
               className="hidden size-20 shrink-0 items-center justify-center rounded-full bg-white sm:flex"

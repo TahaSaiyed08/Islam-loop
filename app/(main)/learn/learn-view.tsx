@@ -2,6 +2,7 @@
 
 import { useMemo } from "react";
 
+import { DailyQuests } from "@/components/daily-quests";
 import { FeedWrapper } from "@/components/feed-wrapper";
 import { Promo } from "@/components/promo";
 import { TierCard } from "@/components/quests";
@@ -63,6 +64,7 @@ export function LearnView({ tiers }: { tiers: LearnTier[] }) {
       <StickyWrapper>
         <UserProgress />
         <Promo />
+        <DailyQuests />
         <TierCard
           tier={currentTier.tier}
           name={currentTier.name}

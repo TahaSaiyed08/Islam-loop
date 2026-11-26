@@ -61,14 +61,15 @@ export const Card = ({
       data-testid={testId}
       data-status={selected ? status : undefined}
       className={cn(
-        "h-full cursor-pointer rounded-2xl border-2 border-b-4 border-swan bg-white p-4 hover:bg-polar active:translate-y-[2px] active:border-b-2 lg:p-6",
-        selected && "border-sand-line bg-sand-soft hover:bg-sand-soft",
+        "h-full cursor-pointer rounded-2xl border-2 border-b-4 border-swan bg-white p-4 transition-colors hover:bg-polar active:translate-y-[2px] active:border-b-2 lg:p-6",
+        selected &&
+          "border-[#84D8FF] bg-[#DDF4FF] hover:bg-[#DDF4FF]",
         selected &&
           status === "correct" &&
-          "border-success-line bg-success-soft hover:bg-success-soft",
+          "animate-duo-pop border-success-line bg-success-soft hover:bg-success-soft",
         selected &&
           status === "wrong" &&
-          "border-danger-line bg-danger-soft hover:bg-danger-soft",
+          "animate-duo-shake border-danger-line bg-danger-soft hover:bg-danger-soft",
         disabled && "pointer-events-none hover:bg-white"
       )}
     >
@@ -76,7 +77,7 @@ export const Card = ({
         <p
           className={cn(
             "text-base font-semibold text-eel lg:text-lg",
-            selected && "text-sand-ink",
+            selected && "text-[#1278A8]",
             selected && status === "correct" && "text-success",
             selected && status === "wrong" && "text-danger"
           )}
@@ -88,7 +89,7 @@ export const Card = ({
           aria-hidden
           className={cn(
             "ml-4 flex h-[24px] w-[24px] shrink-0 items-center justify-center rounded-lg border-2 border-swan text-xs font-bold text-hare lg:h-[30px] lg:w-[30px] lg:text-[15px]",
-            selected && "border-sand-line text-sand-ink",
+            selected && "border-[#84D8FF] text-[#1278A8]",
             selected &&
               status === "correct" &&
               "border-success-line text-success",

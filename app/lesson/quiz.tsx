@@ -11,6 +11,7 @@ import { PreviewBadge } from "@/components/preview-badge";
 import { lessonToChallenges } from "@/lib/challenges";
 import { passMark, type PlayableLesson } from "@/lib/content";
 import { CONFETTI_COLORS, POINTS_PER_CORRECT } from "@/lib/lesson-ui";
+import { playComplete, playCorrect, playTap, playWrong } from "@/lib/sound";
 import { useHydrated } from "@/lib/use-hydrated";
 import { useExitModal } from "@/store/use-exit-modal";
 import { usePracticeModal } from "@/store/use-practice-modal";
@@ -78,7 +79,10 @@ export const Quiz = ({ lesson, nextSlug, tierName }: QuizProps) => {
   useEffect(() => {
     if (!challenge && !recorded.current) {
       recorded.current = true;
-      if (passed) complete(lesson.slug, points);
+      if (passed) {
+        complete(lesson.slug, points);
+        playComplete();
+      }
     }
   }, [challenge, passed, complete, lesson.slug, points]);
 
@@ -118,6 +122,8 @@ export const Quiz = ({ lesson, nextSlug, tierName }: QuizProps) => {
     }
     setResults((r) => ({ ...r, [challenge.id]: ok }));
     setStatus(ok ? "correct" : "wrong");
+    if (ok) playCorrect();
+    else playWrong();
   };
 
   const onPractice = () => {
@@ -249,7 +255,10 @@ export const Quiz = ({ lesson, nextSlug, tierName }: QuizProps) => {
 
       <div className="flex-1">
         <div className="flex h-full items-center justify-center">
-          <div className="flex w-full flex-col gap-y-12 px-6 py-8 lg:min-h-[350px] lg:w-[600px] lg:px-0">
+          <div
+            key={activeIndex}
+            className="animate-duo-slide-up flex w-full flex-col gap-y-10 px-6 pb-12 pt-8 lg:min-h-[350px] lg:w-[600px] lg:px-0"
+          >
             <div className="space-y-3">
               <p className="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs font-bold uppercase tracking-wide text-wolf">
                 <span>
@@ -260,7 +269,7 @@ export const Quiz = ({ lesson, nextSlug, tierName }: QuizProps) => {
               <h1
                 ref={headingRef}
                 tabIndex={-1}
-                className="text-center text-2xl font-extrabold leading-tight text-eel outline-none lg:text-start lg:text-3xl"
+                className="text-center text-2xl font-extrabold leading-tight text-eel outline-none focus-visible:ring-0 lg:text-start lg:text-3xl"
               >
                 {title}
               </h1>
@@ -284,15 +293,22 @@ export const Quiz = ({ lesson, nextSlug, tierName }: QuizProps) => {
                 challenge={challenge}
                 status={status}
                 selectedOption={selectedOption}
-                onSelect={(id) => status === "none" && setSelectedOption(id)}
+                onSelect={(id) => {
+                  if (status !== "none") return;
+                  playTap();
+                  setSelectedOption(id);
+                }}
                 placed={placed}
-                onPlace={(i) =>
-                  status === "none" && setPlaced((p) => [...p, i])
-                }
-                onUnplace={(i) =>
-                  status === "none" &&
-                  setPlaced((p) => p.filter((x) => x !== i))
-                }
+                onPlace={(i) => {
+                  if (status !== "none") return;
+                  playTap();
+                  setPlaced((p) => [...p, i]);
+                }}
+                onUnplace={(i) => {
+                  if (status !== "none") return;
+                  playTap();
+                  setPlaced((p) => p.filter((x) => x !== i));
+                }}
               />
             </div>
           </div>

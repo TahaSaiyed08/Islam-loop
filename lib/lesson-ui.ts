@@ -24,11 +24,11 @@ export function citation(s: Source): string {
 
 export const POINTS_PER_CORRECT = 10;
 
-/** Confetti in the site palette (teal, sand, white). */
+/** Confetti in the vibrant site palette (green, sky, gold, purple, coral). */
 export const CONFETTI_COLORS = [
-  "#0f4a4d",
-  "#2f8f92",
-  "#e9b765",
-  "#c98a2b",
-  "#ffffff",
+  "#58CC02",
+  "#1CB0F6",
+  "#FFC800",
+  "#9B5DE5",
+  "#FF9600",
 ];

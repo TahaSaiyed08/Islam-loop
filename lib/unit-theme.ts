@@ -13,28 +13,28 @@ export type UnitTheme = {
 
 export const UNIT_THEMES: UnitTheme[] = [
   {
-    banner: "bg-[#0B7C80] border-[#075A5D]",
-    node: "bg-[#14A3A3] border-[#0B7C80]",
-    ring: "#14A3A3",
-    ink: "text-[#0B6B6E]",
+    banner: "bg-[#46A302] border-[#378500]",
+    node: "bg-[#58CC02] border-[#46A302]",
+    ring: "#58CC02",
+    ink: "text-[#3C8C00]",
   },
   {
     banner: "bg-[#7C4DEB] border-[#5B2EC7]",
-    node: "bg-[#8B5CF6] border-[#6236C4]",
-    ring: "#8B5CF6",
+    node: "bg-[#9B5DE5] border-[#7C4DEB]",
+    ring: "#9B5DE5",
     ink: "text-[#5B2EC7]",
   },
   {
-    banner: "bg-[#C93B3B] border-[#9E2A2A]",
-    node: "bg-[#F2554C] border-[#C93B3B]",
-    ring: "#F2554C",
-    ink: "text-[#B42328]",
+    banner: "bg-[#0B85C6] border-[#07689C]",
+    node: "bg-[#1CB0F6] border-[#1899D6]",
+    ring: "#1CB0F6",
+    ink: "text-[#0B77B0]",
   },
   {
-    banner: "bg-[#A36000] border-[#7A4800]",
-    node: "bg-[#C77700] border-[#8F5500]",
-    ring: "#C77700",
-    ink: "text-[#8A5300]",
+    banner: "bg-[#C76500] border-[#994D00]",
+    node: "bg-[#FF9600] border-[#D97700]",
+    ring: "#FF9600",
+    ink: "text-[#A35200]",
   },
 ];
 
