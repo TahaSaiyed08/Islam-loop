@@ -1,16 +1,8 @@
 "use client";
 
-import { useState, useSyncExternalStore } from "react";
-
-import { Volume2, VolumeX } from "lucide-react";
+import { useState } from "react";
 
 import { Button } from "@/components/ui/button";
-import {
-  isSoundEnabled,
-  playTap,
-  setSoundEnabled,
-  subscribeSound,
-} from "@/lib/sound";
 import { useHydrated } from "@/lib/use-hydrated";
 import { useProgress } from "@/store/use-progress";
 
@@ -19,54 +11,9 @@ export function SettingsPanel() {
   const hydrated = useHydrated();
   const [confirming, setConfirming] = useState(false);
   const [done, setDone] = useState(false);
-  const soundOn = useSyncExternalStore(
-    subscribeSound,
-    isSoundEnabled,
-    () => true
-  );
-
-  const toggleSound = () => {
-    const next = !soundOn;
-    setSoundEnabled(next);
-    if (next) playTap();
-  };
 
   return (
     <div className="space-y-8" data-hydrated={hydrated}>
-      <section
-        className="rounded-xl border bg-card p-6"
-        aria-labelledby="sound-heading"
-      >
-        <div className="flex flex-wrap items-center justify-between gap-4">
-          <div>
-            <h2 id="sound-heading" className="text-xl font-bold">
-              Sound effects
-            </h2>
-            <p className="mt-1 text-muted-foreground">
-              Play short chimes when you select or check answers in lessons.
-            </p>
-          </div>
-          <Button
-            variant={soundOn ? "secondary" : "default"}
-            onClick={toggleSound}
-            aria-pressed={soundOn}
-            data-testid="sound-toggle"
-          >
-            {soundOn ? (
-              <>
-                <Volume2 className="mr-2 size-4" />
-                Sound On
-              </>
-            ) : (
-              <>
-                <VolumeX className="mr-2 size-4" />
-                Sound Off
-              </>
-            )}
-          </Button>
-        </div>
-      </section>
-
       <section
         className="rounded-xl border bg-card p-6"
         aria-labelledby="saved"

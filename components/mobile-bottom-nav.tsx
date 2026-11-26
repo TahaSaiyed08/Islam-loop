@@ -31,7 +31,7 @@ export const MobileBottomNav = () => {
             className={cn(
               "flex min-w-[64px] flex-col items-center justify-center gap-0.5 rounded-xl border-2 px-2.5 py-1 text-[11px] font-extrabold uppercase tracking-wide transition [&_svg]:size-6",
               active
-                ? "border-[#84D8FF] bg-[#DDF4FF] text-[#1278A8]"
+                ? "border-brand-line bg-brand-soft text-primary"
                 : "border-transparent text-wolf hover:bg-polar"
             )}
           >

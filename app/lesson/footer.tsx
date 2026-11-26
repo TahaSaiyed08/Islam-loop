@@ -80,7 +80,7 @@ export const Footer = ({
             >
               <p
                 data-testid="footer-message"
-                className="text-xl font-extrabold lg:text-2xl"
+                className="text-xl font-extrabold lg:text-[24px] lg:leading-[30px]"
               >
                 {status === "correct"
                   ? "Well done."
@@ -115,7 +115,7 @@ export const Footer = ({
           key={status}
           disabled={disabled}
           aria-disabled={disabled}
-          className="w-full sm:ml-auto sm:w-auto sm:min-w-[150px]"
+          className="w-full text-[17px] sm:ml-auto sm:w-auto sm:min-w-[150px]"
           onClick={onCheck}
           size="lg"
           variant={status === "wrong" ? "danger" : "secondary"}

@@ -8,39 +8,41 @@ body,
   @apply h-full;
 }
 
-/* The Roadmap design tokens: Duolingo-style Feather Green, Sky Blue, Gold, and Coral. */
+/* The Roadmap design tokens. Deep teal, warm sand, off-white. See DESIGN.md. */
 @layer base {
   :root {
+    /* The Roadmap palette (DESIGN.md). Neutrals follow the Duolingo-style grey scale;
+       hues are our own: teal brand, amber accent, coral for errors. */
     --background: 0 0% 100%; /* #FFFFFF */
     --foreground: 0 0% 29.4%; /* #4B4B4B */
     --card: 0 0% 100%; /* #FFFFFF */
     --card-foreground: 0 0% 29.4%; /* #4B4B4B */
-    --primary: 95 98% 28%; /* #3C8C00 — AA on soft green & white */
+    --primary: 182 81.8% 23.7%; /* #0B6B6E */
     --primary-foreground: 0 0% 100%; /* #FFFFFF */
-    --secondary: 199 100% 93.5%; /* #DDF4FF */
-    --secondary-foreground: 199 80% 35%; /* #1278A8 */
-    --accent: 45 100% 50%; /* #FFC800 */
+    --secondary: 40 100% 92%; /* #FFF1D6 */
+    --secondary-foreground: 36 100% 27.1%; /* #8A5300 */
+    --accent: 36 87.6% 59%; /* #F2A93B */
     --accent-foreground: 41 100% 12%; /* #3D2A00 */
     --muted: 0 0% 96.9%; /* #F7F7F7 */
     --muted-foreground: 0 0% 42%; /* #6B6B6B */
     --border: 0 0% 89.8%; /* #E5E5E5 */
     --input: 0 0% 89.8%; /* #E5E5E5 */
-    --ring: 199 92% 54%; /* #1CB0F6 */
-    --success: 95 98% 28%; /* #3C8C00 */
-    --success-soft: 93 100% 86%; /* #D7FFB8 */
-    --success-line: 95 79% 68%; /* #A5ED6E */
-    --danger: 358 75% 44%; /* #C51B20 */
-    --danger-soft: 358 100% 94%; /* #FFDFE0 */
-    --danger-line: 358 100% 81%; /* #FF9E9F */
-    --brand: 95 98% 32%; /* #46A302 — Feather Green (AA with white text) */
-    --brand-dark: 95 100% 26%; /* #378500 — 3D edge */
-    --brand-soft: 199 100% 93.5%; /* #DDF4FF — Sky Blue active nav tint */
-    --brand-line: 199 100% 76%; /* #84D8FF — Sky Blue active nav border */
-    --sand: 45 100% 50%; /* #FFC800 — Gold */
-    --sand-dark: 39 100% 42%; /* #D68A00 */
+    --ring: 182 84.2% 27.3%; /* #0B7C80 */
+    --success: 182 81.8% 23.7%; /* #0B6B6E */
+    --success-soft: 176 60% 90.2%; /* #D7F5F3 */
+    --success-line: 175 49.3% 70.6%; /* #8FD9D3 */
+    --danger: 358 67.4% 42.2%; /* #B42328 */
+    --danger-soft: 4 100% 94.1%; /* #FFE3E1 */
+    --danger-line: 3 80% 80.4%; /* #F5A9A5 */
+    --brand: 182 84.2% 27.3%; /* #0B7C80 */
+    --brand-dark: 182 86% 19.6%; /* #075A5D */
+    --brand-soft: 177 53.8% 92.4%; /* #E1F6F5 */
+    --brand-line: 175 49.3% 70.6%; /* #8FD9D3 */
+    --sand: 36 87.6% 59%; /* #F2A93B */
+    --sand-dark: 36 78.7% 44.1%; /* #C98318 */
     --sand-ink: 36 100% 27.1%; /* #8A5300 */
-    --sand-soft: 45 100% 92%; /* #FFF5D6 */
-    --sand-line: 43 96% 65%; /* #FCD34D */
+    --sand-soft: 40 100% 92%; /* #FFF1D6 */
+    --sand-line: 39 83.9% 68.4%; /* #F2C26B */
     --radius: 1rem;
   }
 

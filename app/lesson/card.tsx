@@ -61,9 +61,8 @@ export const Card = ({
       data-testid={testId}
       data-status={selected ? status : undefined}
       className={cn(
-        "h-full cursor-pointer rounded-2xl border-2 border-b-4 border-swan bg-white p-4 transition-colors hover:bg-polar active:translate-y-[2px] active:border-b-2 lg:p-6",
-        selected &&
-          "border-[#84D8FF] bg-[#DDF4FF] hover:bg-[#DDF4FF]",
+        "h-full cursor-pointer rounded-[12px] border-2 border-b-4 border-swan bg-white p-4 transition-colors hover:bg-polar active:translate-y-[2px] active:border-b-2 lg:p-6",
+        selected && "border-sand-line bg-sand-soft hover:bg-sand-soft",
         selected &&
           status === "correct" &&
           "animate-duo-pop border-success-line bg-success-soft hover:bg-success-soft",
@@ -76,8 +75,8 @@ export const Card = ({
       <div className="flex items-center justify-between">
         <p
           className={cn(
-            "text-base font-semibold text-eel lg:text-lg",
-            selected && "text-[#1278A8]",
+            "text-base font-semibold leading-snug text-eel lg:text-[19px]",
+            selected && "text-sand-ink",
             selected && status === "correct" && "text-success",
             selected && status === "wrong" && "text-danger"
           )}
@@ -89,7 +88,7 @@ export const Card = ({
           aria-hidden
           className={cn(
             "ml-4 flex h-[24px] w-[24px] shrink-0 items-center justify-center rounded-lg border-2 border-swan text-xs font-bold text-hare lg:h-[30px] lg:w-[30px] lg:text-[15px]",
-            selected && "border-[#84D8FF] text-[#1278A8]",
+            selected && "border-sand-line text-sand-ink",
             selected &&
               status === "correct" &&
               "border-success-line text-success",

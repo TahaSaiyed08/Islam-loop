@@ -28,16 +28,18 @@ Nunito (self-hosted with `@fontsource-variable/nunito`, so builds need no networ
 
 ## Components
 
-- **Buttons** (`components/ui/button.tsx`): every upstream variant. The 3D edge is a 4px bottom border (8px on path nodes). On press the edge moves to a transparent top border, so the face sinks while the box keeps its height and nothing around it moves (tested).
-- **Answer cards** (`app/lesson/card.tsx`): rounded-2xl, 2px border with a 4px bottom, number badge. Selected is amber; correct is teal; wrong is coral; the right answer is revealed after a miss.
-- **Progress bar**: grey track, bright teal fill with a light highlight stripe.
-- **Feedback bar** (`app/lesson/footer.tsx`): after Check, the bar turns teal or coral, with an icon disc, a bold verdict and the one-line reason. The button fills the width on phones.
-- **Path** (`app/(main)/learn/`): 70px round nodes with an 8px edge in a zigzag (cycle of 8, 40px steps), a bouncing Start bubble and a progress ring on the current lesson, and a crown on the checkpoint.
+- **Buttons** (`components/ui/button.tsx`): every upstream variant, matched to measured Duolingo geometry (`h-[50px]` `lg` height, `16px` horizontal padding, `0.8px` uppercase tracking, `16px` radius). The 3D edge is a 4px bottom border (8px on path nodes). On press the edge moves to a transparent top border, so the face sinks while the box keeps its height and nothing around it moves (tested).
+- **Answer cards** (`app/lesson/card.tsx`): `12px` radius (`rounded-[12px]`), `2px` border with a `4px` bottom, `24px` desktop padding, `19px` desktop option text, number badge. Selected is amber; correct is teal with `duo-pop`; wrong is coral with `duo-shake`; the right answer is revealed after a miss.
+- **Progress bar**: `16px` grey track, bright teal fill with a light highlight stripe.
+- **Feedback bar** (`app/lesson/footer.tsx`): `140px` desktop height; after Check, the bar turns teal or coral with `duo-slide-up`, an icon disc, a bold `24px/30px` verdict, the one-line reason, and a `150px+` `17px` uppercase Continue button (full width on phones).
+- **Modals** (`components/modals/`): `400px` max-width, `20px` radius, `32px` padding, centered `22px/28px` title, stacked `50px` 3D primary CTA and flat uppercase secondary action.
+- **Path & Navigation** (`app/(main)/learn/`, `components/mobile-bottom-nav.tsx`): 70px round nodes with an 8px edge in a zigzag (cycle of 8, 40px steps), a bouncing Start bubble and a progress ring on the current lesson, a crown on the checkpoint, Daily Quests card in the sticky rail, and a fixed `64px` bottom tab bar on mobile (`< lg`).
 - **Sidebar**: original flat colour icons in place of the upstream art.
 
 ## Interaction
 
-- No sounds. Confetti uses the site colours and is off with reduced motion; the Start bubble stops bouncing too.
+- No sounds (rule 4). Confetti uses the site colours and is off with reduced motion; the Start bubble, shake, pop, and slide-up animations respect `prefers-reduced-motion`.
 - Colour is never the only signal: right and wrong also use icons and words.
-- Keyboard: 1–3 pick an option, Enter checks and continues; focus moves to each new step's heading; every control has a visible focus ring.
+- Keyboard: 1–3 pick an option, Enter checks and continues; focus moves to each new step's heading (`focus-visible:ring-0` on the programmatic heading); every interactive control has a visible focus ring.
 - Touch targets are at least 44px. Layouts are tested at 360px and 1280px.
+

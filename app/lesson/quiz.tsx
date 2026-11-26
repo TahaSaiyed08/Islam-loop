@@ -11,7 +11,6 @@ import { PreviewBadge } from "@/components/preview-badge";
 import { lessonToChallenges } from "@/lib/challenges";
 import { passMark, type PlayableLesson } from "@/lib/content";
 import { CONFETTI_COLORS, POINTS_PER_CORRECT } from "@/lib/lesson-ui";
-import { playComplete, playCorrect, playTap, playWrong } from "@/lib/sound";
 import { useHydrated } from "@/lib/use-hydrated";
 import { useExitModal } from "@/store/use-exit-modal";
 import { usePracticeModal } from "@/store/use-practice-modal";
@@ -79,10 +78,7 @@ export const Quiz = ({ lesson, nextSlug, tierName }: QuizProps) => {
   useEffect(() => {
     if (!challenge && !recorded.current) {
       recorded.current = true;
-      if (passed) {
-        complete(lesson.slug, points);
-        playComplete();
-      }
+      if (passed) complete(lesson.slug, points);
     }
   }, [challenge, passed, complete, lesson.slug, points]);
 
@@ -122,8 +118,6 @@ export const Quiz = ({ lesson, nextSlug, tierName }: QuizProps) => {
     }
     setResults((r) => ({ ...r, [challenge.id]: ok }));
     setStatus(ok ? "correct" : "wrong");
-    if (ok) playCorrect();
-    else playWrong();
   };
 
   const onPractice = () => {
@@ -269,7 +263,7 @@ export const Quiz = ({ lesson, nextSlug, tierName }: QuizProps) => {
               <h1
                 ref={headingRef}
                 tabIndex={-1}
-                className="text-center text-2xl font-extrabold leading-tight text-eel outline-none focus-visible:ring-0 lg:text-start lg:text-3xl"
+                className="text-center text-2xl font-extrabold leading-tight text-eel outline-none focus-visible:ring-0 lg:text-start lg:text-[32px] lg:leading-[40px]"
               >
                 {title}
               </h1>
@@ -293,22 +287,15 @@ export const Quiz = ({ lesson, nextSlug, tierName }: QuizProps) => {
                 challenge={challenge}
                 status={status}
                 selectedOption={selectedOption}
-                onSelect={(id) => {
-                  if (status !== "none") return;
-                  playTap();
-                  setSelectedOption(id);
-                }}
+                onSelect={(id) => status === "none" && setSelectedOption(id)}
                 placed={placed}
-                onPlace={(i) => {
-                  if (status !== "none") return;
-                  playTap();
-                  setPlaced((p) => [...p, i]);
-                }}
-                onUnplace={(i) => {
-                  if (status !== "none") return;
-                  playTap();
-                  setPlaced((p) => p.filter((x) => x !== i));
-                }}
+                onPlace={(i) =>
+                  status === "none" && setPlaced((p) => [...p, i])
+                }
+                onUnplace={(i) =>
+                  status === "none" &&
+                  setPlaced((p) => p.filter((x) => x !== i))
+                }
               />
             </div>
           </div>

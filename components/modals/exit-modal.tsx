@@ -24,24 +24,24 @@ export const ExitModal = () => {
 
   return (
     <Dialog open={isOpen} onOpenChange={close}>
-      <DialogContent className="max-w-md">
-        <DialogHeader>
-          <div className="mb-5 flex w-full items-center justify-center">
+      <DialogContent className="max-w-[400px] rounded-[20px] p-8 sm:rounded-[20px]">
+        <DialogHeader className="space-y-3">
+          <div className="mb-3 flex w-full items-center justify-center">
             <LogoMark className="size-20" />
           </div>
 
-          <DialogTitle className="text-center text-2xl font-bold">
+          <DialogTitle className="text-center text-[22px] font-extrabold leading-[28px] text-eel">
             Leave for now?
           </DialogTitle>
 
-          <DialogDescription className="text-center text-base">
+          <DialogDescription className="text-center text-base font-semibold text-wolf">
             Your answers here will be lost. Lessons you have finished stay
             finished.
           </DialogDescription>
         </DialogHeader>
 
-        <DialogFooter className="mb-4">
-          <div className="flex w-full flex-col gap-y-4">
+        <DialogFooter className="mt-2">
+          <div className="flex w-full flex-col gap-y-3">
             <Button
               variant="secondary"
               className="w-full"

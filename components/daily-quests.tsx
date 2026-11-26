@@ -26,7 +26,7 @@ export const DailyQuests = () => {
       current: Math.min(doneCount, 1),
       target: 1,
       icon: Sparkles,
-      iconColor: "text-[#1CB0F6]",
+      iconColor: "text-brand",
     },
     {
       id: "streak",
@@ -34,7 +34,7 @@ export const DailyQuests = () => {
       current: Math.min(streakCount, 1),
       target: 1,
       icon: Flame,
-      iconColor: "text-[#FF9600]",
+      iconColor: "text-[#8B5CF6]",
     },
   ];
 
@@ -57,10 +57,7 @@ export const DailyQuests = () => {
             <li key={q.id} className="flex items-center gap-x-3">
               <div className="flex size-10 shrink-0 items-center justify-center rounded-xl bg-polar">
                 {complete ? (
-                  <CheckCircle2
-                    aria-hidden
-                    className="size-6 text-[#46A302]"
-                  />
+                  <CheckCircle2 aria-hidden className="size-6 text-brand" />
                 ) : (
                   <Icon aria-hidden className={`size-6 ${q.iconColor}`} />
                 )}
@@ -76,7 +73,7 @@ export const DailyQuests = () => {
                 <Progress
                   value={pct}
                   className="h-3"
-                  indicatorClassName={complete ? "bg-[#58CC02]" : "bg-sand"}
+                  indicatorClassName={complete ? "bg-brand" : "bg-sand"}
                   aria-label={q.title}
                 />
               </div>

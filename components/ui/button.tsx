@@ -13,7 +13,7 @@ const sink =
   "active:border-b-0 active:border-t-4 active:border-t-transparent active:bg-clip-padding";
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center whitespace-nowrap rounded-2xl text-[15px] font-extrabold uppercase tracking-wide ring-offset-background transition-[filter,background-color] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50",
+  "inline-flex items-center justify-center whitespace-nowrap rounded-2xl text-[15px] font-extrabold uppercase tracking-[0.8px] ring-offset-background transition-[filter,background-color] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50",
   {
     variants: {
       variant: {
@@ -46,7 +46,7 @@ const buttonVariants = cva(
       size: {
         default: "h-11 px-4 py-2",
         sm: "h-9 px-3",
-        lg: "h-12 px-8",
+        lg: "h-[50px] px-4",
         icon: "h-10 w-10",
 
         // custom
