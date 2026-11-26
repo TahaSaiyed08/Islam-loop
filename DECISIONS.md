@@ -98,3 +98,11 @@ All from the "Initial import from sanidhyy/duolingo-clone" commit. Mapped colour
 37. **Bug found and fixed:** unit colour classes live in `lib/unit-theme.ts`, but Tailwind only scanned `app/` and `components/`, so every unit banner rendered white text on white. All tests had passed, because none checked a computed colour. `lib/` is now scanned, and a regression test checks every banner has a colour and 4.5:1 text.
 38. **Active sidebar item** text moved from brand teal to the deeper teal ink: axe measured 4.44:1 on the pale fill.
 39. **Al-Islam.org is still unreachable** in this session: the WebFetch route still fails with `getaddrinfo ENOTFOUND al-islam.org`. Content is unchanged.
+
+## `clone-website` extraction pass
+
+40. **Skill installed locally:** Copied `JCodesMore/ai-website-cloner-template`'s `clone-website` skill (`SKILL.md`, `references/`, `LICENSE`) into `.agents/skills/clone-website/` and `.claude/skills/clone-website/`, audited as markdown-only, and updated `CLAUDE.md` rule 4 + `AGENTS.md`.
+41. **Measured Duolingo extraction:** Inspected `https://www.duolingo.com` public landing, guest lesson (`/lesson`), and exit-lesson modal via headless Chromium at `1280px` and `360px` (`docs/research/duolingo/BRIEF.md`). Applied exact measurements: `50px` primary/CTA button height, `0.8px` uppercase tracking, `12px` answer card radius with `24px` desktop padding and `19px` option text, `32px/40px` lesson heading, `140px` feedback bar with `24px/30px` verdict and `17px` Continue CTA, and `400px` / `20px`-radius modals.
+42. **Brand fidelity (Rule 4):** Kept The Roadmap's own brand palette (`DESIGN.md` teal, sand, unit colours), Nunito font, original icons, and zero sound effects (removed the temporary Web Audio sounds and green/sky palette from earlier commit `93b166d`).
+43. **Logged-in `/learn` boundary:** `https://www.duolingo.com/learn` redirects unauthenticated guests back to onboarding; `/learn` retains the existing ported geometry plus the new `DailyQuests` rail card and `MobileBottomNav` tab bar until a signed-in capture is provided.
+

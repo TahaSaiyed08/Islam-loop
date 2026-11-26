@@ -1,6 +1,6 @@
 # Progress
 
-**Phase:** rework done, then a Duolingo-style pass (DECISIONS 31–39). **Status:** UI ported and restyled, all gates green; Al-Islam.org content still blocked (see REWORK_REPORT.md, MANUAL_FETCH.md).
+**Phase:** `clone-website` skill installed and Duolingo measurement pass applied (DECISIONS 40–43). **Status:** Lesson, modal, button, and mobile-nav geometry aligned to extracted Duolingo metrics while keeping Roadmap brand tokens; Al-Islam.org content still blocked (see REWORK_REPORT.md, MANUAL_FETCH.md).
 
 | Phase | Status |
 |---|---|
